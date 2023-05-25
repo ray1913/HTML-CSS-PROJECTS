@@ -1,5 +1,11 @@
+
+body {
+    margin: 0;
+}
+
 p {
     font-family: Roboto, Arial; 
+
 /* Removes default margins of all paragraphs on this webpage */
     margin-top: 0;
     margin-bottom: 0; 
