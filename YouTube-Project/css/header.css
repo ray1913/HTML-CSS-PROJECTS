@@ -11,7 +11,7 @@
 .header {
     height: 55px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  /* distributes 'only direct child items' evenly across this header container */
    
 }
 
@@ -19,7 +19,7 @@
     
     /* width: 150px; "was deleted for this section to stretch and contain it's content" */
     display: flex;
-    align-items: center;
+    align-items: center; /* aligns items in this section vertically */
 
 }
 
@@ -35,7 +35,7 @@
 }
 
 .middle-section {
-    flex: 1;
+    flex: 1;  /* makes the search bar grow with the page, and will shrink until it hits it's 'default width'.  */
     margin-left: 70px;
     margin-right: 35px;
     max-width: 600px; /* search-bar can be lesser than 300px when page is shrinked, but will stop growing at a width of 300px when page is expanded. 
@@ -47,13 +47,16 @@
 
 .search-bar {
     flex: 1; /* search-bar will grow or shrink to fit the space available in its flex container.(middle section),
-    so it pushes the buttons to the right edge of the conatainer*/
+                so it pushes the buttons to the right edge of the conatainer*/
     height: 36px;
     padding-left: 10px;
     font-size: 16px;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 3px;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.10);  /* sets shadows 'inside' the search-bar */
+    width: 0;
+     /* width: 0; removes default width of the search bar input element: See LINE 38 ); Search bar will shrink as much as it can.
+                The right section will be able to resize with page*/
 }
 
         /* targets search bar's placeholder te */
@@ -90,8 +93,30 @@
 }
 
 .right-section {
-    background-color: peru;
-    width: 250px;
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* This property keeps the width of this section and won't shrink it's items when webpage is resized to a smaller size.
+                       The items will not resize with the page after this property is set  */
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.user-picture {
+    height: 32px;
+    border-radius: 16px; /* half of the set user-picture's width makes the image perfectly rounded*/
 }
 
 
