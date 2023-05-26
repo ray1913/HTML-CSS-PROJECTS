@@ -1,11 +1,15 @@
 
 body {
+    font-family: Roboto, Arial; 
     margin: 0; /* removes all margins on all four sides of the webpage */
     padding-top: 80px; 
+    padding-left: 80px;
+
+    height: 1000px;
 }
 
 p {
-    font-family: Roboto, Arial; 
+    
 
 /* Removes default margins of all paragraphs on this webpage */
     margin-top: 0;
