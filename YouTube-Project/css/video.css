@@ -24,6 +24,19 @@ Media query will be used to fine tune responsiveness ----
 
 .thumbnail-box {
     margin-bottom: 12px;
+
+    position: relative;
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+
+    position: absolute;
+    
+    right: 10px;
+    bottom: 14px;
+
 }
 
 .video-info-grid {
