@@ -1,6 +1,7 @@
 
 body {
-    margin: 0;
+    margin: 0; /* removes all margins on all four sides of the webpage */
+    padding-top: 80px; 
 }
 
 p {
