@@ -13,6 +13,12 @@
     display: flex;
     justify-content: space-between;  /* distributes 'only direct child items' evenly across this header container */
    
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    
 }
 
 .left-section {
