@@ -35,7 +35,10 @@ Media query will be used to fine tune responsiveness ----
     position: absolute;
     
     right: 10px;
-    bottom: 14px;
+    bottom: 20px;
+    padding: 1%;
+    font-size: 12px;
+    border-radius: 3px;
 
 }
 
