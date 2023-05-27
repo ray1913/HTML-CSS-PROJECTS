@@ -5,3 +5,12 @@
     top: 55px;
     width: 72px;
 }
+
+.sidebar-link {
+    height: 76px;
+}
+
+div .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+} 
