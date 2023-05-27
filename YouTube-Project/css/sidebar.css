@@ -4,13 +4,31 @@
     bottom: 0;
     top: 55px;
     width: 72px;
+    padding-top: 6px;
 }
 
 .sidebar-link {
     height: 76px;
+
+    display: flex;
+    flex-direction: column; /* when flex direction is set to 'column', the effect of 'justify-content' and 'align-items' property are reversed */
+    justify-content: center; 
+    align-items: center;
+
 }
 
 div .sidebar-link:hover {
     background-color: rgb(235, 235, 235);
     cursor: pointer;
 } 
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.sidebar-link .link-name {
+    font-size: 10px;
+}
+
+
