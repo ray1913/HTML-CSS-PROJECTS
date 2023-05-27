@@ -30,6 +30,7 @@ Media query will be used to fine tune responsiveness ----
 
 .video-time {
     background-color: black;
+    font-weight: 500;
     color: white;
 
     position: absolute;
