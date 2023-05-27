@@ -8,7 +8,7 @@
 }
 
 .sidebar-link {
-    height: 76px;
+    height: 75px;
 
     display: flex;
     flex-direction: column; /* when flex direction is set to 'column', the effect of 'justify-content' and 'align-items' property are reversed */
