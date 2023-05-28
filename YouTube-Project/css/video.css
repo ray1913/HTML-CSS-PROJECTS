@@ -5,25 +5,26 @@
     row-gap: 35px;
 }
 
-/* Commented out to fit the 'video-previews' perfectly in 'video-grid-main'. Now page will respond when resized.
-Media query will be used to fine tune responsiveness ----
+/* Commented out to fit the 'video-previews' perfectly in element with the 'video-grid-main' class. Now page will respond to an extent when resized.
+
 .video-preview {            
     display: inline-block;
     margin-right: 15px;
     vertical-align: top;
     width: 300px; 
-
 }
 
 */
 
 .thumbnail {
+
     /* width: 300px;  This forced the image's width, & made page resizing inffective  */
-    width: 100%; /* thumbnail image will fit perfectly into the set grid column. i.e will take up 100% of the grid's '1fr' */ 
+
+    width: 100%;   /* thumbnail image will fit perfectly into the set grid column. */ 
 }
 
 .thumbnail-box {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 
     position: relative;
 }
@@ -40,7 +41,6 @@ Media query will be used to fine tune responsiveness ----
     padding: 1%;
     font-size: 12px;
     border-radius: 3px;
-
 }
 
 .video-info-grid {
@@ -48,13 +48,17 @@ Media query will be used to fine tune responsiveness ----
     grid-template-columns: 50px 1fr;
  }
 
+ .profile-picture {
+    width: 36px; /* Take up entire width of it's container; 'channel-picture' if set to a 100% */
+    border-radius: 50px;
+ }
 
 .video-title {
     margin-top: 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-author,
@@ -66,6 +70,50 @@ Media query will be used to fine tune responsiveness ----
 .video-author {
     margin-bottom: 6px;
 }
+
+                        /* Page Responsiveness  */
+
+@media(max-width: 600px) {   /* from a viewport width 0f 500px & lower / 0-500px, have 1 column per row.   */
+    .video-grid-main {
+    grid-template-columns: 1fr ;
+    display: grid;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 881px) {   /* have two rows betweeen 601px & 881px of viewport's width. */
+    .video-grid-main {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    }
+}
+
+@media(min-width: 881px) and (max-width: 950px) {  /* have 3rows when viewport width is between 700px-1100  */
+    .video-grid-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media(min-width: 951px) {   /* from a viewport 0f 951px and higher, have 4 grids per row  */
+    .video-grid-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+@media(max-width: 600px) {   /* from a viewport 0f 900 and lower, have 1 column per row  */
+  
+    .thumbnail-box {
+        margin-bottom: 15px;
+    }
+
+}
+
+
 
 /* The styles below is commented out because Css grids, preferable for alignments, is used in place of the display property, 'inline-block'. */
 
@@ -85,10 +133,7 @@ Media query will be used to fine tune responsiveness ----
     background-color: gray;
  } */
 
- .profile-picture {
-    width: 40px; /* Take up entire width of it's container; 'channel-picture' if set to a 100% */
-    border-radius: 50px;
- }
+
 
 
 

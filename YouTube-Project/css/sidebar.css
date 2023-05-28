@@ -1,23 +1,26 @@
 .sidebar {
+    background-color: white; /* set to have a background:  fixed elements floats on the page and is transparent*/
     position: fixed;
     left: 0;
     bottom: 0;
     top: 55px;
     width: 72px;
     padding-top: 6px;
+
+    z-index: 200; 
 }
 
 .sidebar-link {
     height: 75px;
 
     display: flex;
-    flex-direction: column; /* when flex direction is set to 'column', the effect of 'justify-content' and 'align-items' property are reversed */
+    flex-direction: column; /* when flex direction is set to 'column', the effect of 'justify-content' & 'align-items' property are reversed */
     justify-content: center; 
     align-items: center;
 
 }
 
-div .sidebar-link:hover {
+div .sidebar-link:hover {      /* background effect on sidebar links when users hover*/
     background-color: rgb(235, 235, 235);
     cursor: pointer;
 } 
