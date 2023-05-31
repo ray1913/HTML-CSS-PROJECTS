@@ -219,12 +219,12 @@ div .profile-picture {
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .1.5rem solid var(--bg-color); /* remove preceeding dot (.) to see effect on the border radius*/
+    transition: .5s ease; /* will have effect on 'services-box div' (code line 244) */
 }
 
 .services-box i {
@@ -232,3 +232,50 @@ div .profile-picture {
     color: var(--main-color);
 }
 
+.services-box h3 {
+   font-size: 2.6rem; 
+}
+
+.services-box p {
+   font-size: 1.6rem;
+   margin: 1rem 0 3rem; 
+}
+
+.services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.2); /* Scale this div closer to the user when hovered on*/
+    cursor: pointer;
+}
+
+            /* Portfolio Section  */
+
+.portfolio {
+    background: var(--second-bg-color);
+    
+    /* grid-template-columns: repeat(3, 1fr); shortcut repeat grid function instead of using '1fr 1fr 1fr'. Here '1fr' is repeated 3 times.*/  */
+    
+    /* align-items: center; */
+}
+
+.portfolio h2 {
+    margin-bottom: 5rem;
+  
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.heading span {
+    margin-left: 10px;
+}
+
+.portfolio-box img {
+    /* width: 500px;
+    height: 400px; */
+    /* object-fit: cover; */
+   
+    height: 300px;
+    object-fit: cover;
+}
