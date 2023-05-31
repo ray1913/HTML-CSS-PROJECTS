@@ -27,6 +27,23 @@ body {
    color: var(--text-color); 
 }
 
+
+section {
+    background-color: teal;
+    min-height: 100vh; /* defines the minimum height of all section element. */
+    padding: 10rem 9% 2rem;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+div .profile-picture {
+    width: 200px;
+}
+
 .header {
     position: fixed;
    
