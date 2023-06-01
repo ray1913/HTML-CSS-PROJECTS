@@ -177,6 +177,7 @@ div .profile-picture {
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 .heading {
@@ -194,7 +195,7 @@ div .profile-picture {
 }
 
         /* Services Section */
-
+        
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -263,7 +264,6 @@ div .profile-picture {
 
 .portfolio h2 {
     margin-bottom: 5rem;
-  
 }
 
 .portfolio-container {
