@@ -264,7 +264,10 @@ div .profile-picture {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem; /* column and row grid spacing */
+    align-items: center;
+    overflow: hidden; /* images won't overflow padding right/left set to all sections of this webpage (line 70)*/
 }
 
 .heading span {
@@ -272,10 +275,91 @@ div .profile-picture {
 }
 
 .portfolio-box img {
+    /* width: 200; */
     /* width: 500px;
     height: 400px; */
     /* object-fit: cover; */
-   
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
+    transition: .5s ease;
 }
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute; /* '.portfolio-layer' contents will float and move only inside '.portfolio-box'  */
+   
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    /* left: 0;
+    width: 0;
+    height: 100%; */
+
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    padding: 0 4rem;
+    transform: translateY(100%); /* hides the background/linear gradient styles from this elemnt */  
+    transition: .3s ease; /* The preceeding dot(.) before the transition second makes the transtion effect set to this element faster */
+}
+
+.portfolio-box:hover .portfolio-layer { /* targets 'portfolio-layer' element. when we hover over 'portfolio', since portfolio-layer element floats but relative to it's parent.*/
+    transform: translateY(0);  /* linear gradient background styles will appear horizontally with transition duration time of .3s  when we hover  
+    If set to 'X', linear gradient background styles will appear vertically*/
+}
+
+.portfolio-layer h4 {
+    padding-bottom: 1rem;
+    font-size: 2.4rem;
+}
+
+.portfolio-layer p {
+    font-size: 12px; 
+    padding-bottom: 1.5rem;
+}
+
+.portfolio-box {
+    transition: .3s ease;
+}
+
+.portfolio-box:hover {
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+.portfolio-layer a {
+    display: flex; /* see code line 104 */
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 3rem;
+}
+
+
+                /* Contact Section  */
+
+
+
+
+
