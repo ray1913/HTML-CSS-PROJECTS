@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Raleway', Arial;
-    --main-color: rgb(187, 135, 39);
+    --main-cleanCode: rgb(187, 135, 39);
+    
 }
 
 body {
@@ -12,7 +13,24 @@ body {
 
 header {
     display: flex;
-    padding: 1rem
+    align-items: center;
+    padding: 0.99rem 4.5rem;
 }
+
+header .fsd {
+    color: var(--main-cleanCode);
+    font-size: 2rem;
+    font-weight: 900;
+    padding-right: 10rem;
+}
+
+header .links a {
+    text-decoration: none;
+    padding-right: 2.7rem;
+}
+
+
+
+
 
 
