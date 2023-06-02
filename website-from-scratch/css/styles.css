@@ -2,18 +2,17 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Raleway', Arial;
+    --main-color: rgb(187, 135, 39);
 }
 
 body {
   
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 header {
     display: flex;
+    padding: 1rem
 }
+
+
