@@ -9,7 +9,9 @@
 
 body {
     background-image: url("../img/thunderstorm-g01ff31372_1280.jpg");
-    
+ 
+    background-size: cover; /* stretch an image to fit the background of an element */
+
 }
 
 header {
