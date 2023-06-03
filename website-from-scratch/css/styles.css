@@ -147,10 +147,40 @@ section .section-btn:active {
 }
 
 section .user-input {
-    height: 300px;
+    padding-top: 1rem;
+    height: 400px;
     width: 300px;
-    background-color: #473C33;
+    background-color: #0c0c0c;
+    border-radius: 4px;
+    opacity: 0.80;
 }
+
+.user-input .logIn-btn {
+    padding: 7px 7rem;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--main-cleanCode);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform .4s;
+}
+
+.logIn-btn:hover {
+    background-color: lightgray;
+}
+
+.logIn-btn:active {
+    opacity: 0.8;
+}
+
+
+section input {
+    display: block;
+}
+
+
+
 
 
 
