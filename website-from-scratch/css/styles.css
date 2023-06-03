@@ -2,32 +2,88 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Raleway', Arial;
-    --main-cleanCode: rgb(187, 135, 39);
-    
+    font-family: 'Roboto', Arial;
+    --main-cleanCode: #F97B22;
+    --main-links: #fff; 
 }
 
 body {
-  
+    background-image: url("../img/thunderstorm-g01ff31372_1280.jpg");
+    
 }
 
 header {
     display: flex;
     align-items: center;
-    padding: 0.99rem 4.5rem;
+    justify-content: space-around;
+    padding: 0 3rem;
+    margin-top: 10px;
+    
+    position: relative;
+
 }
 
 header .fsd {
     color: var(--main-cleanCode);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
-    padding-right: 10rem;
+    padding-right: 3rem;
+}
+
+.links {
+    padding: 0 2rem;
 }
 
 header .links a {
+    
     text-decoration: none;
-    padding-right: 2.7rem;
+    padding-right: 6rem;
+    font-weight: 700;
+  
+    /* color: var(--main-links); */ color: #fff;
 }
+
+button {
+    border-radius: 0;
+    padding: 10px;
+   
+}
+
+.query .btn {
+    background-color: #fff;
+    border-width: thin;
+    border-color: var(--main-cleanCode);
+    border-style: solid;
+    border-radius: 5px 0 0 5px;
+    margin: -5px;
+}
+
+.query input {
+    border: none;
+    padding-right: 50px; /* padding right didn't have effect on the button, wrapping the input element. */
+    font-size: 10px;
+    outline: none;
+}
+
+.btn .ipT::placeholder {
+    font-size: 12px;
+    padding-left: 2px;
+} 
+
+.query .btn2 {
+
+        border: none;
+        padding: 11px 25px;
+        color: #fff;
+        font-size: 11px;
+        background-color: var(--main-cleanCode);
+        border-radius: 0 5px 5px 0;
+}
+
+
+
+
+
 
 
 
