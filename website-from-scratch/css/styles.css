@@ -22,14 +22,20 @@ header {
     margin-top: 10px;
     
     position: relative;
-
 }
 
-header .fsd {
+
+/* header .fsd {
     color: var(--main-cleanCode);
     font-size: 3rem;
     font-weight: 900;
     padding-right: 3rem;
+} */
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
 }
 
 .links {
@@ -37,17 +43,26 @@ header .fsd {
 }
 
 header .links a {
+
+    color: #fff;
     
     text-decoration: none;
-    padding-right: 6rem;
+    padding-right: 7rem;
     font-weight: 700;
+    transition: color .4s ease, font-size .2s linear;
+}
+
+header .links a:hover {
+     font-size: 16px;
+     color: var(--main-cleanCode);
+     transform:scale(1.2);
   
-    /* color: var(--main-links); */ color: #fff;
+     /* transition-timing-function: linear; */
 }
 
 button {
     border-radius: 0;
-    padding: 10px;
+    padding: 10px ;
    
 }
 
@@ -57,7 +72,7 @@ button {
     border-color: var(--main-cleanCode);
     border-style: solid;
     border-radius: 5px 0 0 5px;
-    margin: -5px;
+    margin: -4px;
 }
 
 .query input {
@@ -74,14 +89,68 @@ button {
 
 .query .btn2 {
 
-        border: none;
-        padding: 11px 25px;
+        border-style: solid;
+        border-width: thin;
+        border-color: var(--main-cleanCode);
+        padding: 10px 25px;
         color: #fff;
         font-size: 11px;
         background-color: var(--main-cleanCode);
         border-radius: 0 5px 5px 0;
+        cursor: pointer;
 }
 
+/* Section  */
+
+section {
+    padding: 5rem 5rem;
+}
+
+.page-info-container {
+    display: flex;
+}
+
+.page-info {
+    flex: 1;
+}
+
+.page-info h1 {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+section p {
+    color: #fff;
+    line-height: 20px;
+}
+
+section .section-btn {
+    margin-top: 1.3rem;
+    padding: 8px 3rem;
+
+    border: none;
+    background-color: var(--main-cleanCode);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform .2s ease-out;
+}
+
+section .section-btn:hover {
+    transform: scale(1.2);
+    font-weight:bolder;
+    opacity: 0.8;
+}
+
+section .section-btn:active {
+    opacity: 0.8;
+}
+
+section .user-input {
+    height: 300px;
+    width: 300px;
+    background-color: #473C33;
+}
 
 
 
