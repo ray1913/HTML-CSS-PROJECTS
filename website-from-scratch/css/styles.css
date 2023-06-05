@@ -342,6 +342,16 @@ section i:hover {
         height: 37.5px; /* literally, users won't type in here so i used height to padding */
         border: 1px solid var(--main-cleanCode);
     }
+
+                /* section media-query conditions  */
+
+    .page-info h1 {
+        font-size: 3rem;
+    }
+
+    .page-info-container {
+        column-gap: 6rem; /* already set to grid.(code-line 295) So this sets a column spacing */
+    }
    
 }
 
