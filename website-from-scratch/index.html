@@ -71,39 +71,49 @@
                 </button>
             </div>
 
-            <div class="user-input">
+            <div class="create-acc-bx">
 
-                <button class="logIn-btn">Login Here</button>
-              
-                <input type="text">
-                <input type="text">
-
-                <div class="hrBox">
-                    <hr><hr>
+                <button class="logIn-btn">Login Here</button> 
+               
+                <div>
+                    <input type="text" placeholder="Enter Username">
+                    <hr> <!--- A block element, forces the input element, an inline element below, to the next line -->
+    
+                    <input type="password" placeholder="Enter Password" minlength="9" maxlength="10">
+                    <hr>
+    
+                    <button class="loginBT2">
+                        Login
+                    </button>
                 </div>
-             
 
-                <!-- <button class="footer-btn">
-                    Login
-                </button>
-                <p>Don't have an account?</p>
-                <p>Sign Up here</p>
-                <p>Log in with</p>
+                <p>Don't Have an Account?</p>
+                <p><span>Sign Up </span>Here</p>
+                <p>Log in With</p>
 
-                <div class="icons">
-                    <i class='bx bxl-twitter'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-google'></i>
-                    <i class='bx bxl-skype'></i>
-                </div> -->
+                    <!-- boxicons -->
+
+                <div>
+                     <!-- icons will appear vertically if not wrapped in a div, since flexbox doesn't go down two levels --->
+                    <a href="#"> 
+                        <i class='bx bxl-twitter bx-sm'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram bx-sm'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-facebook-circle bx-sm'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-google bx-sm'></i>
+                    </a>
+                    <a href="#">    
+                        <i class='bx bxl-skype bx-sm'></i>
+                    </a>                
+                </div>
 
             </div>
-            
-
-           </div> 
-          
+               
         </section>
-
     </body>
 </html>
