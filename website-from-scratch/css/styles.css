@@ -41,19 +41,15 @@ header img {
 }
 
 header .links a {
-
+    font-size: 14px;
     color: #fff;
     padding-right: 7rem;
     font-weight: 700;
     transition: color .4s ease, font-size .2s linear;
 }
 
-header .links a:hover {
-     font-size: 16px;
+.links a:hover {
      color: var(--main-cleanCode);
-     transform:scale(1.2);
-  
-     /* transition-timing-function: linear; */
 }
 
 button {
