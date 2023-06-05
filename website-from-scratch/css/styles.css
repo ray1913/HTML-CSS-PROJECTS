@@ -143,54 +143,107 @@ section .section-btn:hover {
 }
 
 section .section-btn:active {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
-section .user-input {
-    padding-top: 1rem;
-    height: 400px;
-    width: 300px;
-    background-color: #0c0c0c;
-    border-radius: 4px;
-    opacity: 0.80;
+section .create-acc-bx {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 23, 23); 
+    width: 250px;
+    border-radius: 5px;
+    height: 350px;
+
     text-align: center;
 }
 
-.user-input .logIn-btn {
-    padding: 10px 7rem;
-    margin-bottom: 3rem;
+.logIn-btn {
+    margin: 20px auto 40px;
+    width: 180px;
+    padding: 0.6rem;
     border: none;
+    background-color: #fff;
     font-size: 14px;
     font-weight: 700;
     color: var(--main-cleanCode);
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color .4s;
-    background-color: #fff;
-}
-
-.logIn-btn:hover {
-    background-color: lightgray;
-}
-
-.logIn-btn:active {
-    opacity: 0.8;
 }
 
 section input {
- margin-bottom: 0; 
- background-color: #0c0c0c;
- border: none;
+    background-color: rgb(23, 23, 23); 
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    
+}
+section input::placeholder {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.5;
+    color: #fff;
+    margin-right: auto;
 }
 
 section hr {
-    margin-top: 0;
-    
+    width: 180px;
+  
+    margin: 0 auto;
 }
 
-.user-input p:nth-of-type() {
-
+section hr {
+    border-color: rgb(120, 85, 20); /* i set both hr to orange, but when i used rgb to fine tune to a darker color, the hr line became thinner */ 
+    margin-bottom: 2rem;
 }
+
+.loginBT2 {
+    width: 180px;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--main-cleanCode);
+    font-size: 14px;
+    font-weight: 700; 
+    border-radius: 5px;
+    transition: color 1s ease;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+section .loginBT2:hover {
+    background-color: gray;
+}
+
+section .loginBT2:active {
+    opacity: 0.8;
+}
+
+section p {
+    line-height: 21px;
+}
+
+section p:nth-of-type(even) span { /* this pseudo class property targets all 'even' paragraphs with a span. inside 'section'. if we have 5 'p' siblings, then the 2nd and 4th paragraph will be targeted since theyr'e even numbers */
+    color: rgb(226, 129, 10);
+    font-size: 14px;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section i {
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 7%;
+}
+
+section i:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+
 
 
 
