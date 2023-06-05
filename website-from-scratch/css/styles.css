@@ -5,6 +5,7 @@
     font-family: 'Roboto', Arial;
     --main-cleanCode: #F97B22;
     --main-links: #fff; 
+    text-decoration: none;
 }
 
 body {
@@ -45,8 +46,6 @@ header img {
 header .links a {
 
     color: #fff;
-    
-    text-decoration: none;
     padding-right: 7rem;
     font-weight: 700;
     transition: color .4s ease, font-size .2s linear;
@@ -153,7 +152,7 @@ section .create-acc-bx {
     background-color: rgb(23, 23, 23); 
     width: 250px;
     border-radius: 5px;
-    height: 350px;
+    height: 370px;
 
     text-align: center;
 }
@@ -228,9 +227,10 @@ section p:nth-of-type(even) span { /* this pseudo class property targets all 'ev
     font-size: 14px;
 }
 
-section a {
-    text-decoration: none;
+section p:nth-of-type(even) {
+    margin-bottom: 9px;
 }
+
 
 section i {
     color: #fff;
