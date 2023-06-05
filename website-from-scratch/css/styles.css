@@ -158,6 +158,7 @@ section .user-input {
 
 .user-input .logIn-btn {
     padding: 10px 7rem;
+    margin-bottom: 3rem;
     border: none;
     font-size: 14px;
     font-weight: 700;
@@ -176,18 +177,14 @@ section .user-input {
     opacity: 0.8;
 }
 
-section .buTTon {
-    height: 2px;
-    background-color: green;
+section input {
+ margin-bottom: 0; 
+ background-color: #0c0c0c;
+ border: none;
 }
 
-section input {
-    display: block;
-    margin: 20px auto 0;
-    padding: 0 4rem;
-    text-decoration-color: green;
-    border-bottom-color: orange;
-    background-color: #0c0c0c;
+section hr {
+    margin-top: 0;
     
 }
 
