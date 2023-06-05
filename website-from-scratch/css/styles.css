@@ -46,8 +46,6 @@ section i {
     background-color: #fff;
 }
 
-
-
 /* -----------------------------------  */
 
 header img {
@@ -109,6 +107,16 @@ button {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+
+.query .btn2:hover {
+    opacity: 0.7;
+}
+
+.query .btn2:active {
+    opacity: 0.6;
+}
+
+
 
 /* Section  */
 
@@ -233,7 +241,6 @@ section p:nth-of-type(even) {
     margin-bottom: 9px;
 }
 
-
 section i {
     margin-top: 25px;
     margin-right: 7%;
@@ -243,6 +250,8 @@ section i:hover {
     color: orange;
     cursor: pointer;
 }
+
+            /* Media query  */
 
 
 
