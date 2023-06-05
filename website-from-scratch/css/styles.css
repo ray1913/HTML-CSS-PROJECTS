@@ -24,11 +24,31 @@ header {
     position: relative;
 }
 
+    /* Code refactored  */
+
 header,
  .page-info-container,
  .create-acc-bx {
     display: flex;
 }
+
+.links a,
+.btn-2,
+section p,
+section input,
+section input::placeholder,
+section i {
+    color : var(--main-links);
+}
+
+.query .btn,
+.logIn-btn {
+    background-color: #fff;
+}
+
+
+
+/* -----------------------------------  */
 
 header img {
     width: 100px;
@@ -42,7 +62,6 @@ header img {
 
 header .links a {
     font-size: 14px;
-    color: #fff;
     padding-right: 7rem;
     font-weight: 700;
     transition: color .4s ease, font-size .2s linear;
@@ -85,7 +104,6 @@ button {
     border-width: thin;
     border-color: var(--main-cleanCode);
     padding: 10px 25px;
-    color: #fff;
     font-size: 11px;
     background-color: var(--main-cleanCode);
     border-radius: 0 5px 5px 0;
@@ -108,7 +126,6 @@ section {
 }
 
 section p {
-    color: #fff;
     line-height: 20px;
 }
 
@@ -150,7 +167,6 @@ section .create-acc-bx {
     width: 180px;
     padding: 0.6rem;
     border: none;
-    background-color: #fff;
     font-size: 14px;
     font-weight: 700;
     color: var(--main-cleanCode);
@@ -161,7 +177,6 @@ section input {
     background-color: rgb(23, 23, 23); 
     border: none;
     outline: none;
-    color: white;
     font-size: 13px;
     margin-right: 30px;
     
@@ -170,7 +185,6 @@ section input::placeholder {
     font-size: 13px;
     font-style: italic;
     opacity: 0.5;
-    color: #fff;
     margin-right: auto;
 }
 
@@ -221,7 +235,6 @@ section p:nth-of-type(even) {
 
 
 section i {
-    color: #fff;
     margin-top: 25px;
     margin-right: 7%;
 }
