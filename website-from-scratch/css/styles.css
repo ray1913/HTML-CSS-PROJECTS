@@ -54,6 +54,7 @@ header img {
     border-radius: 100%;
 }
 
+
 .links {
     padding: 0 2rem;
 }
@@ -73,7 +74,7 @@ header .links a {
 
 button {
     border-radius: 0;
-    padding: 10px ;
+    padding: 10px;
    
 }
 
@@ -90,14 +91,16 @@ button {
 
 .query input {
     border: none;
-    padding-right: 50px; /* padding right didn't have effect on the button, wrapping the input element. */
+    padding-right: 50px; padding right didn't have effect on the button, wrapping the input element.
     font-size: 10px;
     outline: none;
 }
 
 .btN .ipT::placeholder {
     font-size: 12px;
-    padding-left: 10px;
+    padding-left: 1.625rem;
+    font-style: italic;
+    opacity: 0.80;
 } 
 
 .query .btn2 {
@@ -123,7 +126,7 @@ button {
 
 
 
-/* Section  */
+        /* Section  */
 
 section {
     padding: 5rem 5rem;
@@ -144,7 +147,7 @@ section p {
 
 section .section-btn {
     margin-top: 1.3rem;
-    padding: 8px 3rem;
+    padding: 0.5rem 3rem;
 
     border: none;
     background-color: var(--main-cleanCode);
@@ -256,111 +259,65 @@ section i:hover {
     cursor: pointer;
 }
 
-                /* Media queries */
+                /* Media query for mobile 400vw and lesser*/
 
 @media (max-width: 400px) {
 
-    body {
-        padding-bottom: 20px;
+    header {
+        padding-top: 1rem;
     }
 
-    .mainW {
-        display: flex;
-        flex-direction: column;
-    }
-
-    section {
-        padding: 0 1rem;
-    }
-    
+   
     .links a {
         display: none;
     }
 
-    .author-img {
-        width: 100px;
-    }
-
+    .img-bx {
    
-    .btn2 {
-        margin-top: 20px;
+        margin-right: 5rem;
+        padding-left: 12rem;
     }
 
-    .page-info h1 {
-        font-size: 20px;
+    header .query .btn2 {
+        display: none;
     }
 
+    header .query .btN {
+        padding: 1rem 3rem;
+        margin-right: 1.875rem;
+        border-radius: 0.1875rem; 
+    }
+
+    .btN .ipT::placeholder {
+        font-size: 15px;
+        opacity: 0.9;
+        font-style: italic;
+    } 
+  
     .page-info-container {
         display: grid;
-        grid-template-columns:  1fr;
-        margin-top: 2rem;
-    } 
-
-    .create-acc-bx {
-        margin-top: 1.5rem;
-        height: 500px;
+        grid-template-columns: 99px;
     }
-}
-
-        /* condition set between 400px ---> 768px of viewport width */
-@media (min-width: 400px) and (max-width: 768px) {
-
-    header {
-        padding: 0.5rem 0.5rem;
-    }
-
-    header .links a {
-        padding: 0 1rem;
-        font-size: 10px;
-    }
-
-    header .author-img {
-        width: 60px;
-        height: 60px;
-    }
- 
-    .links  {
-        /* white-space: nowrap; */
-        z-index: -1;
-        font-size: 10px;
-    }
-
-    .query .btN {
-        width: 150px;
-      
-    }
-
-    .query .btN input {
-        width: 100%; /* take up 100% width of your parent, 'btN' */
-    }
-
-    .query .btN input::placeholder {
-        padding: 0 0.9rem;
-    }
-
-    .query .btn2 {
-        height: 37.5px; /* literally, users won't type in here so i used height to padding */
-        border: 1px solid var(--main-cleanCode);
-    }
-
-                /* section media-query conditions  */
 
     .page-info h1 {
-        font-size: 3rem;
+        font-size: 64px;
     }
 
-    .page-info-container {
-        column-gap: 6rem; /* already set to grid.(code-line 295) So this sets a column spacing */
+    .section-btn {
+        white-space: nowrap;
+        margin-bottom: 3rem;
     }
-   
 }
 
+        /* Media query condition for mobile 400vw and above*/
 
+@media (min-width: 401px) {
 
+    .query {
+        white-space: nowrap;
+    }
 
-
-
-
+}
 
 
 
