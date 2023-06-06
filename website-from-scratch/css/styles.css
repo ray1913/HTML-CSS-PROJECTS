@@ -95,14 +95,17 @@ button {
 
 .query input {
     border: none;
-    padding-right: 50px; padding right didn't have effect on the button, wrapping the input element.
+    padding-right: 50px; /*padding right didn't have effect on the button, wrapping the input element.*/
     font-size: 10px;
     outline: none;
 }
 
+.btN .ipT {
+    padding-left: 1rem;
+}
+
 .btN .ipT::placeholder {
     font-size: 12px;
-    padding-left: 1.625rem;
     font-style: italic;
     opacity: 0.80;
 } 
