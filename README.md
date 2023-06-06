@@ -1,1 +1,1 @@
-# HTML-CSS-PROJECTS
+# This Repository is focused Mainly on html and css Web Design projects . Comments are also added to explain in detail, the functions and effects of some advanced line of css codes.     
