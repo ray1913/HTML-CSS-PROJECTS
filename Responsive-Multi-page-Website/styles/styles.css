@@ -41,4 +41,5 @@ nav {
 .nav-links ul li a {
     color: #fff; /* sets links color to white */
     text-decoration: none; /* Removes default underline from links*/
+    font-size: 0.8125rem; /* font size of 13px to lonks */
 }
