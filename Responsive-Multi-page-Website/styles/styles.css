@@ -22,8 +22,8 @@ nav img {
 nav {
     display: flex; /* aligns img and links horizontally */
     padding: 2% 6%; /* top,bottom / left and right padding to nav*/
-    justify-content: space-between; /* horizontally spread nav img and nav-links>contents accross the nav  */
-    
+    justify-content: space-between; /* horizontally spread nav img and .nav-links>contents accross the nav  */
+    align-items: center; /* vertically aligns nav img and .nav-links>links*/
 }
 
 .nav-links {
