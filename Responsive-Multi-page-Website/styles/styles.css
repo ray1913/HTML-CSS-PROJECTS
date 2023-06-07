@@ -40,4 +40,5 @@ nav {
 
 .nav-links ul li a {
     color: #fff; /* sets links color to white */
+    text-decoration: none; /* Removes default underline from links*/
 }
