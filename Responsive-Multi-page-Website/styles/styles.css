@@ -37,3 +37,7 @@ nav {
     padding: 0.5rem 0.75rem; /* 8px & 12px: top and bottom, left and right*/
     position: relative; /* used to identify parent classes, stays in the flow of this page code file*/
 }
+
+.nav-links ul li a {
+    color: #fff; /* sets links color to white */
+}
