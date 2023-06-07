@@ -34,4 +34,6 @@ nav {
 .nav-links ul li {
     list-style: none; /* Removes bullets from 'li' items*/
     display: inline-block; /* links will sit next to each other.  */
+    padding: 0.5rem 0.75rem; /* 8px & 12px: top and bottom, left and right*/
+    position: relative; /* used to identify parent classes, stays in the flow of this page code file*/
 }
