@@ -18,3 +18,8 @@
 nav img {
     width: 9.375rem; /* 150px */
 }
+
+nav {
+    display: flex; /* aligns img and links horizontally */
+    
+}
