@@ -2,7 +2,8 @@
 /* Universal selector, styles in it applies to each and every element in this file  */
 * {
     padding: 0; /* removes all default padding and margins(line 5) on this page,*/
-    margin: 0;
+    margin: 0;  /* removes all default margins on this page */
+    font-family: 'Heebo', sans-serif; /* sets heebo font to all texts on this page*/
 }
 
 .header {
