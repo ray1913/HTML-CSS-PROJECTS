@@ -14,3 +14,7 @@
    
     position: relative; /* Stay in this webpage's flow */
 }
+
+nav img {
+    width: 9.375rem; /* 150px */
+}
