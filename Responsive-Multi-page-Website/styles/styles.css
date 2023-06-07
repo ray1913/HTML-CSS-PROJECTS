@@ -5,3 +5,12 @@
     margin: 0;
 }
 
+.header {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../images/banner.png"); /* The linear gradient is the 'overlay' to this background image */
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh; /* the height of this background image will not be smaller than the full height of the viewport height*/
+    width: 100%; /* take up the full viewport's width */
+   
+    position: relative; /* Stay in this webpage's flow */
+}
