@@ -32,5 +32,6 @@ nav {
 }
 
 .nav-links ul li {
-    list-style: none; /* removes bullets from 'li' items*/
+    list-style: none; /* Removes bullets from 'li' items*/
+    display: inline-block; /* links will sit next to each other.  */
 }
