@@ -30,3 +30,7 @@ nav {
     flex: 1; /* this element grows and moves from 'right->left' because of (line 25), & then takes up the space created by line-25.  */
     text-align: right; /* alignes .nav-link 'links' to the right side of the main 'nav' */
 }
+
+.nav-links ul li {
+    list-style: none; /* removes bullets from 'li' items*/
+}
