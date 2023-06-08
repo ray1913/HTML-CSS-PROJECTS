@@ -60,6 +60,6 @@ nav {
 }
 
 .nav-links ul li:hover::after { /* after style selector hover effect */
-
+    width: 100%;
 }
 
