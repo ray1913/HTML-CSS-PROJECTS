@@ -22,7 +22,7 @@ nav img {
 
 nav {
     display: flex; /* aligns img and links horizontally */
-    padding: 2% 6%; /* top,bottom / left and right padding to nav*/
+    padding: 2% 6%; /* top,bottom / left and right padding, applied ONLY to nav and not this 'section' */
     justify-content: space-between; /* horizontally spread nav img and .nav-links>contents accross the nav  */
     align-items: center; /* vertically aligns nav img and .nav-links>links*/
 }
@@ -63,4 +63,15 @@ nav {
 .nav-links ul li:hover::after { /* after style selector hover effect */
     width: 100%; /* after selector lines will be visible when links are hovered on (line 57) */
 }
+
+.text-box {
+    color: #fff;
+    width: 90%; /* take up 90% of this header section's width */
+    position: absolute; /* floats this element, makes it relative to it's parent, set to relative html (code line 24) */
+    top: 50%; /* move this element and it's contents 50% from top of this section. */
+    left: 50%; /* move 50% from the left of this 'section' */
+    transform: translate(-50%, -50%); /* moves element back up a distance of half of the height and width set to .header (code line 13 and 14 )  */
+    text-align: center; /* centers html code line(59, 60, 63 */
+}
+
 
