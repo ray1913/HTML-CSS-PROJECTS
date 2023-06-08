@@ -34,13 +34,32 @@ nav {
 
 .nav-links ul li {
     list-style: none; /* Removes bullets from 'li' items*/
-    display: inline-block; /* links will sit next to each other.  */
+    display: inline-block; /* li element is now an inline block and links in it will sit next to each other.  */
     padding: 0.5rem 0.75rem; /* 8px & 12px: top and bottom, left and right*/
     position: relative; /* used to identify parent classes, stays in the flow of this page code file*/
 }
 
 .nav-links ul li a {
     color: #fff; /* sets links color to white */
+
     text-decoration: none; /* Removes default underline from links*/
     font-size: 0.8125rem; /* font size of 13px to lonks */
 }
+
+    /* hover styling using the after selector  */
+
+.nav-links ul li::after { /* used to insert something after the content of the 'selected element(s) */
+    
+    content: "";  /* content placed here will sit next the 'li links' */
+    background-color: #f44336; /* background color of the after li style*/
+    display: block; /* li, now to styled be just a 2px line with the 'after selector', will sit directly under each li link */
+    width: 100%; /* take up effect of (code line 37) */
+    width: 0;  /* will hide 'lines'. We'll make them visible only when hover on */
+    height: 2px;  /* line of of this '::after 'li' */
+    margin: auto; /* horizontally centers 'li line' under link */ 
+}
+
+.nav-links ul li:hover::after { /* after style selector hover effect */
+
+}
+
