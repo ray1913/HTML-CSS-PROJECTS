@@ -57,9 +57,10 @@ nav {
     width: 0;  /* will hide 'lines'. We'll make them visible only when hover on */
     height: 2px;  /* line of of this '::after 'li' */
     margin: auto; /* horizontally centers 'li line' under link */ 
+    transition: width .4s;  /* ::after 'li' lines will appear in a smooth transition style. The '.' makes speeds up the transition. */
 }
 
 .nav-links ul li:hover::after { /* after style selector hover effect */
-    width: 100%;
+    width: 100%; /* after selector lines will be visible when links are hovered on (line 57) */
 }
 
