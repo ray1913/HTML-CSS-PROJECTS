@@ -79,5 +79,7 @@ nav {
     font-size: 3.875rem;
 }
 
-
+.text-box p {
+    margin: 0.625rem 0 2.5rem; /* margin top, left and right, bittom */
+}
 
