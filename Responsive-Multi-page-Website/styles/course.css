@@ -1,6 +1,40 @@
+
 .course {
-    padding-top: 100px;
+    /* padding-top: 100px;*/
+   
     width: 80%;
     margin: auto;
     text-align: center;
+}
+
+.course-info-container {
+    padding-bottom: 5rem;
+}
+
+
+.course h1 {
+    margin-top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course h3 {
+    font-size: 18px;
+}
+
+.course p {
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course .row {
+    display: flex; /* contents of line 100, 115, 130 will sit next to each other */
+    justify-content: space-between;
+
+}
+
+.course .course-col {
+    
 }
