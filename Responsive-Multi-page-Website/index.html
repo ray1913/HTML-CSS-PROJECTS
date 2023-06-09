@@ -84,13 +84,13 @@
     <!-- function to open and close side-menu -->
         <script>
 
-            var navLinks = documument.getElementByiD("navLinks");
+            var navLinks = document.getElementByid("navLinks");
             function showMenu() {
-                right: 0;  /* side-menu is visible. css line(128) */
+                navLinks.style.right = "0";  /* side-menu is visible 'onClick'. css line(128) */
             }
 
             function hideMenu() {
-                right: -200px;  /* side-menu is hidden. css line(128) */
+                navLinks.style.right = "-200px";   /* side-menu is hidden 'oncliCk'. css line(128) */
             }
 
         </script>
