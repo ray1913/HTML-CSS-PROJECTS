@@ -105,21 +105,34 @@ nav {
     background-color: #f44336;
 }
 
+        /* hide boxicons on a viewport size higher than 700px */
+
+nav .bx {       /* icons classname. html code- line  44, 69 */
+    display: none; 
+}
+
+
+
+
             /*  Media Query condition for 700px viewports or lesser */
 
     @media(max-width: 700px) {
        
-        /* These styles: 114-121 creates a side menu for nav links */
+        /* These styles: 114-121 creates a side-menu for nav links */
         .nav-links {
             position: absolute; /* .nav-links & contents moves out of layout flow */
             background-color: #f44336;
             height: 100vh; /* take up 100vh of this section(.header) */
-            width: 150px;   
+            width: 200px;   
             top: 0;        /* 0 pixels from top of this section, sticks to top */
-            right: 0;           /* sticks to right side  */
+            right: 0;           /* sticks to right side, stays visible. in contrast to (line 134) below  */
             text-align: left;   /* anchor tags are left aligned */
             z-index: 2;  /*  place this element in front of every contents in this section, */
         }
+
+        .nav-links {
+            right: -200px;  /* Negative values, this element, set to absolute, and it's contact, (line 123) will move beyond the right of it's parent, '.header' set to relative, hence will not be visible again on the viewport  */
+        } 
 
        .nav-links ul li {
             display: block; /* links will sit on top of each other */
@@ -151,7 +164,21 @@ nav {
             width: 100%;
         }
 
-        /* icons to close and open nav links Menu created. 114-121  */
+        /* icons to close and open nav links side-Menu created. 114-121  */
+
+        nav .bx {
+            display: block;  /* icons will be visible. line 111)
+             and will be on it's own line*/
+            color: #fff;    /* changes icons color to white */
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .nav-links ul {
+            padding: 20px;
+        }
+
+
     
 }
 
