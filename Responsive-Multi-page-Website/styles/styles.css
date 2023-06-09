@@ -109,6 +109,7 @@ nav {
 
     @media(max-width: 700px) {
        
+        /* These styles: 114-121 creates a side menu for nav links */
         .nav-links {
             position: absolute; /* .nav-links & contents moves out of layout flow */
             background-color: #f44336;
@@ -132,6 +133,8 @@ nav {
            
         }
 
+
+        /*  pseudo selector  ::after styles for nav links */
         .nav-links ul li a::after {
             content: '';
             display: block;
@@ -143,9 +146,13 @@ nav {
             transition: .2s linear;  
         }
 
+        /*  pseudo selector ::after hover styles for nav links */
         .nav-links ul li a:hover::after {
             width: 100%;
         }
+
+
+        
 
         
 }
