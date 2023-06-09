@@ -37,12 +37,11 @@
                     <img src="images/logo.png" alt="logo photo">
                 </a>
 
-             
-
-                    <!-- divs, ul's & li's are block level elements, hence these links embedded in the 'li' element, will each be on a new line under the logo (line 15)  -->
-                <div class="nav-links">
+                <!--  divs, ul's & li's are all block level elements, hence these links embedded in the 'li' element, will each be on a new line under the logo (line 15)  -->
+                <div class="nav-links" id="navLinks">
+                     <!-- boxicon close icon -->
+                     <i class='bx bx-x-circle' onclick="hideMenu()"></i> <!-- onclick:  jS function to hide sideMenu -->
                     <ul>
-                        <i class='bx bx-x-circle'></i>
                         <li>
                             <a href="#">HOME</a>
                         </li>
@@ -64,7 +63,9 @@
                         </li>
                     </ul>
                 </div>
-                <i class='bx bx-menu'></i>
+
+                <!-- boxicons menu icon -->
+                <i class='bx bx-menu' onclick="showMenu()"></i> <!-- showMenu: jS function. Will show side Menu 'onClick'  -->
             </nav>
 
             <div class="text-box">
@@ -80,9 +81,38 @@
         </section>
 
        
-        <p class="font-awesome">
-            fonts test<i class="fa-solid fa-circle-xmark fa-shake fa-sm"></i>
-        </p>
-    </body>
+    <!-- function to open and close side-menu -->
+        <script>
 
+            var navLinks = documument.getElementByiD("navLinks");
+            function showMenu() {
+                right: 0;  /* side-menu is visible. css line(128) */
+            }
+
+            function hideMenu() {
+                right: -200px;  /* side-menu is hidden. css line(128) */
+            }
+
+        </script>
+
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
