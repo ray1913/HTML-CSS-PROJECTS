@@ -54,13 +54,15 @@ nav {
     background-color: #f44336; /* background color of the after li style*/
     display: block; /* li, now to styled be just a 2px line with the 'after selector', will sit directly under each li link */
     width: 100%; /* take up effect of (code line 37) */
-    width: 0;  /* will hide 'lines'. We'll make them visible only when hover on */
-    height: 2px;  /* line of of this '::after 'li' */
+    width: 0;  /* will now hide 'lines'. We'll make them visible only when hover on */
+    height: 2px;  /* li's '::after line */
     margin: auto; /* horizontally centers 'li line' under link */ 
     transition: width .4s;  /* ::after 'li' lines will appear in a smooth transition style. The '.' makes speeds up the transition. */
 }
 
-.nav-links ul li:hover::after { /* after style selector hover effect */
+    /* after style selector hover effect */
+
+.nav-links ul li:hover::after { 
     width: 100%; /* after selector lines will be visible when links are hovered on (line 57) */
 }
 
@@ -81,5 +83,513 @@ nav {
 
 .text-box p {
     margin: 0.625rem 0 2.5rem; /* margin top, left and right, bittom */
+    font-size: 0.875rem;
+    color: #fff;
 }
+
+.text-box .btn {
+    display: inline-block; /*  take up space only based on your content*/
+    color: #fff;
+    text-decoration: none; /* remove default anchor tag underlines. */
+    border: 0.0625rem solid #fff;
+    padding: 0.75rem 2.125rem; /* padding top, padding bottom */
+    background-color: transparent;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 1s, border 1s;
+}
+
+.btn:hover {
+    border: 1px solid #f44336;
+    background-color: #f44336;
+}
+
+            /*  Media Query condition for 700px viewports or lesser */
+
+    @media(max-width: 700px) {
+       
+        .nav-links {
+            position: absolute; /* .nav-links & contents moves out of layout flow */
+            background-color: #f44336;
+            height: 100vh; /* take up 100vh of this section(.header) */
+            width: 150px;   
+            top: 0;        /* 0 pixels from top of this section, sticks to top */
+            right: 0;           /* sticks to right side  */
+            text-align: left;   /* anchor tags are left aligned */
+            z-index: 2;  /*  place this element in front of every contents in this section, */
+        }
+
+       .nav-links ul li {
+            display: block; /* links will sit on top of each other */
+            padding: 10px 10px; /* modifies layout on this vwprt size (code line 38) */
+        }
+
+        .nav-links a {
+             /* became a block element since it was nested in block elements,
+             but here in this m.query conditions, be an inline-block, code line (149) below is effective because of this.  */
+            display: inline-block; 
+           
+        }
+
+        .nav-links ul li a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            background-color: purple;
+            margin-right: auto;
+            height: 2px;
+            width: 0; 
+            transition: .2s linear;  
+        }
+
+        .nav-links ul li a:hover::after {
+            width: 100%;
+        }
+
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
