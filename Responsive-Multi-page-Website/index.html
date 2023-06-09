@@ -39,6 +39,7 @@
 
                 <!--  divs, ul's & li's are all block level elements, hence these links embedded in the 'li' element, will each be on a new line under the logo (line 15)  -->
                 <div class="nav-links" id="navLinks">
+
                      <!-- boxicon close icon -->
                      <i class='bx bx-x-circle' onclick="hideMenu()"></i> <!-- onclick:  jS function to hide sideMenu -->
                     <ul>
@@ -62,6 +63,7 @@
                             <a href="#">CONTACT</a>
                         </li>
                     </ul>
+
                 </div>
 
                 <!-- boxicons menu icon -->
@@ -81,14 +83,13 @@
         </section>
 
        
-    <!-- function to open and close side-menu -->
+    <!-- Javascript toggleMenu function to open and close side-menu -->
         <script>
 
             var navLinks = document.getElementByid("navLinks");
             function showMenu() {
-                navLinks.style.right = "0";  /* side-menu is visible 'onClick'. css line(128) */
+                navLinks.style.right = "0";   /* side-menu is visible 'onClick'. css line(128) */
             }
-
             function hideMenu() {
                 navLinks.style.right = "-200px";   /* side-menu is hidden 'oncliCk'. css line(128) */
             }
