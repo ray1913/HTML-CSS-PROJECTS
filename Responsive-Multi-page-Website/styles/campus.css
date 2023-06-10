@@ -1,9 +1,20 @@
 .campus {
-    border: 1px solid red;
-    width: 80%;    /* Matches (line-5, course.css) */
-    margin: auto;  /* place this section in the middle of page */
+    width: 80%;    
+    margin: auto;  
+    padding-top: 50px;
+    text-align: center; 
 }
 
 .campus h1 {
     font-size: 36px;
 }
+
+
+
+
+
+
+
+
+
+
