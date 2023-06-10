@@ -8,7 +8,7 @@
 }
 
 .course-info-container {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -29,12 +29,43 @@
     padding: 10px;
 }
 
+
 .course .row {
     display: flex; /* contents of line 100, 115, 130 will sit next to each other */
     justify-content: space-between;
-
+    gap: 3%;
 }
 
 .course .course-col {
-    
+    flex: auto; /* '.course-col' items will become fully flexible, having a default width based on their contents. */
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box; /*  this property constraints the '.course-col' contents to fit or remain in 'one line' within their direct parent.'row' even if 
+                contents padding-top or bottom is bigger than the parent's specified width or height */
+    transition:  0.5s;
+}
+
+.course .course-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+    /* Media Query for html code line 100 */
+
+@media (max-width: 700px) {
+
+    .course {
+        padding-bottom: 10%; /* line-68 below didn't work until i set this  */
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .course-col {
+        margin-bottom: 5%;
+    }  
+
 }
