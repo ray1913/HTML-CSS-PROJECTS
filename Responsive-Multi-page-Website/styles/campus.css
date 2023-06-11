@@ -18,7 +18,7 @@
 .img-container,
 .img-container img,
 .img-text-box {
-    border-radius: 7px;
+    border-radius: 4px;
 }
 
 
@@ -68,8 +68,20 @@
     transform: translateY(15rem); /* this moved upwards instead of downwards, maybe because of (line 60) conflicted */
 }
 
+.img-text-box span {
+    transform: translateX(-10vw); /* move/float this floating element to left  (-10%) of the viewports width */
+    position: absolute;
+}
 
 
+                    /* Media Query for 700px and lesser viewport, only for line 180. Html code file.  */
+
+@media {
+    .washT {
+       position: absolute;
+       transform: translateX(-80%); /* move html content,(line 180) left, -80% of the viewport *
+    }
+}
 
 
 
