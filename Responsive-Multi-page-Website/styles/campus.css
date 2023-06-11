@@ -14,12 +14,20 @@
     margin-top: 50px;
 }
 
-
+    /*  Refactored / cleaned up codes   */
 .img-container,
 .img-container img,
 .img-text-box {
     border-radius: 4px;
 }
+
+.img-text-box,
+.img-text-box-h3,
+.img-text-box-span {
+    position: absolute;
+}
+
+/* -------------------------------------------------------- */
 
 
 .img-container {
@@ -40,7 +48,7 @@
     font-weight: 500;
     padding-top: 10px; 
 
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     top: 0;
     bottom: 0;
@@ -56,7 +64,7 @@
 .img-text-box h3 {
     font-weight: 500;
     font-size: 26px;
-    position: absolute; /* 63 & 47, Now there are two absolute elements, inside (line 28) above*/
+    /* position: absolute;    This line of code is refactored  */
     right: 100px;
     transform: translateY(30rem); /* moves h3's text downwards to a value of 30rem */
     opacity: 0;
@@ -70,7 +78,7 @@
 
 .img-text-box span {
     transform: translateX(-10vw); /* move/float this floating element to left  (-10%) of the viewports width */
-    position: absolute;
+    /* position: absolute;    This line of code is refactored  */
 }
 
 
