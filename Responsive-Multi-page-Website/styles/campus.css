@@ -42,7 +42,6 @@
 .img-text-box {
     color: #fff;
     font-weight: 500;
-    font-size: 20px;
     padding-top: 10px; 
 
     position: absolute;
@@ -59,7 +58,18 @@
 }
 
 .img-text-box h3 {
-    
+    font-weight: 500;
+    font-size: 26px;
+    position: absolute; /* 63 & 47, Now there are two absolute elements, inside (line 28) above*/
+    right: 100px;
+    transform: translateY(30rem);
+    opacity: 0;
+    transition: transform 3s;
+}
+
+.img-text-box:hover h3 { /* Target 'h3' inside me, let it's content be visible when u hover over me. */
+    opacity: 1;
+    transform: translateY(15rem);
 }
 
 
