@@ -18,7 +18,7 @@
 .img-container,
 .img-container img,
 .img-text-box {
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 
@@ -26,17 +26,13 @@
     width: 300px;
     height: 450px;
     position: relative; 
-  
-}
-
-.img-container:hover {
-    
+    display: inline-block; /* .img-containers will sit next to each other */
+    margin-right: 20px;
 }
 
 .img-container img {
    width: 300px;
-   opacity: 0.8;
-  
+   opacity: 0.8; 
 }
 
 .img-text-box {
@@ -62,14 +58,14 @@
     font-size: 26px;
     position: absolute; /* 63 & 47, Now there are two absolute elements, inside (line 28) above*/
     right: 100px;
-    transform: translateY(30rem);
+    transform: translateY(30rem); /* moves h3's text downwards to a value of 30rem */
     opacity: 0;
-    transition: transform 3s;
+    transition: transform .5s;
 }
 
 .img-text-box:hover h3 { /* Target 'h3' inside me, let it's content be visible when u hover over me. */
     opacity: 1;
-    transform: translateY(15rem);
+    transform: translateY(15rem); /* this moved upwards instead of downwards, maybe because of (line 60) conflicted */
 }
 
 
