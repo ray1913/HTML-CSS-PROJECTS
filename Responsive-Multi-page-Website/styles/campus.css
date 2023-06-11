@@ -91,7 +91,7 @@
 @media {
     .washT {
        position: absolute;
-       transform: translateX(-80%); /* move html content,(line 180) left, -80% of the viewport *
+       transform: translateX(37%); /* move html content,(line 180) rigjt 37% of the viewport's 'main axis' *
     }
 }
 
