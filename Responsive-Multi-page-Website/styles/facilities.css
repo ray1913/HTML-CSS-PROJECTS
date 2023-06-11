@@ -1,0 +1,11 @@
+.facilities {
+    width: 80%;
+    border: 1px solid red;
+    margin: auto;
+    text-align: center;
+}
+
+.facilities h1 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
