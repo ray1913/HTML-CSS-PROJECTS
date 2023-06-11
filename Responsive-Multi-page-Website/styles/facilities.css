@@ -1,19 +1,53 @@
 .facilities {
     width: 80%;
-    border: 1px solid red;
     margin: auto;
     text-align: center;
-}
-
-.row {
-    border: 2px solid black;
+    padding: 0 3% 1%;
 }
 
 .facilities h1 {
     font-size: 36px;
-    margin-bottom: 6px;
 }
 
-.facility-info {
-   
+.facilities p {
+    color: #938e8e;
+    font-size: 1rem;
 }
+
+.facilities .header-info {
+    margin-bottom: 3.5rem;
+}
+
+.facility-info-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+   column-gap: 12px;
+   text-align: left;
+}
+
+.facility-info img {
+   width: 330px;
+   border-radius: 5px;
+   margin-top: 8px;
+}
+
+.facilities h3 {
+    padding: 15px 0 15px;
+}
+
+
+
+        /* Media query condition for viewport's width, lesser than 700px  */
+
+@media (max-width: 700px) {
+    .facility-info-container {
+        grid-template-columns: 1fr; /* have grid column on this screen size and lesser */
+        text-align: center;
+    }
+}
+
+
+
+
+
+
