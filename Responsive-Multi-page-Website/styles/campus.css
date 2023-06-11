@@ -3,11 +3,70 @@
     margin: auto;  
     padding-top: 50px;
     text-align: center; 
+    padding-bottom: 10%;
 }
 
 .campus h1 {
     font-size: 36px;
 }
+
+.row {
+    margin-top: 50px;
+}
+
+
+.img-container,
+.img-container img,
+.img-text-box {
+    border-radius: 10px;
+}
+
+
+.img-container {
+    width: 300px;
+    height: 450px;
+    position: relative; 
+  
+}
+
+.img-container:hover {
+    
+}
+
+.img-container img {
+   width: 300px;
+   opacity: 0.8;
+  
+}
+
+.img-text-box {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 10px; 
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: background-color .6s;
+    cursor: pointer;
+}
+
+.img-text-box:hover {
+   background-color: rgba(255, 0, 0, 0.4);
+}
+
+.img-text-box h3 {
+    
+}
+
+
+
+
+
+
 
 
 
