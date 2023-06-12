@@ -65,3 +65,13 @@
     color: crimson;
 }
 
+    /* Media query conditions  */
+
+@media (max-width: 700px) {
+
+    .grid {
+        grid-template-columns: 1fr; 
+        row-gap: 15px;
+    }
+}
+
