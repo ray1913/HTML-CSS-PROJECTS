@@ -1,0 +1,67 @@
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0 5%;
+    text-align: center;
+}
+
+.testimonials h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.sub-heading {
+    padding-bottom: 5rem;
+    color: #938e8e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.testimonial-info-container {
+    display: flex;
+    background-color: rgb(240, 224, 227);
+    padding: 25px 10px 10px;
+    box-sizing: border-box; /* No Matter the modifications to contents INSIDE this box, keeps this box in same line with this section's set vw. (line 2 */
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow .4s, transform .4s;
+}
+
+.testimonial-info-container img {
+    width: 40px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+.testimonial-info-container:hover {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+    transform: scaleY(1.1);
+}
+
+
+.testimonial-texts p {
+    padding: 30px 0 14px;
+    color: #777;
+    font-size: 14px;
+}
+
+.h3T {
+    text-align: left;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.h3T .bx {
+    padding-top: 10px;
+    color: crimson;
+}
+
