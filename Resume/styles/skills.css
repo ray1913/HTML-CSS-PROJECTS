@@ -23,8 +23,8 @@
 
 .qualifications .wrapper {
     display: flex;
-    justify-content: space-around;
-    column-gap: 7%;
+    justify-content: space-between;
+    column-gap: 15%;
 }
 
 
@@ -48,3 +48,17 @@ ul li  {
     line-height: 25px;
     padding: 5% 0 5% 0;
 }
+
+.interesT {
+    padding-top: 82px;
+    text-align: center;
+    display: flex;
+}
+
+.b-p {
+    padding-top: 40px;
+    margin-right: 25px;
+    position: relative;
+    right: 109px;
+}
+
