@@ -1,0 +1,46 @@
+.qualifications {
+    padding: 3% 5%;
+}
+
+.qualifications p {
+    color: gray;
+}
+
+.qualifications h1, h2 {
+    color:#d57017;  
+    font-size: 23px; 
+}
+
+.qualifications h1, h2, h3 {
+    padding: 0 0 1%;
+  
+}
+
+.qualifications h3 {
+    color: white;
+}
+
+.qualifications .wrapper {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 7%;
+}
+
+.ex-ref-edu {
+    padding-bottom: 10%;
+}
+
+ul li  {
+    line-height: 1.8rem;
+    padding-left: 2px;
+    list-style: none;
+}
+
+.ref1 {
+    padding: 0 0 8%;
+}
+
+.edu p {
+    line-height: 25px;
+    padding: 5% 0 5% 0;
+}
