@@ -21,7 +21,6 @@ body {
     width: 70%;
     margin: 25px auto;
     box-sizing: border-box;
-    border: 1px solid red;
     min-height: 500px;
 }
 
@@ -66,8 +65,65 @@ body {
 }
 
 .abouTme a {
-    color: white;
+    /* color: rgb(246, 242, 242); */
+    color: rgb(48, 48, 230);
     padding-top: 5rem;
     font-size: 13px;
     font-style: italic;
+}
+
+
+            /*  media query condition for 'resume-header.  360px viewport width and lesser    */
+
+@media (max-width: 360px) {
+
+    .sectionBox {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .profile-box img {
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+        margin-bottom: 25px;
+    }
+
+    .profile-box img,
+    .abouTme {
+        vertical-align: top;
+    }
+
+    .abouTme {
+        padding-top: 0;
+        line-height: 10px;
+    }
+
+    .abouTme h1 {
+        line-height: 2rem;
+        padding-bottom: 5px;
+    }
+
+    .abouTme p:nth-of-type(1) {
+        font-size: 17px;
+        word-spacing: 3px;
+        padding-bottom: 25px;
+    }
+
+    .abouTme p:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    .abouTme .sp1 {
+        font-size: 15px;
+    }
+
+    .abouTme .sp2 {
+        font-size: 20px;
+    }
+
+   .abouTme a {
+    font-size: 10px;
+   }
+
 }
