@@ -74,6 +74,10 @@ body {
     font-style: italic;
 }
 
+.abouTme a:hover {
+    color:blanchedalmond;
+}
+
 
             /*  media query condition for 'resume-header.  360px viewport width and lesser    */
 
