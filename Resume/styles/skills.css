@@ -1,3 +1,4 @@
+
 .qualifications {
     padding: 3% 5%;
 }
@@ -8,7 +9,7 @@
 
 .qualifications h1, h2 {
     color:#d57017;  
-    font-size: 23px; 
+    font-size: 20px; 
 }
 
 .qualifications h1, h2, h3 {
@@ -26,8 +27,9 @@
     column-gap: 7%;
 }
 
-.ex-ref-edu {
-    padding-bottom: 10%;
+
+.ex-ref-edu, .ref1, .ref2 {
+    padding-bottom: 5%;
 }
 
 ul li  {
@@ -36,8 +38,10 @@ ul li  {
     list-style: none;
 }
 
-.ref1 {
-    padding: 0 0 8%;
+.cerT p {
+    padding-bottom: 10px;
+    font-weight: 700;
+    word-spacing: 5px;
 }
 
 .edu p {
