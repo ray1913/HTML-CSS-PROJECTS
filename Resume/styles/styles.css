@@ -19,7 +19,7 @@ body {
 
 .resume-header,
 .qualifications {
-    width: 70%;
+    width: 80%;
     margin: 25px auto;
     box-sizing: border-box;
     min-height: 500px;
@@ -45,7 +45,7 @@ body {
 }
 
 .abouTme .sp1 {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .sp2 {
