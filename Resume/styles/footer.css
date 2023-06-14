@@ -1,0 +1,46 @@
+
+td {
+    padding: 0 20px 10% 0;
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+.wrap {
+    margin-top: 5%;
+    display: flex;
+    gap: 20%;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+
+
+.footer h1 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 10px 0 10px;
+}
+
+
+            /* Media Query Conditions for 360px viewport's width and below  */
+
+
+@media (max-width: 360px) {
+
+     table td {
+        font-size: 0.80rem;
+        color: #afa3a3;
+    }
+
+    table .bx {
+        color: gray;
+    }
+}
