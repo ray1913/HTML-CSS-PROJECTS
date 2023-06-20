@@ -6,7 +6,13 @@
     --header-icons: rgb(172, 160, 160);
 }
 
+html {
+    font-size: 30px;
+}
+
 body {
     font-family: var(--font-font);
 }
+
+
 
