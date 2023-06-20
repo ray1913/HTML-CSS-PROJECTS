@@ -1,5 +1,12 @@
 * {
+    --font-font: system-ui, Arial;
     --main-color: rgb(27, 116, 228);
     --border-set: 1px solid black;
     padding: 0;
+    --header-icons: rgb(172, 160, 160);
 }
+
+body {
+    font-family: var(--font-font);
+}
+
