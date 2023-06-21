@@ -1,18 +1,71 @@
 * {
     --font-font: system-ui, Arial;
     --main-color: rgb(27, 116, 228);
+    --header-icons-color: rgb(109, 104, 104);
     --border-set: 1px solid black;
-    padding: 0;
+   
     --header-icons: rgb(172, 160, 160);
+    --test-bg-color1: lightgray;
+    --test-bg-color2: lightpink;
+    --test-bg-color2: lightblue;
+    --search-boxColor: rgb(234, 231, 231);
+
+    padding: 0;
+    margin: 0;
 }
 
 html {
-    font-size: 30px;
+    font-size: 12px; /* All font-sizing on this page will be relative to 12px */
 }
 
 body {
     font-family: var(--font-font);
 }
+
+            /* header Section */
+
+.header {
+    display: flex;
+    height: 65px;
+}
+
+.left-section {
+    width: 350px; 
+    display: flex;
+    align-items: center; 
+    padding: 7px; 
+    border: 1px solid black; 
+}
+
+.fb-icon {
+    color:  var(--main-color);
+}
+
+.bx-search {
+    position: relative;
+    left: 20px; /* move 30px of space from the left of the exact spot where you once sat*/
+    top: 1px;
+    color: var(--header-icons-color); 
+
+    z-index: 1; 
+}
+
+.header-searchBx {
+    background-color: var(--search-boxColor);
+    border: none;
+    font-size: 1rem;
+    border-radius: 56px;
+    padding: 14px 60px 14px 40px;
+    outline: none;
+    position: relative;
+    right: 13px;
+}
+
+.header-searchBx::placeholder {
+    font-size: 1rem;
+}
+
+
 
 
 
