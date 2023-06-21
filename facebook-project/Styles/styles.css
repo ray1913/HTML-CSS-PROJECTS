@@ -5,10 +5,8 @@
     --border-set: 1px solid black;
    
     --header-icons: rgb(172, 160, 160);
-    --test-bg-color1: lightgray;
-    --test-bg-color2: lightpink;
-    --test-bg-color2: lightblue;
     --search-boxColor: rgb(234, 231, 231);
+    --hover-color: rgb(239, 231, 231);
 
     padding: 0;
     margin: 0;
@@ -29,12 +27,13 @@ body {
     height: 65px;
 }
 
+            /* left section */
+
 .left-section {
     width: 350px; 
     display: flex;
     align-items: center; 
     padding: 7px; 
-    border: 1px solid black; 
 }
 
 .fb-icon {
@@ -67,14 +66,143 @@ body {
 
             /* Mid-section */
 
-.mid-section {
-    border: 1px solid gray;
-    width: 600px; 
+.mid-section {  
+    max-width: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
 }
 
-.mid-section .midS-link {
+
+.home-link {
+    display: flex; /*  Nested flex */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-IcoN {
+    color: var(--main-color);
+}
+
+/* content 'after' this anchor tag's icon */
+.home-link a:after  { 
+    background-color: var(--main-color);
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100px;
+   
+    position: relative;
+    top: 10px;
+}
+
+.midS-link { 
+    width: 110px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.midS-link:hover {
+    background-color: var(--hover-color);
+}
+
+.midS-link a {
+    color: rgb(86, 79, 79);
+}
+
+             /* Right section */
+
+.right-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 220px;
+    margin-left: auto; /* take up the remaining space on your left after flex:1 was set to 'mid-section' */
+    padding-right: 12px;
+}
+
+.right-section > button {  /* target only child (buttons). button content is not affected */
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-right: 7px;
+    background-color: rgb(223, 216, 216);
+
+    position: relative;
+}
+
+.notification-count {
+
+    background-color: rgb(213, 28, 28);
+    color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: -7px;  /* move up, beyond your parent's top */
+    right: -1px;
+}
+
+.bell-notify {
+    transform: rotate(-9deg); /* negative rotation: rotates bell icon anti-clockwise */
+}
+
+.user-photo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover; /* keeps the image's original resolution*/
+    border-radius: 24px; /* half of the img element width and height will get a circle */
+} 
+
+        /* media Query Condition for 0-999px viewport */
+
+@media (max-width: 999px) {
+
+    .fb-icon {
+        left: 7px;
+    }
+
+    .left-section input, .fb-icon {
+        position: relative;
+    }
+
+    /* disable default/all set widths and paddings intially set to this element */
+    .header-searchBx {
+        width: 0;
+        padding: 0;
+    }
+
+    .left-section input {
+        width: 34px;
+        height: 34px; /* will be a circle. border radius was already set. see css code-line: 56 */
+    }
+
+    .search-icon {
+        margin-right: 5px;
+    }
+
+    .left-section input::placeholder {
+        visibility: hidden; /* hide the input's element's placeholder */
+    } 
+
+}
+
+@media (max-width: 970px) {
     
 }
+
+
+
+
+
+
+
 
 
 
