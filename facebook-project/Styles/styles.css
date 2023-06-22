@@ -3,6 +3,7 @@
     --main-color: rgb(27, 116, 228);
     --header-icons-color: rgb(109, 104, 104);
     --border-set: 1px solid black;
+    --tooltip-set: rgb(22, 21, 21);
    
     --header-icons: rgb(172, 160, 160);
     --search-boxColor: rgb(234, 231, 231);
@@ -28,6 +29,7 @@ body {
     display: flex;
     height: 65px;
 }
+
 
             /* left section */
 
@@ -116,9 +118,38 @@ body {
     color: rgb(86, 79, 79);
 }
 
+.query-icon:hover {
+    opacity: 0;  /* hides this div element hover. (line 57, html code) to */
+}
+
+        /* Tool-tips style rules for mid-section links */
+  
+.home-link-container {
+    position: relative;
+}
+
+.tool-tip {
+    background-color: var(--tooltip-set);
+    color: white;
+    padding: 6px 13px;
+    border-radius: 4px;
+
+    position: absolute;
+    bottom: -37px;
+    right: 20px;
+    opacity: 0;
+
+    pointer-events: none; /* tooltip will appear ONLY when the home icon is hovered on, if this is not set, the tool tip text box appears when mouse rolls over where i initially placed the tool-tip */
+}
+
+.home-link-container:hover .tool-tip  {
+    opacity: 0.80;
+}
+
              /* Right section */
 
 .right-section {
+    
     display: flex;
     justify-content: end;
     align-items: center;
@@ -164,6 +195,7 @@ body {
     object-fit: cover; /* keeps the image's original resolution*/
     border-radius: 24px; /* half of the img element width and height will get a circle */
 } 
+
 
         /* media Query Condition for 0-999px viewport */
 
@@ -234,6 +266,256 @@ body {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
