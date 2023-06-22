@@ -20,6 +20,8 @@ body {
     font-family: var(--font-font);
 }
 
+
+
             /* header Section */
 
 .header {
@@ -74,7 +76,6 @@ body {
     flex: 1;
 }
 
-
 .home-link {
     display: flex; /*  Nested flex */
     align-items: center;
@@ -124,6 +125,10 @@ body {
     width: 220px;
     margin-left: auto; /* take up the remaining space on your left after flex:1 was set to 'mid-section' */
     padding-right: 12px;
+}
+
+.right-section a {
+    color: black;
 }
 
 .right-section > button {  /* target only child (buttons). button content is not affected */
