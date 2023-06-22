@@ -6,6 +6,7 @@
     --tooltip-set: rgb(22, 21, 21);
    
     --header-icons: rgb(172, 160, 160);
+    --header-bg: #fff;
     --search-boxColor: rgb(234, 231, 231);
     --hover-color: rgb(239, 231, 231);
 
@@ -27,7 +28,14 @@ body {
 
 .header {
     display: flex;
-    height: 65px;
+    height: 63px;
+    border-bottom: 0.1rem rgb(223, 212, 212) solid; /* width, color, style  */
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--header-bg);
 }
 
 
@@ -98,7 +106,7 @@ body {
     width: 100px;
    
     position: relative;
-    top: 10px;
+    top: 15.5px;
 }
 
 .midS-link { 
