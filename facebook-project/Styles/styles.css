@@ -23,11 +23,19 @@ body {
 }
 
 
+        /* code-refactoring */
+.header, .left-section, .mid-section, .home-link,
+.midS-link, .right-section  {
+    display: flex;
+}
+
+.bx-search, .header-searchBx, .home-link-container  {
+    position: relative;
+}
 
             /* header Section */
 
 .header {
-    display: flex;
     height: 63px;
     border-bottom: 0.1rem rgb(223, 212, 212) solid; /* width, color, style  */
 
@@ -38,12 +46,10 @@ body {
     background-color: var(--header-bg);
 }
 
-
             /* left section */
 
 .left-section {
     width: 350px; 
-    display: flex;
     align-items: center; 
     padding: 7px; 
 }
@@ -53,7 +59,6 @@ body {
 }
 
 .bx-search {
-    position: relative;
     left: 20px; /* move 30px of space from the left of the exact spot where you once sat*/
     top: 1px;
     color: var(--header-icons-color); 
@@ -68,7 +73,6 @@ body {
     border-radius: 56px;
     padding: 14px 60px 14px 40px;
     outline: none;
-    position: relative;
     right: 13px;
 }
 
@@ -80,14 +84,12 @@ body {
 
 .mid-section {  
     max-width: 700px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     flex: 1;
 }
 
 .home-link {
-    display: flex; /*  Nested flex */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -112,7 +114,6 @@ body {
 .midS-link { 
     width: 110px;
     height: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
@@ -131,10 +132,6 @@ body {
 }
 
         /* Tool-tips style rules for mid-section links */
-  
-.home-link-container {
-    position: relative;
-}
 
 .tool-tip {
     background-color: var(--tooltip-set);
@@ -157,8 +154,6 @@ body {
              /* Right section */
 
 .right-section {
-    
-    display: flex;
     justify-content: end;
     align-items: center;
     width: 220px;
