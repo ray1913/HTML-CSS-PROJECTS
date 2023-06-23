@@ -1,6 +1,76 @@
 .left-sidebar {
-   height: 200px;
-   width: 200px;
-   background-color: red;
+  background-color: rgb(240, 239, 239);
+  position: fixed;
+  left: 0;
+  top: 63px;
+  bottom: 0;
+  width: 225px;
+  padding: 15px 0 0 15px;
+}
 
+.left-sidebar:hover {
+    overflow-x: auto; /* handling of 'sidebar links in the horizontal dirction. the width of the children(sidebar-links) was higher, for this propert to have effect */
+}
+
+.friends-bx {
+    color: rgb(66, 66, 204);
+    opacity: 0.70;
+}
+
+.bxs-group {
+    color: rgb(0, 128, 255);
+}
+
+.events-icon {
+    color: rgb(225, 105, 105);
+}
+
+.feed-icon, .store-icon, .alarm-icon {
+    color: rgb(105, 105, 224);
+}
+
+.podcast-icon {
+    color: rgb(175, 72, 175);
+}
+
+.page-icon {
+    color: rgb(182, 128, 26);
+}
+
+.sidebar-links button {
+    background-color: rgb(224, 216, 216);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.left-sidebar hr {
+   width: 215px; 
+   border: 0.1px thin rgb(219, 211, 211);
+   opacity: 0.6;
+}
+
+.sidebar-links {
+    height: 30px;
+    width: 250px;
+   
+    margin-bottom: 3px;
+    padding: 8px 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-links:hover {
+    background-color: rgb(231, 224, 224);
+    cursor: pointer;
+}
+
+.left-sidebar img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 15px;
 }
