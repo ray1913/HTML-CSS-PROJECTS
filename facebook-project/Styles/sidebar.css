@@ -1,5 +1,5 @@
 .left-sidebar {
-  background-color: rgb(240, 239, 239);
+  background-color: var(--body-bg-color);
   position: fixed;
   left: 0;
   top: 63px;
