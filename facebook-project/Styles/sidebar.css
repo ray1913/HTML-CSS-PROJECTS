@@ -21,10 +21,15 @@
 
 .left-sidebar:hover {
     overflow-y: auto; /* handling of 'sidebar links in the horizontal dirction. the width of the children(sidebar-links) was higher, for this propert to have effect */
+    overflow-y: visible;
 }
 
 .left-sidebar {
-    overflow-x: hidden;  /* hides vertical (bottom) scrollbar */
+    overflow-x: hidden;  /* hides vertical (bottom) scrollbar */  
+}
+
+.left-sidebar {
+    overflow-y: hidden;
 }
 
 .friends-bx {

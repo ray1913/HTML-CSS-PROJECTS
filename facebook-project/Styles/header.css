@@ -1,5 +1,6 @@
-        /* code-refactoring */
-        .header, .left-section, .mid-section, .home-link,
+        
+                /* code-refactored! */
+        .header, .left-section, .mid-section,
         .midS-link, .right-section  {
             display: flex;
         }
@@ -7,7 +8,8 @@
         .bx-search, .header-searchBx, .home-link-container  {
             position: relative;
         }
-        
+
+       
                     /* header Section */
         
         .header {
@@ -65,15 +67,23 @@
             justify-content: space-between;
             flex: 1;
         }
-        
-        .home-link {
-            align-items: center;
+
+        .home-link-container { /* 'tool-tip' div parent. All tool-tip will respond to the below styles. except html code line 32 */
+            display: flex; 
             justify-content: center;
+            align-items: center;
+        }
+        
+        .home-link { 
             text-align: center;
         }
         
         .home-IcoN {
             color: var(--main-color);
+        }
+
+        .tool-tip, .home-link a:after {
+            pointer-events: none;
         }
         
         /* content 'after' this anchor tag's icon */
@@ -86,6 +96,7 @@
            
             position: relative;
             top: 15.5px;
+            /* pointer-events: none; refactored(see line 83 & 84 above). Here tool-tip will not show when we hover over this element */
         }
         
         .midS-link { 
@@ -107,21 +118,27 @@
         .query-icon:hover {
             opacity: 0;  /* hides this div element hover. (line 57, html code) to */
         }
-        
+                
                 /* Tool-tips style rules for mid-section links */
+   
+        #tool-Tip { /* will have higher specificity for tool-tip position. (html code-line: 41 */
+            bottom: -49px;
+            display: flex;
+            right: 27px;
+        }        
         
         .tool-tip {
             background-color: var(--tooltip-set);
             color: white;
-            padding: 6px 13px;
-            border-radius: 4px;
-        
+            padding: 7px 10px;
+            border-radius: 13px;
+            font-size: 0.85rem;
             position: absolute;
-            bottom: -45px;
-            right: 20px;
+            right: 29px;
+            bottom: -40px;
             opacity: 0;
         
-            pointer-events: none; /* tooltip will appear ONLY when the home icon is hovered on, if this is not set, the tool tip text box appears when mouse rolls over where i initially placed the tool-tip */
+            /* pointer-events: none; (refactored. see line 83 & 84 above)  tooltip will appear ONLY when the home icon is hovered on, if this is not set, the tool tip text box appears when mouse rolls over where i initially placed the tool-tip */
         }
         
         .home-link-container:hover .tool-tip  {
