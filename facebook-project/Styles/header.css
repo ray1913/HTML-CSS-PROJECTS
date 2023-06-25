@@ -127,13 +127,18 @@
             right: 27px;
         }        
         
-        .tool-tip {
-            background-color: var(--tooltip-set);
-            color: white;
-            padding: 7px 10px;
-            border-radius: 13px;
-            font-size: 0.85rem;
+        /* refactor tool-tip */
+
+        .tool-tip, .right-toolTip {
             position: absolute;
+            background-color: var(--tooltip-set);
+            color: #fff;
+            padding: 9px 10px;
+            font-size: 0.85rem;
+        }
+
+        .tool-tip {
+            border-radius: 13px;
             right: 29px;
             bottom: -40px;
             opacity: 0;
@@ -153,6 +158,25 @@
             width: 220px;
             margin-left: auto; /* take up the remaining space on your left after flex:1 was set to 'mid-section' */
             padding-right: 12px;
+        }
+
+        .parent-B {
+            position: relative;
+        }
+
+        .right-toolTip {
+            bottom: -38px;
+            border-radius: 12px;
+            visibility: hidden;
+        }
+
+        .right-T {
+            font-size: 0.85rem;
+        } 
+
+        .parent-B:hover .right-toolTip {
+            visibility: visible; /* right-section tool-tip is visible when their parents are rolled-over on. pointer-events property is not necessary since i didn't use opacity hover trick */
+            opacity: 0.80;
         }
         
         
