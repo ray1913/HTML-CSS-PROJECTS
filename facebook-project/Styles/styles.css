@@ -24,6 +24,7 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-font);
     padding-top: 92px;
+    padding-left: 400px;
 }
 
 
