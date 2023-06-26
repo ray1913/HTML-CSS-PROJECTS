@@ -114,11 +114,8 @@
         .midS-link a {
             color: rgb(86, 79, 79);
         }
+/*       
         
-        .query-icon:hover {
-            opacity: 0;  /* hides this div element hover. (line 57, html code) to */
-        }
-                
                 /* Tool-tips style rules for mid-section links */
    
         #tool-Tip { /* will have higher specificity for tool-tip position. (html code-line: 41 */
@@ -219,7 +216,22 @@
         } 
         
         
-                /* media Query Condition for 0-999px viewport */
+                /* media Query Condition for 0-730px viewport width */
+
+        @media (max-width: 730px) {
+            #menu-icoN {
+                right: 370px;
+                margin-right: 100px;
+            }
+
+            .mid-section {
+                position: relative;
+                left: 90px;
+                
+            }
+        }
+
+          /* media Query Condition for 0-999px viewport width */
         
         @media (max-width: 999px) {
         
@@ -255,12 +267,32 @@
         @media (max-width: 970px) {
             .midS-link .console-icon {
                 position: absolute;
-                top: -500px;
+                top: -200px;
             }
-        
+
+            #console-box { 
+                visibility: hidden; /* html code-line 70 is visible on 970px viewport size and below */ 
+            }
+
+            #menu-box, #console-box {
+                background-color: transparent;/* removes set gray background color*/
+            }
+
+            #tool-tiP {
+                visibility: hidden;
+            }
+
             .midS-link .menu-icon {
                 position: relative;
-                right: 90px;
+                right: 45px;
+            }
+
+        }
+
+        @media (min-width: 971px) and (max-width: 998px) {
+            #menu-box {
+                visibility: hidden;
+                background-color: transparent;
             }
         }
         
