@@ -1,0 +1,188 @@
+/* these styles will target all 'section element' on the page */
+section {  
+    border: 1px solid lightgray;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    width: 500px;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 0 5px;
+
+    position: relative;
+   
+}
+
+/* refactored code */
+
+.secT-one-child, .book-icon-bx {
+    display: flex;
+} 
+
+.book-icon-bx, .create-story-box  button, .create-story-box h3,
+.create-story-bx, .story-grid   {
+    position: relative;
+}
+
+.story, .reels, .bx-plus,
+ .create-story-box button,  .sibling,
+ .create-story-bx button {
+    cursor: pointer;
+} 
+
+/***************************************************/
+
+.secT-one-child {
+    /* display: flex;  target only 'book-icon-bx' but not it's contents(refactored) */
+    justify-content: space-around;
+    padding: 15px 25px 15px 25px;
+}
+
+.book-icon-bx {
+    /* display: flex;  Nested flex. will now target 'book-icon-bx' contents(refactored) */
+    align-items: center;
+
+   /* position: relative;  will be the parent/(relative to) for the element set to 'after::' (refactored) */
+}
+
+.bx-book-open {
+    margin-right: 9px;
+}
+
+.story {
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+.set-blue {
+    color: var(--main-color);
+}
+
+.reels {
+    opacity: 0.7;
+}
+
+.book-icoN::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    margin: auto;
+    background-color: var(--main-color);
+    position: absolute;
+    left: -65px;
+    bottom: -15px;
+    overflow-X: hidden;
+}
+
+.secT-one-container hr {
+    border: 0.20rem thin rgb(239, 231, 231);
+    opacity: 0.3;
+    width: 498px;
+    position: relative;
+    right: 7.5px;
+}
+
+.create-story-box {
+    height: 176px;
+    width: 115px;
+    border: 1px solid lightgray;
+    padding-bottom: 28px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.create-story-box img {
+    height: 90%; /* relative to line 58's height above*/
+    width: 115px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* top right, top-left, bt-right, bt-left */
+}
+
+
+.create-story-box  button{
+   
+   /*  position: relative; (refactored) stacking order of positioned elements, the(this) element(will) below appears in front */  
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 4px;
+    background-color: rgb(2, 127, 253);
+    color: white;
+    border-color: white;
+    top: -18px;
+    transform: translateX(102%);
+}
+
+.create-story-box h3 {
+    font-size: 0.95rem;
+    opacity: 0.95;
+    /* position: relative; */
+    top: -15px;
+    left: 18px;
+    font-weight: bold;
+}
+
+.create-story-bx  {
+    font-weight: bold;
+    /* position: relative; */
+    height: auto;
+}
+
+.create-story-bx img {
+    height: 80%;
+    width: 115px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.create-story-bx > div {
+    color: #fff;
+    position: relative;
+    top: -25px;
+    left: 10px;
+}
+
+.create-story-bx  button {
+    display: inline-flex; /* be a flexbox, but take up space based only on your content's width/size */
+    border: 4px solid var(--main-color);
+    border-radius: 100%;
+    align-items: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+
+
+.create-story-bx  button img {
+    width: 35px;
+    border-radius: 100%;
+}
+
+#siblinG {
+   top: -40px; 
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 14px 0;
+    column-gap: 9px;  
+}
+
+.arrow-div {
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+
+.chev-rN {
+    background-color: whitesmoke; 
+    padding: 7px 7px 7px 7px;
+    border-radius: 100%;
+}
+
+
+
+
