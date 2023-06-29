@@ -301,3 +301,52 @@
 
 /****************/
 
+                    /* secT-three-container  */
+
+.secT-three-content-header .col .channel-phoTo {
+    position: relative;
+    width: 10%;
+}
+
+.secT-three-content-header .col .channel-phoTo img {
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.secT-three-content-header .col .sub-channel-phoTo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    bottom: 0;
+}
+
+.secT-three-content-header {
+    display: grid; 
+    grid-template-columns: 55px 1fr 55px;
+    padding: 12px 0 12px; /* p-T, p-LR p-Bt*/
+}
+
+/* refactored */
+.col-2-title, .col-2-info  {
+    font-size: 1rem;
+}
+
+.secT-three-content-header .col-2 .col-2-title {
+    opacity: 0.95;
+}
+
+/* refactored */
+.secT-three-content-header .col-2-info, .col-3 {
+    color: rgb(120, 114, 114);
+} 
+
+.secT-three-content-header .col-3 {
+    display: flex; /* nested flex */
+    align-items: center;
+}
+
