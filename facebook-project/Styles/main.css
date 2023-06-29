@@ -189,14 +189,14 @@
 
         /* .secT-two-container */
 
-.secT-two-container {   
+.secT-two-container, .secT-three-container {   
     /* background-color: white; */
     width: 34%;
     position: relative;
     left: 400px;
 }
 
-.secT-two-content{
+.secT-two-content, .secT-three-content {
     background-color: white;
     width: 100%;
     margin-right: auto;
@@ -270,7 +270,11 @@
     align-items: center;
 }
 
-/* .status-wrap icons */
+/* .vid-icon-box icons */
+
+.vid-icon-box {
+    cursor: pointer;
+}
 
 .vid-icon {
     color: crimson;
