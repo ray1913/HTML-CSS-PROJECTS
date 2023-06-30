@@ -373,13 +373,13 @@
     /* word-spacing: -3px;  This will remove default spacing between words */
 }
 
+.ad-info p:nth-of-type(2), .ad-info p:nth-of-type(3) {
+    font-weight: bold;
+}
+
 .ad-info p:nth-of-type(2) {
     font-weight: bold;
     font-size: 1rem;
-}
-
-.ad-info p:nth-of-type(3) {
-    font-weight: bolder;
 }
 
 
