@@ -1,14 +1,72 @@
 .right-sidebar {
-    background-color: red;
-    color: white;
-
     position: fixed;
     
     /* when left/right are set, element will stretch to meet both conditions. same with 'top and bottom' */
-    left: 1000px;
+    left: 1100px;
     right: 0; 
     top: 91px;
-
-
-    
+    bottom: 0;
 }
+
+.right-sidebar h3 {
+    color: rgb(96, 90, 90);
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.right-sidebar .right-sidebar-content-box {
+    width: 240px;
+    height: 80px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    /* overflow-y: hidden; */
+
+    position: relative;
+}
+
+.right-sidebar .right-sidebar-content-box:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.right-sidebar-img-box img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.right-sidebar-float {
+    position: absolute; /* move only inside (line 29) element area above */
+    top: 5px;
+    right: 7px;
+}
+
+.right-sidebar-content-box button {
+    background-color: rgb(222, 227, 227);
+    border-radius: 100%;
+    padding: 7px;
+    border: none;
+    visibility: hidden;
+}
+
+.right-sidebar-float .dots-icon {
+   color: gray;
+}
+
+/* since the 'button' is inside this element, it/it's content will be visible only when this element is hovered on  */
+.right-sidebar-content-box:hover button { 
+    visibility: visible;
+    cursor: pointer;
+}
+
+.right-sidebar .content-bx {
+    margin-bottom: 12px;
+}
+
+
+
+
