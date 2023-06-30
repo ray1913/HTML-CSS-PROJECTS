@@ -361,6 +361,13 @@
 
 }
 
+/* Page video  */
+.ad-info video {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .ad-info img {
     width: 100%; /* take up the entire width set. see line (194) above/ padding left/right (line 208)  */
     border-radius: 3px;
