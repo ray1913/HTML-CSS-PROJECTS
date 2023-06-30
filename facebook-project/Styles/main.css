@@ -205,7 +205,7 @@
     margin-top: 15px;
     box-shadow: 0 0 5px rgba(0,0,0, 0.15);
     border: none;
-    padding: 0 15px;
+    padding: 0 15px; 
     padding: 0 16px 10px 16px;
 }
 
@@ -328,12 +328,17 @@
 .secT-three-content-header {
     display: grid; 
     grid-template-columns: 55px 1fr 55px;
-    padding: 12px 0 12px; /* p-T, p-LR p-Bt*/
+    padding: 12px 0 20px; /* p-T, p-LR p-Bt*/
 }
 
 /* refactored */
 .col-2-title, .col-2-info  {
     font-size: 1rem;
+}
+
+.col-2-info span {
+    font-weight: normal;
+    
 }
 
 .secT-three-content-header .col-2 .col-2-title {
@@ -349,4 +354,9 @@
     display: flex; /* nested flex */
     align-items: center;
 }
+
+.ad-info h4 {
+    color: rgb(48, 44, 44);
+}
+
 
