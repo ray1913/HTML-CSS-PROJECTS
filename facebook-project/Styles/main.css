@@ -368,8 +368,11 @@
 } 
 
 .ad-info p:nth-of-type(1) {
-    color: rgb(105, 101, 101);
-    /* word-spacing: -3px; This will remove default spacing between words */
+    color: gray;
+    /* word-spacing: -3px;  This will remove default spacing between words */
 }
+
+
+
 
 
