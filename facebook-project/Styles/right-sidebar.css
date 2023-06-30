@@ -3,7 +3,12 @@
     color: white;
 
     position: fixed;
-    bottom: 100px;
-    right: 0;
+    
+    /* when left/right are set, element will stretch to meet both conditions. same with 'top and bottom' */
+    left: 1000px;
+    right: 0; 
+    top: 91px;
+
+
     
 }
