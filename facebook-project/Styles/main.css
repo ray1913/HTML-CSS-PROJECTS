@@ -363,8 +363,13 @@
     width: 100%; /* take up the entire width set. see line (194) above/ padding left/right (line 208)  */
 }
 
-.ad-info {
-    
+.ad-info p {
+    padding-left: 15px;
+} 
+
+.ad-info p:nth-of-type(1) {
+    color: rgb(105, 101, 101);
+    /* word-spacing: -3px; This will remove default spacing between words */
 }
 
 
