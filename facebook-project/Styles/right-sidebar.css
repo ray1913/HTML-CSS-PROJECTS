@@ -76,6 +76,25 @@
 
     width: 95%;
     margin: auto;
+    padding-bottom: 13px;
+}
+
+.page-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-conT {
+    background-color: rgb(222, 227, 227);
+    padding: 10px 5px 0;
+    border-radius: 100%;
+}
+
+.page-profile .dots-icon {
+    color: gray;
+    position: relative;
+    bottom: 5px;
 }
 
 
