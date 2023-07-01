@@ -80,6 +80,8 @@
 }
 
 .page-profile {
+    background-color: rgb(222, 227, 227);
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
