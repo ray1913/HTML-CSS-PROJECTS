@@ -8,28 +8,25 @@
   padding: 15px 0 15px 15px;
 }
 
+.left-sidebar {
+    overflow-x: hidden;  /* hides vertical (bottom) scrollbar */  
+    overflow-y: hidden;
+}
+
 .left-sidebar::-webkit-scrollbar {
     width: 14px;    
     /*height: 100%;    take up the 100% sidebar's height*/
-  }
+}
 
   .left-sidebar::-webkit-scrollbar-thumb { /* creates scrollbar*/
     background-color: rgb(186, 180, 180);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 4px solid rgb(228, 226, 222);   /*creates padding around scroll thumb */
-  }
+}
 
 .left-sidebar:hover {
     overflow-y: auto; /* handling of 'sidebar links in the horizontal dirction. the width of the children(sidebar-links) was higher, for this propert to have effect */
     overflow-y: visible;
-}
-
-.left-sidebar {
-    overflow-x: hidden;  /* hides vertical (bottom) scrollbar */  
-}
-
-.left-sidebar {
-    overflow-y: hidden;
 }
 
 .friends-bx {
