@@ -21,6 +21,7 @@
     background-color: rgb(186, 180, 180);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 4px solid rgb(228, 226, 222);   /*creates padding around scroll thumb */
+    cursor: pointer;
 }
 
 .right-sidebar:hover {
@@ -35,7 +36,6 @@
 }
 
 .right-sidebar .right-sidebar-content-box {
-    background-color: plum;
     width: 290px; /* set to be more than the browser window so scrollbar will take effect when set */
     height: 80px;
     margin-bottom: 2px;
@@ -63,13 +63,13 @@
 .right-sidebar-float {
     position: absolute; /* move only inside (line 29) element area above */
     top: 7px;
-    right: 30px;
+    right: 70px;
 }
 
 .right-sidebar-content-box button {
     background-color: rgb(240, 244, 244);
     border-radius: 100%;
-    padding: 7px;
+    padding: 9px;
     border: none;
     visibility: hidden;
 }
