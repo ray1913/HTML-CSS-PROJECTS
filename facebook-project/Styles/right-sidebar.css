@@ -7,6 +7,7 @@
     top: 91px;
     bottom: 0;
     padding: 0 18px 0 8px;
+    overflow-y: scroll; /* sidebar will be scrollable */
 }
 
 .right-sidebar h3 {
