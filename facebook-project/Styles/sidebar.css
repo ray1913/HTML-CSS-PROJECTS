@@ -146,3 +146,62 @@
 
 }
 
+@media (min-width: 721px) and (max-width: 925px) {
+.left-sidebar {
+    width: 120px;
+}
+
+.hd-wrap {
+    display: flex; 
+    flex-direction: column; /* will not work, since flexbox doesn't affect grandchild flex items(html code line 136 / 140 */
+}
+
+/* this is a nested flex */
+.hd-wrap #sidebar-hd {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 0;
+    padding-bottom: 15px;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 1px;
+    padding-bottom: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
