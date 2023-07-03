@@ -1,325 +1,359 @@
-        
-                /* code-refactored! */
-        .header, .left-section, .mid-section,
-        .midS-link, .right-section  {
-            display: flex;
-        }
-        
-        .bx-search, .header-searchBx, .home-link-container  {
-            position: relative;
-        }
+/* code-refactored! */
+.header,
+.left-section,
+.mid-section,
+.midS-link,
+.right-section {
+    display: flex;
+}
 
-       
-                    /* header Section */
-        
-        .header {
-            height: 63px;
-            border-bottom: 0.1rem rgb(223, 212, 212) solid; /* width, color, style  */
-        
-            position: fixed;
-            right: 0;
-            top: 0;
-            left: 0;
-            background-color: var(--header-bg);
-        
-            z-index: 200;
-        }
-        
-                    /* left section */
-        
-        .left-section {
-            width: 350px; 
-            align-items: center; 
-            padding: 7px; 
-        }
-        
-        .fb-icon {
-            color:  var(--main-color);
-        }
-        
-        .bx-search {
-            left: 20px; /* move 30px of space from the left of the exact spot where you once sat*/
-            top: 1px;
-            color: var(--header-icons-color); 
-        
-            z-index: 1; 
-        }
-        
-        .header-searchBx {
-            background-color: var(--search-boxColor);
-            border: none;
-            font-size: 1rem;
-            border-radius: 56px;
-            padding: 14px 60px 14px 40px;
-            outline: none;
-            right: 13px;
-        }
-        
-        .header-searchBx::placeholder {
-            font-size: 1rem;
-        }
-        
-                    /* Mid-section */
-        
-        .mid-section {  
-            max-width: 700px;
-            align-items: center;
-            justify-content: space-between;
-            flex: 1;
-        }
+.bx-search,
+.header-searchBx,
+.home-link-container {
+    position: relative;
+}
 
-        .home-link-container { /* 'tool-tip' div parent. All tool-tip will respond to the below styles. except html code line 32 */
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .home-link { 
-            text-align: center;
-        }
-        
-        .home-IcoN {
-            color: var(--main-color);
-        }
 
-        .tool-tip, .home-link a:after {
-            pointer-events: none;
-        }
-        
-        /* content 'after' this anchor tag's icon */
-        .home-link a:after  { 
-            background-color: var(--main-color);
-            content: '';
-            display: block;
-            height: 3px;
-            width: 100px;
-           
-            position: relative;
-            top: 15.5px;
-            /* pointer-events: none; refactored(see line 83 & 84 above). Here tool-tip will not show when we hover over this element */
-        }
-        
-        .midS-link { 
-            width: 110px;
-            height: 50px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 3px;
-        }
-        
-        .midS-link:hover {
-            background-color: var(--hover-color);
-        }
-        
-        .midS-link a {
-            color: rgb(86, 79, 79);
-        }
+/* header Section */
+
+.header {
+    height: 63px;
+    border-bottom: 0.1rem rgb(223, 212, 212) solid;
+    /* width, color, style  */
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--header-bg);
+
+    z-index: 200;
+}
+
+        /* left section */
+
+.left-section {
+    width: 350px;
+    align-items: center;
+    padding: 7px;
+}
+
+.fb-icon {
+    color: var(--main-color);
+}
+
+.bx-search {
+    left: 20px;
+    /* move 30px of space from the left of the exact spot where you once sat*/
+    top: 1px;
+    color: var(--header-icons-color);
+
+    z-index: 1;
+}
+
+.header-searchBx {
+    background-color: var(--search-boxColor);
+    border: none;
+    font-size: 1rem;
+    border-radius: 56px;
+    padding: 14px 60px 14px 40px;
+    outline: none;
+    right: 13px;
+}
+
+.header-searchBx::placeholder {
+    font-size: 1rem;
+}
+
+/* Mid-section */
+
+.mid-section {
+    max-width: 700px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.home-link-container {
+    /* 'tool-tip' div parent. All tool-tip will respond to the below styles. except html code line 32 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-link {
+    text-align: center;
+}
+
+.home-IcoN {
+    color: var(--main-color);
+}
+
+.tool-tip,
+.home-link a:after {
+    pointer-events: none;
+}
+
+/* content 'after' this anchor tag's icon */
+.home-link a:after {
+    background-color: var(--main-color);
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100px;
+
+    position: relative;
+    top: 15.5px;
+    /* pointer-events: none; refactored(see line 83 & 84 above). Here tool-tip will not show when we hover over this element */
+}
+
+.midS-link {
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.midS-link:hover {
+    background-color: var(--hover-color);
+}
+
+.midS-link a {
+    color: rgb(86, 79, 79);
+}
+
 /*       
-        
-                /* Tool-tips style rules for mid-section links */
-   
-        #tool-Tip { /* will have higher specificity for tool-tip position. (html code-line: 41 */
-            bottom: -49px;
-            display: flex;
-            right: 27px;
-        }        
-        
-        /* refactor tool-tip */
 
-        .tool-tip, .right-toolTip {
-            position: absolute;
-            background-color: var(--tooltip-set);
-            color: #fff;
-            padding: 9px 10px;
-            font-size: 0.85rem;
-        }
+        /* Tool-tips style rules for mid-section links */
 
-        .tool-tip {
-            border-radius: 13px;
-            right: 29px;
-            bottom: -40px;
-            opacity: 0;
-        
-            /* pointer-events: none; (refactored. see line 83 & 84 above)  tooltip will appear ONLY when the home icon is hovered on, if this is not set, the tool tip text box appears when mouse rolls over where i initially placed the tool-tip */
-        }
-        
-        .home-link-container:hover .tool-tip  {
-            opacity: 0.80;
-        }
-        
-                     /* Right section */
-        
-        .right-section {
-            justify-content: end;
-            align-items: center;
-            width: 220px;
-            margin-left: auto; /* take up the remaining space on your left after flex:1 was set to 'mid-section' */
-            padding-right: 12px;
-        }
+#tool-Tip {
+    /* will have higher specificity for tool-tip position. (html code-line: 41 */
+    bottom: -49px;
+    display: flex;
+    right: 27px;
+}
 
-        .parent-B {
-            position: relative;
-        }
+/* refactor tool-tip */
 
-        .right-toolTip {
-            bottom: -38px;
-            border-radius: 12px;
-            visibility: hidden;
-        }
+.tool-tip,
+.right-toolTip {
+    position: absolute;
+    background-color: var(--tooltip-set);
+    color: #fff;
+    padding: 9px 10px;
+    font-size: 0.85rem;
+}
 
-        .right-T {
-            font-size: 0.85rem;
-        } 
+.tool-tip {
+    border-radius: 13px;
+    right: 29px;
+    bottom: -40px;
+    opacity: 0;
 
-        .parent-B:hover .right-toolTip {
-            visibility: visible; /* right-section tool-tip is visible when their parents are rolled-over on. pointer-events property is not necessary since i didn't use opacity hover trick */
-            opacity: 0.80;
-        }
-        
-        
-        .right-section a {
-            color: black;
-        }
-        
-        .right-section > button {  /* target only child (buttons). button content is not affected */
-            height: 48px;
-            width: 48px;
-            border-radius: 24px;
-            border: none;
-            margin-right: 7px;
-            background-color: rgb(223, 216, 216);
-        
-            position: relative;
-        }
-        
-        .notification-count {
-        
-            background-color: rgb(213, 28, 28);
-            color: white;
-            padding: 5px 7px 5px 7px;
-            border-radius: 10px;
-        
-            position: absolute;
-            top: -7px;  /* move up, beyond your parent's top */
-            right: -1px;
-        }
-        
-        .bell-notify {
-            transform: rotate(-9deg); /* negative rotation: rotates bell icon anti-clockwise */
-        }
-        
-        .user-photo {
-            width: 48px;
-            height: 48px;
-            object-fit: cover; /* keeps the image's original resolution*/
-            border-radius: 24px; /* half of the img element width and height will get a circle */
-        } 
-        
-        
-                /* media Query Condition for 0-730px viewport width */
+    /* pointer-events: none; (refactored. see line 83 & 84 above)  tooltip will appear ONLY when the home icon is hovered on, if this is not set, the tool tip text box appears when mouse rolls over where i initially placed the tool-tip */
+}
 
-        @media (max-width: 730px) {
-            #menu-icoN {
-                right: 370px;
-                margin-right: 100px;
-            }
+.home-link-container:hover .tool-tip {
+    opacity: 0.80;
+}
 
-            .mid-section {
-                position: relative;
-                left: 90px;
-                
-            }
-        }
+/* Right section */
 
-          /* media Query Condition for 0-999px viewport */
-        
-        @media (max-width: 999px) {
-        
-            .fb-icon {
-                left: 7px;
-            }
-        
-            .left-section input, .fb-icon {
-                position: relative;
-            }
-        
-            /* disable default/all set widths and paddings intially set to this element */
-            .header-searchBx {
-                width: 0;
-                padding: 0;
-            }
-        
-            .left-section input {
-                width: 34px;
-                height: 34px; /* will be a circle. border radius was already set. see css code-line: 56 */
-            }
-        
-            .search-icon {
-                margin-right: 5px;
-            }
-        
-            .left-section input::placeholder {
-                visibility: hidden; /* hide the input's element's placeholder */
-            } 
-        
-        }
-        
-        @media (max-width: 970px) {
-            .midS-link .console-icon {
-                position: absolute;
-                top: -200px;
-            }
+.right-section {
+    justify-content: end;
+    align-items: center;
+    width: 220px;
+    margin-left: auto;
+    /* take up the remaining space on your left after flex:1 was set to 'mid-section' */
+    padding-right: 12px;
+}
 
-            #console-box { 
-                visibility: hidden; /* html code-line 70 is visible on 970px viewport size and below */ 
-            }
+.parent-B {
+    position: relative;
+}
 
-            #menu-box, #console-box {
-                background-color: transparent;/* removes set gray background color*/
-            }
+.right-toolTip {
+    bottom: -38px;
+    border-radius: 12px;
+    visibility: hidden;
+}
 
-            #tool-tiP {
-                visibility: hidden;
-            }
+.right-T {
+    font-size: 0.85rem;
+}
 
-            .midS-link .menu-icon {
-                position: relative;
-                right: 45px;
-            }
+.parent-B:hover .right-toolTip {
+    visibility: visible;
+    /* right-section tool-tip is visible when their parents are rolled-over on. pointer-events property is not necessary since i didn't use opacity hover trick */
+    opacity: 0.80;
+}
 
-        }
 
-        @media (min-width: 971px) and (max-width: 998px) {
-            #menu-box {
-                visibility: hidden;
-                background-color: transparent;
-            }
-        }
-        
-        @media (min-width: 999px)  {
-        
-              .mid-section {
-                flex: 1;
-                margin: auto;
-              }
-        
-              .midS-link .menu-icon {
-                position: absolute;
-                top: -500px; /* displaces the icon and places/hides beyond top of browser window*/
-              }   
-        }
-        
-        @media (max-width: 1158px)  {
-        
-            .mid-section {
-                max-width: 400px;
-            }
-        
-            .mid-section .midS-link .menu-icon {
-                margin-left: 40px;
-            }
-        
-        }
-        
-        
-        
+.right-section a {
+    color: black;
+}
+
+.right-section>button {
+    /* target only child (buttons). button content is not affected */
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-right: 7px;
+    background-color: rgb(223, 216, 216);
+
+    position: relative;
+}
+
+.notification-count {
+
+    background-color: rgb(213, 28, 28);
+    color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: -7px;
+    /* move up, beyond your parent's top */
+    right: -1px;
+}
+
+.bell-notify {
+    transform: rotate(-9deg);
+    /* negative rotation: rotates bell icon anti-clockwise */
+}
+
+.user-photo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    /* keeps the image's original resolution*/
+    border-radius: 24px;
+    /* half of the img element width and height will get a circle */
+}
+
+
+/* media Query Condition for 0-730px viewport width */
+
+@media (max-width: 730px) {
+    #menu-icoN {
+        right: 370px;
+        margin-right: 100px;
+    }
+
+    .mid-section {
+        position: relative;
+        left: 90px;
+
+    }
+}
+
+/* media Query Condition for 0-999px viewport */
+
+@media (max-width: 999px) {
+
+.fb-icon {
+    left: 7px;
+}
+
+.left-section input,
+.fb-icon {
+    position: relative;
+}
+
+/* disable default/all set widths and paddings intially set to this element */
+.header-searchBx {
+    width: 0;
+    padding: 0;
+}
+
+.left-section input {
+    width: 34px;
+    height: 34px;
+    /* will be a circle. border radius was already set. see css code-line: 56 */
+}
+
+.search-icon {
+    margin-right: 5px;
+}
+
+.left-section input::placeholder {
+    visibility: hidden;
+    /* hide the input's element's placeholder */
+}
+
+}
+
+@media (max-width: 970px) {
+.midS-link .console-icon {
+    position: absolute;
+    top: -200px;
+}
+
+#console-box {
+    visibility: hidden;
+    /* html code-line 70 is visible on 970px viewport size and below */
+}
+
+#menu-box,
+#console-box {
+    /* removes set gray background color*/
+    background-color: transparent;
+
+}
+
+#tool-tiP {
+    visibility: hidden;
+}
+
+.midS-link .menu-icon {
+    position: relative;
+    right: 45px;
+}
+
+}
+
+@media (min-width: 721px) and (max-width: 925px) {
+
+    .header .right-section {
+    position: relative;
+    right: 20px;
+}
+
+}
+
+@media (min-width: 971px) and (max-width: 998px) {
+    #menu-box {
+    visibility: hidden;
+    background-color: transparent;
+}
+
+}
+
+@media (min-width: 999px) {
+
+.mid-section {
+    flex: 1;
+    margin: auto;
+}
+
+.midS-link .menu-icon {
+    position: absolute;
+    top: -500px;
+    /* displaces the icon and places/hides beyond top of browser window*/
+}
+
+}
+
+ @media (max-width: 1158px) {
+
+.mid-section {
+    max-width: 400px;
+}
+
+.mid-section .midS-link .menu-icon {
+    margin-left: 40px;
+}
+
+}
