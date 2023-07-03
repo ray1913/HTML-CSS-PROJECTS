@@ -1,5 +1,4 @@
 .right-sidebar {
-    background-color: tomato;
     position: fixed;
     
     /* when left/right are set, element will stretch to meet both conditions. same with 'top and bottom' */

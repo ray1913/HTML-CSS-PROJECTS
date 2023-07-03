@@ -413,7 +413,7 @@
 }
 
 
-/* main media query condition */
+/* 'main' media query condition for viewport of 360px and below */
 
 @media (max-width: 360px) {
 
@@ -481,9 +481,6 @@
     border-radius: 10px;
 }
 
-.secT-three-content {
- 
-}
 
 .secT-three-content-header {
 
@@ -512,6 +509,35 @@
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 10px;
+}
+
+}
+
+@media (min-width: 360px) and (max-width: 720px) {
+
+body {
+    padding: 80px 0 10px;
+}
+
+.secT-one-container {
+    left: 170px;
+    height: 285px;
+    margin-top: 20px;
+}
+
+.left-sidebar {
+    width: 141px;
+} 
+     
+.left-sidebar .sidebar-links {
+    display: flex;
+    align-items: center; 
+    /* flex-direction: column; */       
+}
+
+.secT-two-container, .secT-three-container {
+    left: 170px;
+    width: 66%;
 }
 
 }
