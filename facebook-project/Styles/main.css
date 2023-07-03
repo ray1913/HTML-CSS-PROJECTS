@@ -7,12 +7,9 @@
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
     width: 500px;
     box-sizing: border-box;
-    height: 300px;
     padding: 0 5px;
-
     position: relative;
     left: 400px;
-   
 }
 
 /* refactored code */
@@ -85,6 +82,13 @@
     right: 7.5px;
 }
 
+.story-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 14px 0;
+    column-gap: 9px;  
+}
+
 .create-story-box {
     height: 176px;
     width: 115px;
@@ -118,7 +122,7 @@
 .create-story-box h3 {
     font-size: 0.95rem;
     opacity: 0.95;
-    /* position: relative; */
+    /* position: relative;  refactored (line 24) */
     top: -15px;
     left: 18px;
     font-weight: bold;
@@ -126,8 +130,8 @@
 
 .create-story-bx  {
     font-weight: bold;
-    /* position: relative; */
-    height: auto;
+    min-height: 100px;
+    /* position: relative;    refactored   (line 24)  */
 }
 
 .create-story-bx img {
@@ -164,13 +168,6 @@
 
 #siblinG {
    top: -40px; 
-}
-
-.story-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 14px 0;
-    column-gap: 9px;  
 }
 
 .arrow-div {
@@ -416,3 +413,105 @@
 }
 
 
+/* main media query condition */
+
+@media (max-width: 360px) {
+
+.secT-one-container {
+    left: 200px;
+    
+}
+
+.secT-two-container {
+    left: 200px;
+    width: 100%; /* 100% of 500px, (line-8) above*/
+  
+}
+    
+.story-grid {
+   grid-template-columns: 20px 20px 20px 20px;    
+   column-gap: 100px; 
+}
+    
+.create-story-box {
+    /* width: 75px;  removed for the set grid-columns above to work perfectly */ 
+    height: 90%; 
+}
+
+.create-story-box img {
+    width: 100%;
+}
+
+    /* already set to relative in the css code file (line 24) */
+.create-story-box h3 {
+    font-size: 10px;
+    left: 22px;
+}
+
+.create-story-bx #amb-bx {
+    position: relative;
+}
+
+.story-grid .create-story-bx #amb {
+    /* width: 80px; */
+    top: 200px;
+  
+    position: absolute;
+}
+
+.create-story-bx .pr-lucy {
+    position: relative;
+}
+
+.create-story-bx .sibling-1 {
+    position: absolute;
+    top: 210px;
+}
+
+.story-grid .create-story-bx img {
+    /* width: 80px; */
+    height: 100%;
+}
+
+/* secT-three-container */
+
+.secT-three-container {
+    left: 200px;
+    width: 50%;   
+    border-radius: 10px;
+}
+
+.secT-three-content {
+ 
+}
+
+.secT-three-content-header {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 10px;
+}
+
+.col-2 .col-2-title {
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ad-footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ad-footer {
+    padding-bottom: 10px;
+}
+
+.ad-footer-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+}
