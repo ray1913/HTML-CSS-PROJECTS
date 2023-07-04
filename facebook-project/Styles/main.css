@@ -1,4 +1,3 @@
-/* these styles will target all 'section element' on the page */
 
 .secT-one-container {  
     border: 1px solid lightgray;
@@ -611,7 +610,48 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
     
 }
 
-@media (min-width: 926px) and (max-width: 1367px) {
+
+@media (min-width: 721px) and (max-width: 925px) {
+.secT-two-container, .secT-three-container {
+    width: 383px;
+}   
+
+.secT-two-container .secT-two-content {
+    width: 100%;
+}
+
+.secT-three-container .ad-footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.secT-three-container .ad-footer-btn {
+    width: 100%;
+}
+
+.secT-three-container .ad-footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+}
+
+.secT-three-container .ad-footer-btn {
+    border-radius: 5px;
+    width: 95%;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: transform 1s, box-shadow 1s; /* this property is only effective when this element is hovered on */
+}
+
+.secT-three-container:hover .ad-footer-btn {
+    transform: scaley(1.1); /* grow 'vertically' by a scale of 1.1 when rolled over on */
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.40);
+
+}
+
+}
+
+@media (min-width: 926px) {
 
 .secT-one-container {
     left: 200px;
@@ -737,7 +777,13 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
     /* opacity: 0.8; */
     transform: scaley(1.1); /* grow 'vertically' by a scale of 1.1 when rolled over on */
     box-shadow: 4px 4px 5px rgba(0,0,0,0.40);
+}
 
+}
+
+@media (min-width: 926px) and (max-width: 1000px) {
+.secT-one-container {  
+    left: 200px;
 }
 
 
