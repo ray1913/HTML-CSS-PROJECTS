@@ -786,8 +786,90 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
     left: 200px;
 }
 
+}
+
+@media (min-width: 931px) and (max-width: 1200px) {
+.secT-one-container {
+    left: 200px;
+    width: 55%;
+}
+.secT-one-container .secT-one-child {
+    width: 90%;
+}
+
+.secT-one-child .book-icon-bx .book-icoN::after {
+    width: 200px;
+}
+
+hr:nth-child(2) {
+    width: 502px;
+    margin: auto;
+}
+
+.secT-one-container .story-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+
+.story-grid .create-story-bx {
+    height: 241px;
+}
+
+.create-story-bx .img-rel #ray {
+    height: 180px;
+    position: relative;
+    border-radius: 0;
+    top: 24px;
+    right: 10px;
+}
+
+.create-story-bx .cross-btN {
+    top: 163px;
+    left: 33px;
+    background-color: var(--main-color);
+    border: 4px solid white; /* white round border: html code line 317.  */
+}
+
+.bx-plus {
+    color: white;
+}
+
+.story-grid .create-story-box img {
+    width: 100px;
+    height: 200px;
+}
+
+.story-grid .create-story-bx .bx-main-img {
+    width: 100px;
+}
+
+.create-story-bx h3 {
+    font-size: 0.95rem;
+    margin-left: 6px;
+    position: relative;
+    top: 10px;
+    color: black;
+} 
+
+.create-story-bx .sibling-1 {
+    top: 210px;
+}
+
+.create-story-bx #amb {
+    top: -40px;
+}
+
+.secT-two-container {
+    width: 52%;
+}
+
+ .secT-three-container {
+    width: 500px;
+ }
 
 }
+    
 
 
 
