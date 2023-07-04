@@ -2,11 +2,10 @@
   background-color: var(--body-bg-color);
   position: fixed;
   left: 0;
-  top: 63px;
+  top: 91px;
   bottom: 0;
   width: 225px;
   padding: 15px 0 15px 15px;
-
 }
 
 .left-sidebar {
