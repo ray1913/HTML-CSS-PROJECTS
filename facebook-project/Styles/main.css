@@ -214,8 +214,7 @@
     cursor: pointer;
 }
 
-.secT-two-content-header .inpUt-bx {
-   
+.secT-two-content-header .inpUt-bx { 
     flex: 1;
 }
 
@@ -226,11 +225,13 @@
     border: none;
     border-radius: 20px;
     font-size: 1rem;
+    padding-left: 13px; /* blinking cursor didnt show until i set this and 'outline' to 'none' */
+    outline: none;
 }
 
 .secT-two-content-header input::placeholder {
     font-size: 1rem; 
-    padding-left: 10px;
+    /* padding-left: 13px; */
     color: rgb(82, 78, 78);
  }
 
@@ -611,13 +612,23 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
 }
 
 @media (min-width: 926px) and (max-width: 1367px) {
+
 .secT-one-container {
     left: 200px;
-  }  
+}  
+
+.secT-one-container,  .secT-one-container hr {
+    width: 330px;
+}
 
 .secT-one-container .secT-one-child {
-    border: 1px solid green;
-    width: 55%; /* take up 55% of width set to parent (html- line 280px) */
+    width: 70%; /* take up 55% of width set to parent (html- line 280px) */
+}
+
+.secT-one-child #book-icon-b {
+    position: relative;
+    left: 20px;
+    margin-right: -35px;
 }
 
 .secT-one-container .secT-one-child  .book-icoN::after {
@@ -663,7 +674,7 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
 
 .create-story-bx {
     position: relative;
-    left: 35px;
+    left: 40px;
 }
 
 .create-story-bx img {
@@ -677,8 +688,58 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
 }
 
 .story-grid .arrow-div {
-    right: 180px;
+    right: 3px;
 }
+
+.secT-two-container, .secT-three-container {
+    left: 200px;
+}
+
+.secT-three-container {
+    margin-bottom: 15px;
+}
+
+.secT-two-container, .secT-three-content {
+    width: 360px;
+}
+
+.status-wrap  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-wrap .vid-icon-box h3 {
+    margin-left: 0;
+}
+
+.secT-three-container .secT-three-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secT-three-container .ad-footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    padding-right: 10px;
+}
+
+.secT-three-container .ad-footer-btn {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: transform 1s, box-shadow 1s; /* this property is only effective when this element is hovered on */
+}
+
+
+.secT-three-container:hover .ad-footer-btn {
+    /* opacity: 0.8; */
+    transform: scaley(1.1); /* grow 'vertically' by a scale of 1.1 when rolled over on */
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.40);
+
+}
+
 
 }
 
