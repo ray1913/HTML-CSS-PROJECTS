@@ -9,7 +9,6 @@
     padding: 0 18px 0 8px;
     overflow-y: hidden;  /* horizontal sidebar will not be visible */   
     overflow-x: hidden; /* vertical sidebar will not be visible */
-
 }
 
 
@@ -297,4 +296,55 @@ right: -50px;
 
 .birthdays-container .bday-1 span {
     font-weight: bold;
+}
+
+
+/* media query conditions for right-sidebar layout between 721px and 925 viewport  */
+
+@media (min-width: 721px) and (max-width: 925px) {
+
+.right-sidebar {
+  
+    left: 660px;
+    right: 0;
+}
+
+
+.right-sidebar h3 {
+  margin-top: 7px;  
+}
+
+.right-sidebar .right-sidebar-content-box {
+    padding: 10px 5px;
+    width: 220px;
+    align-items: center;
+}
+
+.right-sidebar .right-sidebar-content-box img {
+    width: 100px;
+}
+
+.right-sidebar .right-sidebar-float {
+    right: 5px;
+    top: 10px;
+}
+
+.right-sidebar .friend-req-container {
+    padding: 8px 0 8px 5px;
+    margin-bottom: 5px;
+}
+
+}
+
+@media (min-width: 926px) and (max-width: 1000px) {
+
+.secT-one-container {
+    left: 240px;
+}
+
+.right-sidebar {
+    left: 650px;
+
+}
+
 }
