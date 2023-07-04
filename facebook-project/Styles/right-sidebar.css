@@ -120,10 +120,34 @@
     color: gray;
 }
 
-.icon-conT:hover button {
-    background-color: rgb(222, 227, 227);
+
+.icon-conT:hover button,
+.bday-wrap:hover   {
     cursor: pointer;
 }
+
+/*  refactored style rules */
+
+.icon-conT:hover button,
+.auto-page-row:hover,
+.switch-bx:hover,
+.promote-bx:hover,
+.friend-req-container:hover,
+.req-header:hover .dovE,
+.bday-wrap:hover 
+  {
+    background-color: rgb(222, 227, 227);
+
+} 
+
+.auto-page-row,
+.switch-bx, .promote-bx,
+.confirm-bx-btn .btn1, .btn-1  {
+    cursor: pointer;
+}
+
+
+/*************************************** */
 
 .auto-page-row, .switch-bx, .promote-bx  {
     display: flex;
@@ -134,26 +158,13 @@
 .auto-page-row {
     padding: 7px 0 7px 5px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
-.auto-page-row:hover {
-    background-color: rgb(227, 227, 227);
-}
 
 .switch-bx, .promote-bx {
     margin-bottom: 10px;
     padding: 6px 0 6px 10px;
     border-radius: 10px;
-    cursor: pointer;
-}
-
-.switch-bx:hover {
-    background-color: rgb(227, 227, 227);
-}
-
-.promote-bx:hover {
-    background-color: rgb(227, 227, 227);
 }
 
 .autoPageImage img {
@@ -175,8 +186,8 @@
     width: 400px;
 }
 
-.friend-req-container:hover {
-    background-color: rgb(227, 227, 227);
+.friend-req-container:hover,
+.req-header:hover .dovE {
     border-radius: 5px;
     cursor: pointer;
 }
@@ -190,12 +201,6 @@
     position: relative;
     left: 72px;
     padding: 8px;
-}
-
-.req-header:hover .dovE {
-    background-color: rgb(227, 227, 227);
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 .req-row {
@@ -215,11 +220,11 @@
 }
 
 .freq-info .time {
-color: darkslategray;
-font-weight: normal; 
-position: absolute;
-top: 0;
-right: -50px;
+    color: darkslategray;
+    font-weight: normal; 
+    position: absolute;
+    top: 0;
+    right: -50px;
  
 }
 
@@ -260,7 +265,6 @@ right: -50px;
     padding: 9px 10px;
     border-radius: 5px;
     margin-top: 8px;
-    cursor: pointer;
 }
 
 .confirm-bx-btn .btn-1 {
@@ -283,11 +287,6 @@ right: -50px;
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 12px;
-}
-
-.bday-wrap:hover {
-    background-color: rgb(222, 227, 227);
-    cursor: pointer;
 }
 
 .birthdays-container .bday {
