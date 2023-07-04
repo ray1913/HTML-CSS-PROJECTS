@@ -610,6 +610,78 @@ hr:nth-child(2) { /* target the the second  horizontal line on the page. (html c
     
 }
 
+@media (min-width: 926px) and (max-width: 1367px) {
+.secT-one-container {
+    left: 200px;
+  }  
+
+.secT-one-container .secT-one-child {
+    border: 1px solid green;
+    width: 55%; /* take up 55% of width set to parent (html- line 280px) */
+}
+
+.secT-one-container .secT-one-child  .book-icoN::after {
+    width: 100px;
+    right: -65px; /* will push this '::atfer' element from left-right, instead of right-left. */
+   
+}
+
+.story-grid {
+    grid-template-columns: 50px 70px 70px 70px;
+    column-gap: 5px;
+}
+
+.create-story-box {
+    width: 85px;
+    height: 175px;
+}
+
+.img-rel {
+    position: relative;
+}
+
+.heaDr {
+    position: absolute;
+   
+    bottom: -50px;
+    right: 27px;
+    left: -4px;
+}
+
+.create-story-box img {
+    width: 100%;
+    height: 150px;
+}
+
+.create-story-box button {
+    right: 13px;
+}
+
+.create-story-box h3 {
+    font-size: 0.85rem;
+}
+
+.create-story-bx {
+    position: relative;
+    left: 35px;
+}
+
+.create-story-bx img {
+    width: 100%;
+    height: 100%;
+}
+
+.create-story-bx .sibling-1 {
+    position: absolute;
+    top: 165px;
+}
+
+.story-grid .arrow-div {
+    right: 180px;
+}
+
+}
+
 
 
 
