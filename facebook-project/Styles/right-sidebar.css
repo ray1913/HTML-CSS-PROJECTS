@@ -147,10 +147,22 @@
 }
 
 
+.auto-page-row, .switch-bx, .promote-bx,
+.req-row,
+.mutual-friends-info,
+.bday-wrap {
+    display: flex;
+}
+
+.req-header .dovE, 
+.freq-info .name,
+.confirm-bx-btn .btn1 {
+    position: relative;
+}
+
 /*************************************** */
 
 .auto-page-row, .switch-bx, .promote-bx  {
-    display: flex;
     align-items: center;
     column-gap: 10px;
 }
@@ -194,17 +206,13 @@
 
 .req-header .dove {
     display: inline-block;
-}
-
-.req-header .dovE  {
     color: rgb(53, 53, 219);
-    position: relative;
     left: 72px;
     padding: 8px;
 }
 
+
 .req-row {
-    display: flex;
     column-gap: 14px;
 }
 
@@ -216,7 +224,6 @@
 .freq-info .name {
     font-weight: bold;
     font-size: 1rem;
-    position: relative;
 }
 
 .freq-info .time {
@@ -229,7 +236,6 @@
 }
 
 .mutual-friends-info {
-    display: flex;
     align-items: center;
     column-gap: 3px;
     margin-top: 7px;
@@ -249,7 +255,6 @@
 }
 
 .confirm-bx-btn .btn1 {
-    position: relative;
     left: 55px;
 }
 
@@ -282,7 +287,6 @@
 }
 
 .bday-wrap {
-    display: flex;
     column-gap: 10px;
     padding: 7px;
     border-radius: 5px;
