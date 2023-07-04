@@ -200,6 +200,13 @@
 
 }
 
+@media (min-width: 926px) and (max-width: 1367px) {
+    .left-sidebar {
+        background-color: red;
+        width: 150px;
+    }   
+}
+
 
 
 
