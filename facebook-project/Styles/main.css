@@ -18,8 +18,12 @@
 } 
 
 .book-icon-bx, .create-story-box  button, .create-story-box h3,
-.create-story-bx, .story-grid   {
+.create-story-bx, .story-grid, .secT-one-container hr, .secT-two-container, .secT-three-container  {
     position: relative;
+}
+
+.create-story-bx  button, .arrow-div {
+    position: absolute;
 }
 
 .story, .reels, .bx-plus,
@@ -27,6 +31,8 @@
  .create-story-bx button {
     cursor: pointer;
 } 
+
+
 
 /***************************************************/
 
@@ -77,7 +83,6 @@
     border: 0.20rem thin rgb(239, 231, 231);
     opacity: 0.3;
     width: 498px;
-    position: relative;
     right: 7.5px;
 }
 
@@ -153,8 +158,6 @@
     border-radius: 100%;
     align-items: center;
     cursor: pointer;
-
-    position: absolute;
     top: 8px;
     left: 12px;
 }
@@ -170,7 +173,6 @@
 }
 
 .arrow-div {
-    position: absolute;
     right: 0;
     top: 90px;
 }
@@ -188,7 +190,6 @@
 .secT-two-container, .secT-three-container {   
     /* background-color: white; */
     width: 34%;
-    position: relative;
     left: 400px;
 }
 
@@ -448,23 +449,23 @@
     left: 22px;
 }
 
-.create-story-bx #amb-bx {
+.create-story-bx #amb-bx, .create-story-bx .pr-lucy  {
     position: relative;
 }
+
 
 .story-grid .create-story-bx #amb {
     /* width: 80px; */
     top: 200px;
   
-    position: absolute;
+    
 }
 
-.create-story-bx .pr-lucy {
-    position: relative;
+.story-grid .create-story-bx #amb, .create-story-bx .sibling-1 {
+    position: absolute;
 }
 
 .create-story-bx .sibling-1 {
-    position: absolute;
     top: 210px;
 }
 
