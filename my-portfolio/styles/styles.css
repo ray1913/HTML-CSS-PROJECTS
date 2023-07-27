@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+    font-family: 'Ubuntu', 'Inter', 'Roboto', Arial;  
+    color: #e8dddd;
+    background-image: url(/images/portfolio-background.png);
+    padding-bottom: 100px;
+}
+
+
+/* Code Refactored */
+
+.holder .header-case,
+.holder .skills-case,
+.holder .hobbies-case,
+.holder .socials-case {
+  /* margin: auto; */
+  margin-block: 1% 0;
+  width: 70%;
+  /* border: 1px solid white; */
+  padding: 1% 0 1% 2%;
+}
+
+.holder .skills-case,
+.holder .hobbies-case,
+.holder .socials-case {
+  padding-inline: 5% 0;
+}
+
+
+.holder .intro-case span, h1, h2, h3 {
+  font-family: 'Pacifico', 'Ubuntu', Arial;
+}
+
+.holder h1, h2, h3 {
+  color: rgb(157, 16, 157); 
+}
+
+.holder h1, h2, h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}
+
+.holder h1, p {
+  transform: scaleY(1.2);
+}
+
+.holder .socials-info-case,
+.holder .mail-info {
+  display: flex;
+  align-items: center;
+}
+
+.skills-case .skills-info,
+.skills-case .skills-info .skills-info-row .cert-info {
+  display: flex;
+}
+
+
+/* ---------------------------------------  */
+
+.holder {
+  width: 90%;
+}
+
+.holder .header-case {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.userImg-case {
+  padding: 10px;
+  margin: 2% 0 0 10%;
+  text-align: center;
+}
+
+.userImg-case img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.intro-case * {
+  line-height: 50px;
+  font-size: 0.95rem;
+}
+
+.intro-case span {
+  color: #e70ae7;
+  font-size: 1.9rem;
+}
+
+.intro-case p:first-child {
+  font-size: 1.2rem;
+  word-spacing: 3px;
+}
+
+.intro-case p:first-child, .holder [id="text-intro"] {
+  transform: none;
+}
+
+.holder [id="text-intro"] {
+  font-size: 13px;
+}
+
+/* Skills */
+.skills-case .skills-info {
+  padding-inline: 0 10%;
+}
+
+.skills-case .skills-info {
+  justify-content: space-between;
+}
+
+.skills-info p {
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.skills-case .skills-info  .skills-info-row-x p {
+  font-size: 0.70rem;
+}
+
+.skills-case .skills-info .skills-info-row .cert-info {
+  /* column-gap: 20px; */
+  margin-bottom: 15px;
+}
+
+.skills-case .skills-info  .skills-info-row-x p,
+.skills-case .skills-info .skills-info-row .cert-info * {
+  transform: scaleY(1.2);
+}
+
+.skills-case .skills-info .skills-info-row .cert-info * {
+  font-size: 0.80rem;
+  line-height: 10px;
+}
+
+
+/* hobbies */
+.hobbies-case, .hobbies-case .work-hisT {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hobbies-case .hobby-info-x p,
+ .hobbies-case .hobby-info p {
+    line-height: 20px;
+}
+
+.hobbies-case .hobby-info-x p,
+ .hobbies-case .hobby-info p,
+ .hobbies-case .hobby-info-x .work-hisT * {
+    font-size: 0.8rem;
+ }
+
+.hobbies-case .hobby-info-x  {
+    margin-left: auto;
+    padding-inline: 0 11%;
+}
+
+.hobbies-case .hobby-info-x .work-hisT * {
+    transform: scaleY(1.2);
+}
+
+/* socials */
+.socials-case .socials-info .socials-info-case * {  /* targets all children of 'socials-info-case */
+  font-size: 0.6rem;
+  font-weight: 500;
+  transform: scaleY(1.2);
+}
+
+.socials-case .socials-info .socials-info-case .tweet {
+  color: #1DA1F2;
+}
+
+.socials-case .socials-info .socials-info-case .git {
+  color: #beb6b6;
+}
+
+.socials-case .socials-info {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.socials-case .socials-info .case-one {
+  margin-block: 0 15px;
+}
+
+.socials-case .socials-info .case-x,
+.socials-case .mail-case .mail-info  {
+  margin-left: 20px;
+}
+
+.socials-case .socials-info .fa-brands {
+  margin-left: 25px;
+}
+
+.socials-case .mail-case .mail-info {
+  width: 9%;
+  justify-content: space-between;
+}
+
+.mail-case .mail-info.mail-info [id="mail-text"] {
+  font-size: 0.6rem;
+  font-weight: 500;
+  transform: scaleY(1.2);
+}
+
+.socials-case .mail-case .mail-info img {
+  width: 13px;
+  transition: transform 1s;
+}
+
+.mail-case .mail-info img:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.holder .hobbies-case {
+  width: 71%;
+}
+
+.holder .hobby-info-x{
+  position: relative;
+  left: 12px;
+}
+
+/* Media Query conditions */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .holder,
+  .holder .header-case,
+  .holder .skills-case,
+  .holder .hobbies-case,
+  .holder .socials-case,
+  .holder .socials-info {
+    width: 100%;
+}
+
+  .holder .header-case {
+  column-gap: 5px;
+  grid-template-columns: 100px 1fr;
+  padding-inline: 0;
+  padding-block: 0 2%;
+  margin-block: 0 5%;
+}
+  
+.holder .userImg-case img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  right: 5px;
+}
+
+.holder .intro-case p:nth-of-type(1),
+.holder .intro-case p:nth-of-type(2) {
+  font-size: 0.6rem;
+  /* font-weight: 400; */
+  transform: scaleY(1.2);
+}
+
+.holder .intro-case p  {
+  line-height: 13px;
+}
+
+.holder .intro-case p span {
+  font-size: 1rem;
+}
+
+/* skills */
+
+.holder .skills-case .skills-info {
+  column-gap: 20px;
+}
+
+.holder .skills-case .skills-info h1 {
+  font-size: 0.70rem;
+}
+
+.holder .skills-case .skills-info .skills-info-row  h2 {
+  position: relative;
+  bottom: 2px;
+}
+
+.holder .skills-case .skills-info p {
+  font-size: 0.60rem;
+}
+
+.holder .skills-case .skills-info-row h2 {
+  font-size: 0.85rem;
+  padding-block: 0 7%;
+  position: relative;
+  /* position: absolute; */
+}
+
+.holder .skills-case .skills-info-row  .cert-info div {
+  font-size: 0.65rem;
+}
+
+.holder .skills-case .skills-info-row  .cert-info {
+  display: grid; 
+  grid-template-columns: 100fr 1fr;
+  column-gap: 5px;
+}
+
+.holder .hobbies-case  {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+
+}
+
+.holder .hobbies-case h2 {
+  font-size: 0.90rem;
+  margin-block: 0 5%;
+}
+
+.holder .hobby-info p,
+.holder #work-h div {
+  font-size: 0.65rem;
+}
+
+.holder .socials-case h3 {
+  font-size: 0.90rem;
+}
+
+.socials-case .mail-case .mail-info {
+  width: 15%;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 634px) {
+  .holder .header-case {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .holder .intro-case *  {
+    line-height: 30px;
+}
+  
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+.holder, .holder .header-case {
+    width: 100%;
+}
+
+.holder .userImg-case {
+  padding: 0;
+}
+
+.holder .userImg-case img {
+  width: 150px;
+  height: 150px;
+}
+
+.holder .intro-case p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.holder .intro-case p:nth-of-type(1),
+.holder .intro-case p:nth-of-type(2) {
+  font-size: 1rem;
+  transform: scaleY(1.2);
+}
+
+.holder .intro-case span {
+  font-size: 1.5rem; 
+}
+
+}
+
+@media (max-width: 768px)  {
+
+  .holder .header-case {
+    display: flex;
+    padding: 0;
+}
+
+.holder .header-case .userImg-case {
+  position: relative;
+  right: 25px;
+  /* padding: 0; */
+  margin-inline: 6% 0;
+}
+
+.holder .intro-case p {
+  line-height: 5px;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .holder {
+    width: 100%;
+}
+
+.holder .header-case {
+  width: 100%;
+  grid-template-columns: 150px 1fr;
+  column-gap: 13%;
+}
+
+.holder .userImg-case {
+  width: 100%;
+  margin: 0;
+}
+
+.holder .userImg-case img {
+  width: 200px;
+  height: 200px;
+}
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+.holder .header-case {
+  width: 100%;
+  grid-template-columns: 200px 1fr;
+  column-gap: 20%;
+}
+
+.holder .userImg-case {
+  margin: 0;
+}
+
+.holder img {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+
+.holder .intro-case p {
+  font-size: 1.2rem;;
+}
+
+.holder .intro-case span {
+  font-size: 3rem;
+}
+
+.holder .mail-case {
+  height: 30px;
+  position: relative;
+}
+
+.holder .mail-case .mail-info {
+  padding: 0;
+  height: 20px;
+}
+
+.holder #anchor-icon {
+  position: relative;
+  left: 10px;
+}
+}
+
+
+
+
+
