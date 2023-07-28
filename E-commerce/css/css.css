@@ -71,7 +71,7 @@ body {
    font-size: 5em; 
    padding-bottom: 1.5em;
    margin-block: 1em 0;
-   animation: slide-in ease 10s;
+   animation: slide-in ease 5s;
 }
 
 @keyframes slide-in {
@@ -79,17 +79,22 @@ body {
    to {transform: translate(200%); transform: scale(1.2);} */
    25% {transform: translate(-200%);}
    50% {transform: translate(200%); transform: scale(1.2);}
+   100% {transform: translatey(10%);}
 }
 
 .content-image-grid-case {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   padding-block: 40px;
    column-gap: 1em;
+}
+
+.content-case {
+   margin-top: 5em;
 }
 
 .content .content-image {
    height: 168px;
+   width: 100%; /* Take up 100% of the grid's 1fr. If not set, grid won't resizde with page when it's shrinked */
    object-fit: cover;
 }
 
@@ -147,22 +152,34 @@ body {
    height: 0;
    border-top: 1px solid rgba(0, 0, 0, 0.1);
    border-bottom: 1px solid rgba(255, 255, 255, 0.888);
-   opacity: 0.2;
+   opacity: 0.1;
    margin-top: 10em;
 }
 
 .footer {
-   /* margin-top: 3em; */
+   background-color: hsla(0, 2%, 16%, 0.1);
+   background-image: url("../brand/240_F_500767502_AdezwSUsyb04l79RpV6zubKulRnIHpd0.jpg"); 
+   background-blend-mode: multiply;
    text-align: center;
-   padding-block:0 2em;
+   padding-block:0 1em;
 }
 
 .footer-links {
    margin-inline: 2.5em;
+   transition: transform 10s;
+}
+
+.footer-links .fa-brands {
+   transition: transform .5s;
+}
+
+.footer-links:hover a .fa-brands {
+   transform: scale(1.5);
 }
 
 .footer span {
    display: inline-block;
+   color: #cdc4c4;
 }
 
 [class$="one"] {
@@ -175,11 +192,11 @@ body {
 }
 
 .github {
-   color: #373535;
+   color: #696363;
 }
 
 .facebook {
-   color: #4267B2;
+   color: #a1b1d2;
 }
 
 [class$="two"] {
