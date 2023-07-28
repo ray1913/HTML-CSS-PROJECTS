@@ -74,6 +74,7 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    padding-block: 40px;
+   column-gap: 1em;
 }
 
 .content .content-image {
