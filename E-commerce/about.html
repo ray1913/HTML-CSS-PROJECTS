@@ -16,20 +16,25 @@
    
       <!-- Custom stylesheet -->
       <link rel="stylesheet" href="css/css.css">
-   
    </head>
 
    <body>
       <header>
          <nav class="navbar">
-            <span>
-               <img width="25px" src="brand/download.jpeg" alt="jewelry photo">
-            </span>
-            <ul>
-               <li><a href="">Home</a></li>
-               <li><a href="">About</a></li>
-               <li><a href="">Products</a></li>
-            </ul>
+            <div class="nav-case"> <!-- flex -->
+               <div>
+                  <span>
+                     <img class="nav-brand-image" src="brand/download.jpeg" alt="jewelry photo">
+                  </span>
+               </div>
+               <div>
+                  <ul class="nav-links">
+                     <li><a class="links" href="">Home</a></li>
+                     <li><a class="links" href="">About</a></li>
+                     <li><a class="links" href="">Products</a></li>
+                  </ul>
+               </div>
+            </div>
          </nav>
 
          <div class="sub-header">
@@ -58,13 +63,30 @@
 
          <div>
             <button>
-               Explore Collection 
+               Explore Collection <i class="fa-solid fa-arrow-right"></i> 
             </button>
          </div>
-
-        
       </main>
 
-
+      <footer>
+         <ul class="footer-links">
+            <li>
+               <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+               </a>
+            </li>
+            <li>
+               <a href="">
+                  <i class="fa-brands fa-github"></i> 
+               </a>
+            </li>
+            <li>
+               <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+               </a>
+            </li>
+         </ul>
+            
+      </footer>
    </body>
 </html>
