@@ -2,6 +2,7 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   scroll-behavior: smooth;
 }
 
 li {
@@ -68,11 +69,20 @@ body {
    color: #333;
    font-size: 5em; 
    padding-bottom: 1em;
+
+   animation-name: slide-in;
+   animation-duration: 5s;
+}
+
+@keyframes slide-in {
+   from {transform: translate(-200%);}
+   to {transform: translate(200%); transform: scale(1.2);}
+  
 }
 
 .content-image-grid-case {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    padding-block: 40px;
    column-gap: 1em;
 }
