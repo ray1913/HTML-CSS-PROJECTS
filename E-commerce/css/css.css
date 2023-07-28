@@ -44,6 +44,7 @@ body {
    padding: 0.8em;
    font-size: 1em;
    margin-inline: 2em;
+   color: hsla(0, 0%, 20%, 0.656);
 }
 
 .links::after {
@@ -68,21 +69,21 @@ body {
 .page-title  {
    color: #333;
    font-size: 5em; 
-   padding-bottom: 1em;
-
-   animation-name: slide-in;
-   animation-duration: 5s;
+   padding-bottom: 1.5em;
+   margin-block: 1em 0;
+   animation: slide-in ease 10s;
 }
 
 @keyframes slide-in {
-   from {transform: translate(-200%);}
-   to {transform: translate(200%); transform: scale(1.2);}
-  
+   /* from {transform: translate(-200%);}
+   to {transform: translate(200%); transform: scale(1.2);} */
+   25% {transform: translate(-200%);}
+   50% {transform: translate(200%); transform: scale(1.2);}
 }
 
 .content-image-grid-case {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    padding-block: 40px;
    column-gap: 1em;
 }
@@ -99,6 +100,10 @@ body {
 .sub-title {
    font-size: 2em;
    margin-block: 2.5em 0.70em;
+}
+
+.page-info-holder p:nth-of-type(1) {
+   margin-block: 0 0.5em;
 }
 
 .home-page-info {
@@ -137,10 +142,19 @@ body {
    transform: scale(105%);
  }
 
+ .line-before-footer {
+   border: 0;
+   height: 0;
+   border-top: 1px solid rgba(0, 0, 0, 0.1);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.888);
+   opacity: 0.2;
+   margin-top: 10em;
+}
+
 .footer {
-   margin-top: 3em;
+   /* margin-top: 3em; */
    text-align: center;
-   padding-block: 2em;
+   padding-block:0 2em;
 }
 
 .footer-links {
@@ -152,7 +166,8 @@ body {
 }
 
 [class$="one"] {
-   padding-bottom: 3em;
+   color: #333;
+   padding-block: 1em 2em;
 }
 
 .tweet {
