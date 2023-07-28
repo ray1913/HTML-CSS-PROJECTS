@@ -21,26 +21,153 @@ html {
 
 body {
    font-family: 'Albert Sans', Arial;
+   min-height: auto;
 }
 
 .navbar {
-   padding-inline: 1.8em;
-   margin-top: 1em;
-   margin-bottom: 2.5em;
+   padding-inline: 3em;
+   margin-bottom: 4em;
 }
 
 .nav-case {
    display: flex; 
-   /* justify-content: space-between; */
+   justify-content: space-between;
    align-items: center;
 }
 
 .navbar .nav-brand-image {
-   width: 25px;
+   width: 150px;
 }
 
 .links {
-   border: 1px solid red;
    padding: 0.8em;
+   font-size: 1em;
+   margin-inline: 2em;
 }
+
+.links::after {
+   content: '';
+   background-color: #b43f37dc;
+   border-radius: 9px;
+   display: block;
+   height: 2px;
+   width: 100%;
+   width: 0;
+   transition: width .3s;
+}
+
+.links:hover::after {
+   width: 100%;
+}
+
+.page-title-holder {
+   text-align: center;
+}
+
+.page-title  {
+   color: #333;
+   font-size: 5em; 
+   padding-bottom: 1em;
+}
+
+.content-image-grid-case {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding-block: 40px;
+}
+
+.content .content-image {
+   height: 168px;
+   object-fit: cover;
+}
+
+.content-info {
+   text-align: center;
+}
+
+.sub-title {
+   font-size: 2em;
+   margin-block: 2.5em 0.70em;
+}
+
+.home-page-info {
+   text-align: left;
+   padding-inline: 1em;
+}
+
+.store-link-button-case {
+   padding-right: 4em;
+   padding-block: 4em 1em;
+   text-align: end;
+}
+
+.button-arrow-icon {
+   padding-left: 10px;
+}
+
+         
+.store-link-button {
+   background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+   padding: 25px;
+   font-size: 1.3em;
+   font-family:  'Albert Sans', Arial;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border: none;
+ }
+
+ .store-link-button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   transform: scale(105%);
+ }
+
+.footer {
+   margin-top: 3em;
+   text-align: center;
+   padding-block: 2em;
+}
+
+.footer-links {
+   margin-inline: 2.5em;
+}
+
+.footer span {
+   display: inline-block;
+}
+
+[class$="one"] {
+   padding-bottom: 3em;
+}
+
+.tweet {
+   color:#1DA1F2;
+}
+
+.github {
+   color: #373535;
+}
+
+.facebook {
+   color: #4267B2;
+}
+
+[class$="two"] {
+   padding-top: 3em;
+}
+
+
+
+ 
+
+
+
+
+
+
+
 
