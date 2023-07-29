@@ -20,3 +20,20 @@
    text-align: center; 
 }
 
+.gem-name {
+   font-size: 1.2em;
+}
+
+.add-to-cart-button {
+   /* background-color: rgb(245, 245, 245); */
+   background-color: hsla(128, 30%, 57%, 0.786);
+   font-size: 12px;
+   padding: 10px 10px;
+   border: none;
+   border-radius: 3px;
+}
+
+.fa-solid {
+   padding-right: 5px;
+}
+
