@@ -1,0 +1,49 @@
+body {
+   background-color: rgba(255, 255, 255, 0.6);
+   background-blend-mode: multiply;
+}
+
+.main {
+   padding-inline: 1em 1em;
+}
+
+.about-page-title {
+   color: #333;
+   font-size: 4em;
+   text-align: center;
+   padding-block: 0 0.80em;
+
+   animation: slide-in 5s linear;
+}
+
+@keyframes slide-in {
+   from {transform: translatex(-100%);}
+   to {tranform: translate(100%); transform: scale(1.2);}
+
+}
+
+.about-intro-text {
+   padding-bottom: 2em;
+}
+
+.flex-wrap {
+   display: inline-grid;
+   grid-template-areas: "code code code";
+   grid-template-columns: "50px auto 1fr";
+   gap: 12px;
+   margin-left: 5em;
+  
+}
+
+.about-page-image {
+   border-radius: 15px;
+   height: 350px;
+   box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.about-text {
+   display: grid;
+   align-items: center;
+   padding-left: 2em;
+}
+
