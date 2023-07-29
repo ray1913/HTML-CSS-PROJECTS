@@ -4,7 +4,7 @@
 }
 
 .cart-icon-float {
-   background-color: #bd2323;
+   background-color: #e35757;
    color: #fff;
    font-size: 10px;
    position: absolute;
@@ -12,5 +12,11 @@
    right: -5px;
    padding: 3px 6px;
    border-radius: 10px;
+}
+
+.page-title {
+   font-size: 5em;
+   text-transform:capitalize; 
+   text-align: center; 
 }
 
