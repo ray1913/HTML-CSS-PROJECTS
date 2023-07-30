@@ -203,6 +203,17 @@ body {
    padding-top: 3em;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+.navbar {
+      padding-inline: 1em;
+}
+
+.links {
+   margin-inline: 1em;
+}
+
+}
+
 
 
 
