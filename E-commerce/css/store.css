@@ -1,4 +1,6 @@
-
+.store_main {
+   padding-inline: 20px 20px;
+}
 .cart-icon {
    width: 25px;
 }
@@ -29,10 +31,7 @@
 .grid-canister {
    display: grid;
    grid-template-columns: repeat(4, 300px);
-   grid-template-rows: repeat(4, 200px);
-   padding-inline: 5px 10px;
-   row-gap: 20em;
-   column-gap: 3em;
+   gap: 3em;
 }
 
 .gem-info {
@@ -61,7 +60,7 @@
    font-size: 12px;
    padding: 10px 10px;
    border: none;
-   border-radius: 4px;
+   border-radius: 1px;
    transition: box-shadow .5s, transform .5s;
 }
 
