@@ -19,33 +19,42 @@
    <body>
       <header>
          <nav class="navbar">
-            <div class="nav-case"> <!-- flex -->
+            <div class="nav-case store-page-nav"> <!-- flex -->
                <div>
                   <span>
                      <img fa-flip class="nav-brand-image" src="brand/main-brand.png" alt="jewelry photo">
                   </span>
                </div>
-               <div>
-                  <ul class="nav-links">
-                     <li><a class="links" target="_blank" href="index.html">Home</a></li>
-                     <li><a class="links" target="_blank" href="about.html">About</a></li>
-                     <li><a class="links" target="_blank" href="store.html">Products</a></li>
-                     <li class="">
-                        <a href="#">
-                           <!-- absolute inside relative -->
-                           <div class="cart-icon-case">
-                              <img class="cart-icon" src="store-items/cart-large-2-svgrepo-com.svg" alt="cart icon">
-                              <div class="cart-icon-float">2</div>
-                           </div>
-                        </a>
-                     </li>
-                  </ul>
+                  <div class="store-menu"> <!--'absolute' placed inside 'relative' -->
+                     <i class="fa-solid fa-bars fa-2xl store-menu-icon"></i>
+                     <div class="store-drop-down">
+                        <ul class="nav-links store-nav">
+                           <li>
+                              <a class="links store-links" target="_blank" href="index.html">Home</a>
+                           </li>
+                           <li>
+                              <a class="links store-links" target="_blank" href="about.html">About</a>
+                           </li>
+                           <li>
+                              <a class="links store-links" target="_blank" href="store.html">Products</a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <!-- absolute inside relative -->
+                                 <div class="cart-icon-case">
+                                    <img class="cart-icon" src="store-items/cart-large-2-svgrepo-com.svg" alt="cart icon">
+                                    <div class="cart-icon-float">2</div>
+                                 </div>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
-            </div>
          </nav>
       </header>
       <main class="store_main">
-         <h1 class="page-title">your'e here... experience gem</h1>
+         <h1 class="page-title store-page-title">your'e here... experience gem</h1>
          <div class="grid-canister">
             <div class="grid-sub-canister">
                <img class="gem-images" src="store-items/item1.jpeg" alt="gemstone photo"> <br>

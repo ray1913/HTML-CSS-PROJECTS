@@ -26,7 +26,7 @@ body {
    padding-bottom: 2em;
 }
 
-.flex-wrap {
+.grid-wrap {
    display: inline-grid;
    grid-template-areas: "code code code";
    grid-template-columns: "50px auto 1fr";
@@ -47,3 +47,59 @@ body {
    padding-left: 2em;
 }
 
+@media (min-width: 320px) and (max-width: 595px) {
+.navbar {
+   padding-inline: 1em;
+}
+   
+.nav-links-case,
+.fa-menu {
+   position: relative;
+}
+   
+.nav-links-case {
+   padding-inline: 0 2em;
+}
+   
+.fa-menu {
+   color: hsla(0, 3%, 18%, 0.793);
+   bottom: 3px;
+   cursor: pointer;
+}
+   
+.nav-links-float {
+   position: absolute;
+}
+   
+.links {
+      margin-inline: 1em;
+      visibility: hidden;
+}
+   
+.nav-links-case:hover .links {
+      visibility: visible;
+      padding: 0;
+      margin-block:5px 10px;
+}
+   
+.nav-links-case:hover .nav-links-float {
+      margin-top: 10px;
+      left: -17px;
+}
+
+.home-page-title {
+      font-size: 3em;
+      padding-block: 3em 1.3em;
+}
+
+.grid-wrap {
+   grid-template-areas: '..';
+}
+
+.about-text {
+   white-space: nowrap;
+   padding: 0;
+}
+   
+
+}

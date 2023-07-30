@@ -93,7 +93,7 @@ body {
 }
 
 .content .content-image {
-   height: 168px;
+   /* height: 168px; */
    width: 100%; /* Take up 100% of the grid's 1fr. If not set, grid won't resizde with page when it's shrinked */
    object-fit: cover;
 }
@@ -203,15 +203,80 @@ body {
    padding-top: 3em;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 595px) {
 .navbar {
-      padding-inline: 1em;
+   padding-inline: 1em;
+}
+
+.nav-links-case,
+.fa-menu {
+   position: relative;
+}
+
+.nav-links-case {
+   padding-inline: 0 2em;
+}
+
+.fa-menu {
+   color: hsla(0, 3%, 18%, 0.793);
+   bottom: 3px;
+   cursor: pointer;
+}
+
+.nav-links-float {
+   position: absolute;
 }
 
 .links {
    margin-inline: 1em;
+   visibility: hidden;
 }
 
+.nav-links-case:hover .links {
+   visibility: visible;
+   padding: 0;
+   margin-block:5px 10px;
+}
+
+.nav-links-case:hover .nav-links-float {
+   margin-top: 10px;
+   left: -17px;
+}
+
+.home-page-title {
+   font-size: 3em;
+   padding-block: 3em 20px;
+}
+
+.content-image-grid-case {
+   grid-template-columns: 1fr;
+   row-gap: 9em;
+   width: 80%;
+   margin:0 auto;
+}
+
+
+.home-page-info {
+   padding-inline: 10px 10px;
+   white-space: nowrap
+  /* text-align: center; */
+}
+
+.content-image {
+   height: 200px;
+}
+
+.footer {
+   padding: 0;
+   width: 100vw;
+}
+
+}
+
+@media (min-width: 595px) {
+   .fa-menu {
+      display: none;
+   }
 }
 
 
