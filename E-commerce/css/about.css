@@ -97,7 +97,7 @@ body {
 }
 
 .about-text {
-   white-space: nowrap;
+   /* white-space: nowrap; */
    padding: 0;
 }
    
