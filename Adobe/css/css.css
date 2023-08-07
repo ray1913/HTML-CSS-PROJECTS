@@ -21,6 +21,8 @@ a {
    display: flex;
    column-gap: 37px; /* will give each header 'direct child' a column gap of 40px each */
    align-items: center;
+   border: 3px solid red;
+   padding-block: 1em;
 }
 
 .header-child-one {
@@ -30,6 +32,11 @@ a {
 
 .adobe-official-icon {
    width: 30px;
+}
+
+.entity-icon { /* the size of the html entity in this div will increase according to the font size set to the div */
+   font-size: 25px;
+   color: #333;
 }
 
 .adobe-icon-name {
@@ -42,6 +49,12 @@ a {
 
 .child-text-title {
    font-size: 1.1em;
+   margin-right: 0.3em;
+}
+
+.nav-entity-span {
+   display: inline-block;
+   transform: rotateZ(450deg);
 }
 
 .search-sign-in-holder {
@@ -55,6 +68,184 @@ a {
 .nav-search-icon {
    width: 25px;
    transform: rotateZ(80deg); /* will rotate nav search icon 80 degrees to the right */
-   /* position: relative; */
-
 }
+
+.header-sign-in-link {
+   color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
