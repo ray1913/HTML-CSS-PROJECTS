@@ -19,10 +19,16 @@ a {
 
 .header {
    display: flex;
-   column-gap: 37px; /* will give each header 'direct child' a column gap of 40px each */
+   column-gap: 2.3125em; /* will give each header 'direct child' a column gap of 37px each */
    align-items: center;
    border: 3px solid red;
-   padding-block: 1em;
+   padding-block: 1.7em;
+   padding-inline: 1.3em;
+}
+
+.bx-md {
+   font-weight: bold;
+   display: none;
 }
 
 .header-child-one {
@@ -34,11 +40,6 @@ a {
    width: 30px;
 }
 
-.entity-icon { /* the size of the html entity in this div will increase according to the font size set to the div */
-   font-size: 25px;
-   color: #333;
-}
-
 .adobe-icon-name {
    color: hsla(0, 100%, 50%, 0.837);
    font-weight: bold;
@@ -48,22 +49,23 @@ a {
 }
 
 .child-text-title {
-   font-size: 1.1em;
-   margin-right: 0.3em;
+   font-size: 1.2em;
 }
 
-.nav-entity-span {
-   display: inline-block;
-   transform: rotateZ(450deg);
+.bx-sm {
+   position: relative;
+   top: 3px;
+}
+
+.flex-grow { /* this div(html code line(53) will grow, thus take up the remaining space in front of it, pushing line 59 to the far end*/
+   flex: 1;
 }
 
 .search-sign-in-holder {
    display: flex;
    align-items: center;
+   column-gap: 15px;
 }
-
-
-
 
 .nav-search-icon {
    width: 25px;
@@ -74,6 +76,11 @@ a {
    color: #000;
 }
 
+/* Media conditions for header */
+
+@media (max-width: 899px)  {
+
+}
 
 
 
