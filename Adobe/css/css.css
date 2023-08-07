@@ -1,0 +1,18 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth
+}
+
+html {
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Ubuntu', system-ui, Arial;
+}
+
+h1 {
+   
+}
