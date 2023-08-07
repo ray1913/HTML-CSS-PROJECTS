@@ -10,9 +10,21 @@ html {
 }
 
 body {
-   font-family: 'Ubuntu', system-ui, Arial;
+   font-family: 'Source Sans 3', sans-serif, system-ui, Arial;
 }
 
-h1 {
-   
+a {
+   text-decoration: none;
+}
+
+.header {
+   display: flex;
+}
+
+.header-child-one {
+   display: flex;
+}
+
+.adobe-official-icon {
+   width: 25px;
 }
