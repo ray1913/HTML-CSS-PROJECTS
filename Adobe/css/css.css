@@ -15,15 +15,16 @@ body {
 
 a {
    text-decoration: none;
+   color: #000;
 }
 
 .header {
    display: flex;
    column-gap: 2.3125em; /* will give each header 'direct child' a column gap of 37px each */
    align-items: center;
-   border: 3px solid red;
    padding-block: 1.7em;
    padding-inline: 1.3em;
+   border-bottom: 1px solid rgb(248, 242, 242);
 }
 
 .bx-md {
@@ -74,6 +75,77 @@ a {
 
 .header-sign-in-link {
    color: #000;
+}
+
+.query-nav-holder {
+   display: flex;
+   flex-direction: column;
+   padding-inline: 1em;
+   row-gap: 25px;
+}
+
+.close-icon {
+   margin-right: 35px;
+}
+
+.query-nav-child {
+   display: flex;
+   align-items: center;
+}
+
+.query-menu-icon {
+   opacity: 0.6;
+}
+
+
+.query-adobe {
+   flex: 1;
+}
+
+.query-sign-in:hover {
+   color: rgb(38, 38, 232);
+}
+
+.inputSearch-case {
+   border: 1px solid hsl(180, 8%, 85%);
+   display: flex;
+   align-items: center;
+   padding-block: 7px;
+   padding-inline: 10px;
+   border-radius: 3px;
+}
+
+.icon-search {
+   transform: rotatez(90deg);
+}
+
+.searcHbar-case {
+   flex: 1;
+}
+
+.searcHbar {
+   border: none;
+   outline: none;
+   font-size: 1em;
+}
+
+.searcHbar::placeholder {
+   font-size: 1em;
+}
+
+.header-child-holder {
+   background-color: rgb(255, 250, 250);
+   font-size: 10px;
+}
+
+.child-one {
+   border-bottom: 1px solid rgb(246, 240, 240);
+   padding-block: 10px 25px;
+   padding-inline: 10px;
+}
+
+.child-text-title {
+   flex: 1;
 }
 
 /* Media conditions for header */
