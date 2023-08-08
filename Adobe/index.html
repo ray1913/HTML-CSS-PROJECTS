@@ -68,58 +68,59 @@
             </div>
          </div>
       </nav>
-      <nav class="query-nav">
-         <div class="query-nav-holder"> <!-- flexbox set to column -->
-            <div class="query-nav-child"> <!--nested flex-->
-               <div>
-                  <i class='bx bx-menu-alt-left bx-lg query-menu-icon'></i>
-               </div>
-               <div>
-                  <img class="adobe-official-icon" src="icons/adobe-svgrepo-com.svg" alt="adobe icon">
-               </div>
-               <div class="query-adobe">
-                  <div class="adobe-icon-name">Adobe</div>
-               </div>
-               <div>
-                  <div>
+      <nav class="query-nav">          
+         <div class="queryNavChild">
+            <div class="hoverElementForDropdown"><!-- relative -->
+               <i class='bx bx-menu-alt-left bx-lg query-menu-icon'></i>
+                <div class="nav-row"> <!--flex -->
+                   <div>
+                     <img class="adobe-official-icon" src="icons/adobe-svgrepo-com.svg" alt="adobe icon">
+                   </div>
+                   <div class="query-adobe">
+                     <div class="adobe-icon-name">Adobe</div>
+                   </div>
+                   <div>
                      <a class="query-sign-in" href="#">Sign in</a>
+                   </div>
+                </div>
+               <div class="absoLute"> <!--absolute links-->
+                  <div class="inputSearch-case">
+                     <div class="searcHbar-case">
+                        <input class="searcHbar" type="text" placeholder="Search">
+                     </div>
+                  <div class="search">
+                     <img class="icon-search" width="20px" src="icons/search-svgrepo-com.svg" alt="">
                   </div>
-               </div>
-            </div>
-               <div class="inputSearch-case">              
-                  <div class="searcHbar-case">
-                     <input class="searcHbar" type="text" placeholder="Search">
                   </div>
-               <div class="search">
-                  <img class="icon-search" width="20px" src="icons/search-svgrepo-com.svg" alt="">
-               </div>
-            </div>  
-            <div class="header-child-holder">
-               <div class="header-child-one child-one">
-                  <div class="child-text-title">Creativity & Design</div>
-                  <div class="entity-icon">
-                     <i class='bx bx-chevron-down bx-sm'></i>
+                  <div class="header-child-holder">
+                     <div class="header-child-one child-one">
+                        <div class="child-text-title">Creativity & Design</div>
+                        <div class="entity-icon">
+                           <i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                     </div>
+                     <div class="header-child-one child-one">
+                        <div class="child-text-title">PDF & E-signatures </div>
+                        <div class="entity-icon">
+                           <i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                     </div>
+                     <div class="header-child-one child-one">
+                        <div class="child-text-title">Marketing and Commerce </div>
+                        <div class="entity-icon">
+                           <i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                     </div>
+                     <div class="header-child-one child-one">
+                        <div class="child-text-title">Help & Support</div>
+                        <div class="entity-icon">
+                           <i class='bx bx-chevron-down bx-sm'></i>
+                        </div>
+                     </div>
                   </div>
-               </div>
-               <div class="header-child-one child-one">
-                  <div class="child-text-title">PDF & E-signatures </div>
-                  <div class="entity-icon">
-                     <i class='bx bx-chevron-down bx-sm'></i>
-                  </div>
-               </div>
-               <div class="header-child-one child-one">
-                  <div class="child-text-title">Marketing and Commerce </div>
-                  <div class="entity-icon">
-                     <i class='bx bx-chevron-down bx-sm'></i>
-                  </div>
-               </div>
-               <div class="header-child-one child-one">
-                  <div class="child-text-title">Help & Support</div>
-                  <div class="entity-icon">
-                     <i class='bx bx-chevron-down bx-sm'></i>
-                  </div>
-               </div>
-            </div>
+               </div> <!-- end of absolute -->
+            </div> <!--relative end-->
+            
          </div>
       </nav>
    </body>
