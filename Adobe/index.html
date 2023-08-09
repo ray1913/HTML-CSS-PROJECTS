@@ -69,59 +69,64 @@
          </div>
       </nav>
       <nav class="query-nav">          
-         <div>
-            <div class="hoverElementForDropdown"><!-- relative -->
-               <div class="nav-row"> <!--flex -->
-                  <i class='bx bx-menu-alt-left bx-lg query-menu-icon'></i>
-                   <div>
+         <div class="nav-row">   <!--  query-nav links container/Not a flex -->
+               <div class="holder-Nav"> <!--flex: wraps the menu-icon/adobe-logo/sign-in-->
+                  <div class="rel">
+                     <i class='bx bx-menu-alt-left bx-lg query-menu-icon'></i>    
+                     <div class="absoLute"> <!--absolute links-->    
+                        <div class="inpuT-search-icon-holder">
+                           <div class="inpuT-bar-box">
+                              <input type="text" class="input-bar" placeholder="Search">
+                           </div>
+                           <div class="search-icon-box">
+                              <img class="icon-search" width="20px" src="icons/search-svgrepo-com.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="hidden-links">
+                           <div class="child-text-title">
+                             Creativity & Design
+                           </div>
+                           <div>
+                              <i class='bx bx-chevron-down bx-sm'></i>
+                           </div>
+                        </div>
+                        <div class="hidden-links">
+                           <div class="child-text-title">
+                             PDF & E-signatures
+                           </div>
+                           <div>
+                              <i class='bx bx-chevron-down bx-sm'></i>
+                           </div>
+                        </div>
+                        <div class="hidden-links">
+                           <div class="child-text-title">
+                             Marketing & Commerce
+                           </div>
+                           <div>
+                              <i class='bx bx-chevron-down bx-sm'></i>
+                           </div>
+                        </div>
+                        <div class="hidden-links">
+                           <div class="child-text-title">
+                             Help & Support
+                           </div>
+                           <div>
+                              <i class='bx bx-chevron-down bx-sm'></i>
+                           </div>
+                        </div>
+                     </div> <!-- end of absolute -->
+                  </div>  <!-- rel end -->              
+                  <div>
                      <img class="adobe-official-icon" src="icons/adobe-svgrepo-com.svg" alt="adobe icon">
-                   </div>
-                   <div class="query-adobe">
-                     <div class="adobe-icon-name">Adobe</div>
-                   </div>
-                   <div>
+                  </div>
+                    <div class="adobe-icon-name">
+                     Adobe
+                  </div>
+                  <div class="sign-iN">
                      <a class="query-sign-in" href="#">Sign in</a>
-                   </div>
-                </div>
-               <div class="absoLute"> <!--absolute links-->
-                  <div class="inputSearch-case">
-                     <div class="searcHbar-case">
-                        <input class="searcHbar" type="text" placeholder="Search">
-                     </div>
-                  <div class="search">
-                     <img class="icon-search" width="20px" src="icons/search-svgrepo-com.svg" alt="">
-                  </div>
-                  </div>
-                  <div class="header-child-holder">
-                     <div class="header-child-one child-one">
-                        <div class="child-text-title">Creativity & Design</div>
-                        <div class="entity-icon">
-                           <i class='bx bx-chevron-down bx-sm'></i>
-                        </div>
-                     </div>
-                     <div class="header-child-one child-one">
-                        <div class="child-text-title">PDF & E-signatures </div>
-                        <div class="entity-icon">
-                           <i class='bx bx-chevron-down bx-sm'></i>
-                        </div>
-                     </div>
-                     <div class="header-child-one child-one">
-                        <div class="child-text-title">Marketing and Commerce </div>
-                        <div class="entity-icon">
-                           <i class='bx bx-chevron-down bx-sm'></i>
-                        </div>
-                     </div>
-                     <div class="header-child-one child-one">
-                        <div class="child-text-title">Help & Support</div>
-                        <div class="entity-icon">
-                           <i class='bx bx-chevron-down bx-sm'></i>
-                        </div>
-                     </div>
-                  </div>
-               </div> <!-- end of absolute -->
-            </div> <!--relative end-->
-            
-         </div>
+                </div>  
+            </div>         
+         </div> 
       </nav>
    </body>
 </html>

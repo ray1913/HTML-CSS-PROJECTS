@@ -58,14 +58,11 @@ a {
    top: 3px;
 }
 
-.flex-grow { /* this div(html code line(53) will grow, thus take up the remaining space in front of it, pushing line 59 to the far end*/
-   flex: 1;
-}
-
 .search-sign-in-holder {
    display: flex;
    align-items: center;
    column-gap: 15px;
+   margin-left: auto;
 }
 
 .nav-search-icon {
@@ -82,66 +79,100 @@ a {
 .query-menu-icon {
    opacity: 0.6;
    margin-right: 30px;
+   padding-left: 15px;
 }
 
-.nav-row {
-   display: flex;
-   align-items: center;
-}
-
-.query-adobe {
-   flex: 1;
+.query-sign-in {
+   padding-left: 15px;
 }
 
 .query-sign-in:hover {
    color: rgb(38, 38, 232);
 }
 
-.inputSearch-case {
-   border: 1px solid hsl(180, 8%, 85%);
+.holder-Nav {
+   display: flex;
+   align-items: center;
+}
+
+.absoLute {
+   width: 100vw; 
+   overflow-y: scroll; /* will create a sidebar, enabling page visitor to see the full width/content of all '.hidden-links' and it's content */
+}
+
+.inpuT-search-icon-holder {
+   border: 1px solid lightgray;
+   border-radius: 3px;
    display: flex;
    align-items: center;
    padding-block: 7px;
    padding-inline: 10px;
-   border-radius: 3px;
+   width: 95%;
+   margin: 0 auto 25px auto;
+}
+
+.input-bar {
+   border: none;
+   outline: none;
+   font-size: 1em;
+}
+
+.input-bar::placeholder {
+   font-size: 1em;
 }
 
 .icon-search {
    transform: rotatez(90deg);
 }
 
-.searcHbar-case {
-   flex: 1;
-}
-
-.searcHbar {
-   border: none;
-   outline: none;
-   font-size: 1em;
-}
-
-.searcHbar::placeholder {
-   font-size: 1em;
-}
-
 .header-child-holder {
-   background-color: rgb(255, 250, 250);
+   /* background-color: rgb(255, 250, 250); */
+   background-color: hsla(0, 0%, 95%, 0.308);
    font-size: 10px;
 }
 
-.child-one {
-   border-bottom: 1px solid rgb(246, 240, 240);
-   padding-block: 10px 25px;
-   padding-inline: 10px;
+.child-text-title, .inpuT-bar-box {
+   flex: 1;
 }
 
-.child-text-title {
-   flex: 1;
+.sign-iN {
+   margin-left: auto;
+}
+
+.hidden-links {
+   background-color: hsl(0, 100%, 99%);
+   border-bottom: 1px solid rgb(246, 242, 242);
+   display: flex;
+   padding-block: 1.4em;
 }
 
 /* Media conditions for header */
 
 @media (max-width: 899px)  {
+.main-nav {
+   display: none;
+}
+
+.nav-row {
+   padding-block: 20px;
+   border-bottom: 1px solid rgb(251, 249, 249);
+}
+
+.rel {
+   position: relative;
+   cursor: pointer;
+}
+
+.absoLute {
+   margin-top: 40px;
+   position: absolute;
+   /* visibility: hidden; */
+}
+
+.rel:hover .absoLute {
+   visibility: visible;
+}
+
 
 }
 
