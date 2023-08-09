@@ -168,13 +168,12 @@ a {
 .absoLute {
    margin-top: 40px;
    position: absolute;
-   /* visibility: hidden; */
+   visibility: hidden;
 }
 
 .rel:hover .absoLute {
    visibility: visible;
 }
-
 
 }
 
