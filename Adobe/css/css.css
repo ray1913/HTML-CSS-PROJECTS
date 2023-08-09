@@ -177,6 +177,17 @@ a {
 
 }
 
+@media (min-width: 900px) {
+.main-nav {
+   display: block;
+}
+
+.query-nav, .absoLute, .rel {
+   display: none;
+}
+
+}
+
 
 
 
