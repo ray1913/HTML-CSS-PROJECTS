@@ -148,8 +148,8 @@ a {
    padding-inline: 1.8em;
 }
 
-/* Media conditions for header */
 
+/* Media conditions for header */
 @media (max-width: 899px)  {
 .main-nav {
    display: none;
