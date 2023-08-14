@@ -1,0 +1,86 @@
+.secTion-one {
+   overflow-x: hidden;
+}
+
+.secTion-one-photo-holder {
+  
+}
+
+.secTion-one-floatImg-holder {
+   background-color:aliceblue;
+   border-radius: 3px;
+   max-width: fit-content;
+   border: 1px solid red;
+}
+
+.all-apps-wrapper {
+   display: flex;
+   column-gap: 10px;
+   /* border-bottom: 1px solid #757272; */
+}
+
+.all-apps-box, .photoshop-box {
+   border: 1px solid #757272;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 10px;
+   width: 25%;
+   padding-block: 20px;
+   margin-top: 10px;
+   position: relative;
+}
+
+.all-apps-box {
+   background-color: #fff;
+   margin-left: 15px;
+}
+
+.all-apps-box::after {
+   content: '';
+   background-color: grey;
+   width: 16px;
+   position: absolute;
+   display: block;
+   height: 1px;
+   left: -16px;
+   bottom: 0;
+}
+
+.photoshop-box, .all-apps-box {
+   border-bottom: none;
+}
+
+.photoshop-box::after {
+   content: '';
+   background-color: grey;
+   width: 174%;
+   display: block;
+   height: 1px;
+
+   position: absolute;
+   bottom: 0;
+   left: -12px;
+}
+
+.cloud-IMG {
+   width: 35px;
+}
+
+.apps-text {
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.secTion-one-photo-info {
+   background-color: #fff;
+}
+
+.secTion-one-photo-info .saved-price-rate {
+   font-size: 25px;
+   font-weight: 600;
+   padding-top: 20px;
+}
+
+
+
