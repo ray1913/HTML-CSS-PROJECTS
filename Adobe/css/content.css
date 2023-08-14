@@ -37,7 +37,7 @@
 
 .all-apps-box::after {
    content: '';
-   background-color: grey;
+   background-color: #757272;
    width: 27px;
    position: absolute;
    display: block;
@@ -52,7 +52,7 @@
 
 .photoshop-box::after {
    content: '';
-   background-color: grey;
+   background-color: #757272;
    width: 119%;
    display: block;
    height: 1px;
