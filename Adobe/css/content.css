@@ -1,21 +1,30 @@
 .secTion-one {
-   overflow-x: hidden;
+   
 }
 
 .secTion-one-photo-holder {
-  
+   position: relative;
+}
+
+.cloud-photo {
+   width: 100%;
 }
 
 .secTion-one-floatImg-holder {
    background-color:aliceblue;
+   max-width: fit-content;
+   margin-left: 20px;
+
+   position: absolute;
+   bottom: 10em;
    border-radius: 5px;
-   max-width:500px;
 }
 
 .all-apps-wrapper {
    display: flex;
    column-gap: 10px;
-   /* border-bottom: 1px solid #757272; */
+   border-bottom: 1px solid #757272;
+   padding-inline: 14px;
 }
 
 .all-apps-box, .photoshop-box {
@@ -27,40 +36,27 @@
    padding-inline: 50px;
    padding-block: 15px;
    margin-top: 10px;
-   position: relative;
-}
-
-.all-apps-box {
-   background-color: #fff;
-   margin-left: 25px;
-}
-
-.all-apps-box::after {
-   content: '';
-   background-color: #757272;
-   width: 27px;
-   position: absolute;
-   display: block;
-   height: 1px;
-   left: -27px;
-   bottom: 0;
 }
 
 .photoshop-box, .all-apps-box {
    border-bottom: none;
 }
 
-.photoshop-box::after {
-   content: '';
-   background-color: #757272;
-   width: 119%;
-   display: block;
-   height: 1px;
-
-   position: absolute;
-   bottom: 0;
-   left: -12px;
+.all-apps-box {
+   background-color: #fff;
+   position: relative; /* will be the relative box of it's 'after' element below, set to absolute*/
 }
+
+/* The code below covers the border-bottom of element (line 22 above) */
+.all-apps-box::after {
+   content: '';
+   background-color: #fff;
+   width: 100%;
+   height: 2px;
+   position: absolute;
+   bottom: -1.8px;
+}
+
 
 .cloud-IMG {
    width: 35px;
@@ -72,18 +68,118 @@
 }
 
 .secTion-one-photo-info {
-   background-color: #fff;
-   padding-left: 25px;
+   background-color: white;
+   padding-left: 15px;
    font-size: 120%;
+   color: #1d0707;
+   border-radius: 5px;
+   padding-top: 20px;
+   padding: 25px 0 0 16px;
 }
 
 .secTion-one-photo-info .saved-price-rate {
    font-size: 30px;
    font-weight: 600;
-   padding-top: 20px;
+}
+
+.secTion-one-terms-link {
+   color: hsl(214, 100%, 50%);
+}
+
+.btn-bx {
+   padding: 40px 0;
+}
+
+.btn {
+   border-radius: 50px;
+   margin: 2px;
+   font-size: 15px;
+   font-family: system-ui;
+}
+
+.btn-light {
+   background-color: #fff;
+   border: 2px solid black;
+   padding: 10px 20px;
+}
+
+.btn-primary {
+   background-color: hsla(217, 100%, 50%, 0.94);
+   border: 2px solid black;
+   border: none;
+   padding: 14px 35px;
+   color: white;
+}
+
+.btn-light, .btn-primary {
+   transition: opacity 0.15s, border-color 0.15s;
+}
+
+.btn-light:hover {
+   cursor: pointer;
+   opacity: 0.5;
+   border-color: orange;
+}
+
+.btn-primary:active {
+   opacity: 0.6;
+}
+
+.btn-primary:hover {
+   cursor: pointer;
+   opacity: 0.7;
+}
+
+.btn-primary:active {
+   opacity: 0.6;
+}
+
+.cloud-links-case {
+   text-align: center;
+   font-size: 1.2em;
+}
+
+.cloud-links {
+   color: blue;
+   display: inline-block; /* set else paddings won't apply */
+   margin-top: 20px;
+   padding-inline: 0 12px;
+}
+
+.cloud-links:hover {
+   text-decoration: underline;
+}
+
+.ref-text {
+   color: black;
+   font-weight: bold;
+   font-size: 1.3em; /* line 139 will not override since css rules moves from up to down*/
+}
+
+.section-one-hr {
+   width: 97%;
+   margin: 20px auto;
+   opacity: 0.3;
+   color: rgb(99, 29, 29);
 }
 
 
 
+/*********************   Section-two *********/
 
+
+.section-two-holder {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto auto; /* determines the HEIGHT of grid row. first and second row respectively */
+   padding-inline: 5em;
+}
+
+.items {
+   border: 1px solid grey;
+}
+
+.item-5 {
+   grid-column: 2 / 4; /* take up it's column on the second row, starting from item2 and stops before item-4 */
+}
 
