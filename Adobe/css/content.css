@@ -170,16 +170,50 @@
 
 .section-two-holder {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: auto auto; /* determines the HEIGHT of grid row. first and second row respectively */
-   padding-inline: 5em;
+   grid-template-columns: repeat(3, auto);
+   grid-template-rows: 500px 500px; /* determines the HEIGHT of grid row. first and second row respectively */
+   gap: 2em;
+   padding-inline: 8em;
 }
 
 .items {
    border: 1px solid grey;
 }
 
-.item-5 {
-   grid-column: 2 / 4; /* take up it's column on the second row, starting from item2 and stops before item-4 */
+.item-1 {
+   border: none;
 }
 
+.item-5 {
+   grid-column:  2 / 4 ; /* take up it's column on the second row, starting from item2 and stops before item-4 */
+}
+
+.item-1 {
+   background-color: rgba(229, 40, 11, 0.2);
+   background-image: url("../IMG/homepage-CC-sm-pod-DC-e-sign-overlay-new-art\ V2.png.img.png");
+   background-size: cover;
+   background-blend-mode: multiply;
+  /* background-position-y: 516px;   will push the bg-image downwards to reveal to top part since the div wrapping it size is smaller than that of the bg-img */
+   background-position-y: -516px; 
+   background-position-x: 40px; 
+}
+
+.items-text-align {
+   padding-left: 1em;
+   padding-top: 1.2em;
+}
+
+.items-title {
+   font-size: 1.5em;
+   font-weight: 700;
+   padding-bottom: 1em;
+}
+
+.items-link {
+   font-weight: bold;
+   padding-top: 0.5em;
+}
+
+.items-link:hover {
+   text-decoration: underline;
+}
