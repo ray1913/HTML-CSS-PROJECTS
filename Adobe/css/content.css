@@ -173,6 +173,7 @@
    grid-template-columns: repeat(3, auto);
    grid-template-rows: 500px 500px; /* determines the HEIGHT of grid row. first and second row respectively */
    gap: 2em;
+   margin-top: 5em;
    padding-inline: 8em;
 }
 
@@ -187,6 +188,8 @@
 .item-5 {
    grid-column:  2 / 4 ; /* take up it's column on the second row, starting from item2 and stops before item-4 */
 }
+
+/**************  styles for html code. from line 214-230  ****************************** */
 
 .item-1 {
    background-color: rgba(229, 40, 11, 0.2);
@@ -216,4 +219,70 @@
 
 .items-link:hover {
    text-decoration: underline;
+}
+
+/************************ styles for html code. from line 231-239   ******************************** */
+
+.item-2 {
+   background-color:hsl(214, 100%, 50%);
+   background-image: url("../IMG/pexels-photo-6981004.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   position: relative;
+
+   border: none;
+}
+
+.started {
+   color: #af3535;
+}
+
+.item-2-float-nested {
+   position: absolute;
+   bottom: 2em;
+   width: 100%;
+   left: 3px;
+}
+
+.item-2-float-nested * {
+   color: #333;
+}
+
+.item1-btn {
+   background-color: rgba(239, 239, 240, 0.6);
+   display: inline-block;
+   font-family: system-ui, Arial;
+   font-style: italic;
+}
+
+.item1-btn:hover {
+   /* color: white; */
+   background-color: rgb(108, 122, 137);
+}
+
+.item1-bTn {
+   border: none;
+   border-radius: 100px;
+   padding: 15px 25px;
+   margin-right: 10px;
+}
+
+.item1-bTN {
+   border: none;
+   border-radius: 5px;
+   padding: 10px 25px;
+   font-size: 1.2em;
+   box-shadow: 0 0 0.5px red;
+}
+
+.refresh-icon {
+   width: 18px;
+   margin-inline: 5px;
+   padding-top: 2px;
+}
+
+.refresh-icon, .generate-span {
+   display: inline-block;
+   vertical-align: middle;
 }
