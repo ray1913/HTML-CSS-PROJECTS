@@ -221,8 +221,6 @@
    text-decoration: underline;
 }
 
-/************************ styles for html code. from line 231-239   ******************************** */
-
 .item-2 {
    background-color:hsl(214, 100%, 50%);
    background-image: url("../IMG/pexels-photo-6981004.jpeg");
@@ -285,4 +283,35 @@
 .refresh-icon, .generate-span {
    display: inline-block;
    vertical-align: middle;
+}
+
+.item-3 {
+ background-image: url("../IMG/studentsandTeachers.PNG");
+ background-size: cover;  
+ background-position-x: -100%; 
+}
+
+.grid-three-title, .grid-three-info, .grid-three-link {
+   color: #fff;
+}
+
+.grid-three-subTitle, .grid-three-link {
+   font-weight: bold;
+}
+
+.grid-three-subTitle {
+   color: #fff;
+   font-size: 2em;
+}
+
+.grid-three-info, .grid-three-link {
+   margin-top: 10px;
+}
+
+.grid-three-link {
+
+}
+
+.grid-three-link:hover {
+   text-decoration: underline;
 }
