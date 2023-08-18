@@ -309,7 +309,25 @@
    margin-top: 10px;
 }
 
-
 .grid-three-link:hover {
    text-decoration: underline;
 }
+
+
+.item-4 {
+   font-weight: bold;
+   background-color: rgb(144, 144, 231);
+   padding: 2em;  
+   border: none;
+}
+
+.item-4 * { /* all children font's size will increase */
+   font-size: 1.2em;
+   margin-bottom: 1em;
+}
+
+.grid-four-title, .grid-four-subTitle {
+   font-size: 1.7em;
+   border-bottom: 1px solid black;
+}
+
