@@ -309,15 +309,14 @@
    margin-top: 10px;
 }
 
-.grid-three-link:hover {
+.grid-three-link:hover, .item5-link:hover {
    text-decoration: underline;
 }
 
 
 .item-4 {
    font-weight: bold;
-   background-color: rgb(144, 144, 231);
-   padding: 2em;  
+   background-color: rgb(144, 144, 231); 
    border: none;
 }
 
@@ -330,4 +329,35 @@
    font-size: 1.7em;
    border-bottom: 1px solid black;
 }
+
+.item-5, .item-4 {
+   padding: 2em;
+}
+
+.item-5 {
+   background-color: plum;
+   background-image: url("../IMG/Capture.PNG");
+   background-size: cover;
+   border: none;
+}
+
+.item-5-title {
+   font-size: 1.8em;
+   font-weight: bold;
+}
+
+.item-5-title, .item5-link {
+   font-weight: bold;
+}
+
+.item5-content {
+   padding-top: 0.5em;
+   font-size: 1.4em;
+}
+
+.item5-link {
+   padding-top: 0.9em;
+}
+
+
 
