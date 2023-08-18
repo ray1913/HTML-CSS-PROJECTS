@@ -288,7 +288,8 @@
 .item-3 {
  background-image: url("../IMG/studentsandTeachers.PNG");
  background-size: cover;  
- background-position-x: -100%; 
+ background-position-x: -100%;
+ border: none; 
 }
 
 .grid-three-title, .grid-three-info, .grid-three-link {
@@ -308,9 +309,6 @@
    margin-top: 10px;
 }
 
-.grid-three-link {
-
-}
 
 .grid-three-link:hover {
    text-decoration: underline;
