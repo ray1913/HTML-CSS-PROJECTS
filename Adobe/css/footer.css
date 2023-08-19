@@ -16,8 +16,13 @@
    opacity: 0.8;
 }
 
-#links-spaces * {
+.links-spaces * {
    margin-bottom: 0.9em; 
+}
+
+.links-spaces *:hover {
+   cursor: pointer;
+   opacity:0.6;
 }
 
 
