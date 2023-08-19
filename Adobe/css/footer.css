@@ -12,7 +12,12 @@
 .section-three-header {
    font-size: 1.2em;
    font-weight: bold;
+   margin-bottom: 0.4em;
    opacity: 0.8;
+}
+
+#links-spaces * {
+   margin-bottom: 0.9em; 
 }
 
 
