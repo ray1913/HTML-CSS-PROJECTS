@@ -25,5 +25,12 @@
    opacity:0.6;
 }
 
+.products-holder {
+   border: 1px solid black;
+   border-color: #aea5a5;
+   border-left: none;
+   border-right: none;
+}
+
 
 
