@@ -1,7 +1,7 @@
 .section-three {
    background-color: rgb(252, 248, 248);
    margin-top: 6em;
-   padding: 3em 0 0 2em;
+   padding: 3em 3em 0 2em;
 }
 
 .footer-grid-container {
@@ -20,9 +20,15 @@
    margin-bottom: 0.9em; 
 }
 
-.links-spaces *:hover {
+.links-spaces *:hover,
+.links-footer *:hover {
    cursor: pointer;
    opacity:0.6;
+}
+
+.products-holder, .icons-binder {
+   display: flex;
+   align-items: center;
 }
 
 .products-holder {
@@ -30,6 +36,60 @@
    border-color: #aea5a5;
    border-left: none;
    border-right: none;
+   margin: 3em 0 0 0;
+
+   column-gap: 1em;
+   justify-content: center;
+   padding-block: 0.5em;
+}
+
+.icons-binder {
+   column-gap: 0.5em;
+}
+
+.svg-footer-icons {
+   width: 25px;
+}
+
+/************** footer *********/
+.footer {
+   font-size: 0.9em;
+   padding: 1.5em 2em 1.5em; 
+}
+
+.product-holder-copy {
+   border: none; 
+   margin-block: 0;
+   justify-content: start;
+   align-items: center;
+   column-gap: 1.5em;
+}
+
+.handles-icon {
+   margin-right: 2em;
+}
+
+.handles-icon, .bx-sm2 {
+   opacity: 0.6;
+}
+
+.world-icon {
+   margin-right: 0;
+}
+
+.bx-sm2 {
+   position: relative;
+   right: 0.4em;
+}
+
+.icons-bindeR {
+   flex: 1;
+   pointer-events: none;
+}
+
+.privacy-text:hover {
+   color: gray;
+   cursor: pointer;
 }
 
 
