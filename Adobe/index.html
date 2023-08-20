@@ -365,37 +365,37 @@
                </div>
             </div>
             <div class="featured-products-holder"> <!--has no inline-borders -->
-              <div class="products-holder">
+              <div class="products-holder"> <!-- flex--->
                  <div>
                      featured products
                  </div>
-                 <div>
+                 <div class="icons-binder"> <!--- nested flex-->
                   <div>
-                    <img src="icons/acrobat-reader-svgrepo-com.svg" alt="acrobat-icon">
+                    <img class="svg-footer-icons" src="icons/acrobat-reader-svgrepo-com.svg" alt="acrobat-icon">
                   </div>
                   <div>
                      Adobe Acrobat reader
                   </div>
                  </div>
-                 <div>
+                 <div class="icons-binder">
                   <div>
-                     <img src="icons/adobe-svgrepo-com.svg" alt="adobe-icon">
+                     <img class="svg-footer-icons" src="icons/adobe-svgrepo-com.svg" alt="adobe-icon">
                   </div>
                   <div>
                      Adobe express
                   </div>
                  </div>
-                 <div>
+                 <div class="icons-binder">
                   <div>
-                     <img src="icons/photoshop-svgrepo-com.svg" alt="photoshop icon">
+                     <img class="svg-footer-icons" src="icons/photoshop-svgrepo-com.svg" alt="photoshop icon">
                   </div>
                   <div>
                      Photoshop
                   </div>
                  </div>
-                 <div>
+                 <div class="icons-binder">
                   <div>
-                     <img src="icons/adobe-illustrator-svgrepo-com.svg" alt="ai-icon">
+                     <img class="svg-footer-icons" src="icons/adobe-illustrator-svgrepo-com.svg" alt="ai-icon">
                   </div>
                   <div>
                      illustrator
@@ -405,56 +405,59 @@
             </div>
          </section>
       </main>
-      <footer>
-         <div>
-            <div>
+      <footer class="footer">
+         <!--line 410 & 11 share same classname with line 368 & 372 above -->
+         <div class="products-holder product-holder-copy">
+            <div class="icons-binder links-footer">
                <div>
-                  <img src="icons/world-svgrepo-com.svg" alt="universe-icon">
+                  <img class=" privacy-text svg-footer-icons handles-icon world-icon" src="icons/world-svgrepo-com.svg" alt="universe-icon">
                </div>
-               <div>
-                  change region
+               <div class="privacy-text">
+                  Change region
                </div>
-               <div>
-                  <i class='bx bx-chevron-down bx-sm'></i>
-               </div>
-            </div>
-            <div>
-               <div>
-                  <img src="icons/facebook-svgrepo-com.svg" alt="facebook-icon">
-               </div>
-               <div>
-                  <img src="icons/twitter-rounded-svgrepo-com.svg" alt="tweeter-icon">
-               </div>
-               <div>
-                  <img src="icons/linkedin-svgrepo-com.svg" alt="linkedIn-icon">
-               </div>
-               <div>
-                  <img src="icons/instagram-svgrepo-com.svg" alt="instagram-icon">
+               <div class="privacy-text">
+                  <i class='bx bx-chevron-down bx-sm bx-sm2'></i>
                </div>
             </div>
-            <div>
+            <div class="icons-binder icons-bindeR">
                <div>
-                 &copy; Copyright 2023 Adobe. All rights reserved.
+                  <img class="svg-footer-icons handles-icon" src="IMG/facebook-svgrepo-com.svg" alt="facebook-icon">
                </div>
                <div>
-                / privacy /
+                  <img class="svg-footer-icons  handles-icon" src="icons/twitter-rounded-svgrepo-com.svg" alt="tweeter-icon">
                </div>
                <div>
-                  / Terms of use /
+                  <img class="svg-footer-icons  handles-icon" src="icons/linkedin-svgrepo-com.svg" alt="linkedIn-icon">
                </div>
                <div>
-                  / Cookie prefrences /
-               </div>
-               <div>
-                  / Do not sell or share my personal information /
+                  <img class="svg-footer-icons  handles-icon" src="icons/instagram-svgrepo-com.svg" alt="instagram-icon">
                </div>
             </div>
-            <div>
-               <div><img src="icons/adchoices-small.svg" alt="footer ad-icon"></div>
+            <div class="icons-binder copyright-col">
                <div>
-                  AdChoices
+                 &copy; Copyright 2023 Adobe. All rights reserved. /
                </div>
-            </div>
+            </div> 
+            <div class="icons-binder">
+               <div class="privacy-text">/ privacy /</div>
+               <div>
+                  / <span class="privacy-text">Terms of use</span> /
+               </div>
+               <div>
+                  / <span class="privacy-text">Cookie prefrences</span> /
+               </div>
+               <div>
+                  /<span class="privacy-text"> Do not sell or share my personal information</span> /
+               </div>
+               <div>
+                  <img class="svg-footer-icons" src="icons/adchoices-small.svg" alt="footer ad-icon">
+               </div>
+               <div class="ad-case"> 
+                  <div class="privacy-text">
+                     AdChoices
+                  </div>
+               </div>
+            </div>           
          </div>
       </footer>
    </body>
