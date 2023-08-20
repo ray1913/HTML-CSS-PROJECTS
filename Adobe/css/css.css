@@ -178,15 +178,31 @@ a {
 
 }
 
+@media (max-width: 900px) {
+.query-nav {
+   display: block;
+}
+
+}
+
 @media (min-width: 900px) {
 .main-nav {
    display: block;
 }
-
+   
 .query-nav, .absoLute, .rel {
    display: none;
 }
 
+}
+
+@media (max-width: 1349px) {
+.section-one-photo-holder {
+
+}
+   .secTion-one-floatImg-holder {
+      
+   }
 }
 
 
