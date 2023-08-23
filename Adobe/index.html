@@ -23,54 +23,55 @@
 
    </head>
    <body>
-      <nav class="main-nav">
-         <div class="header">
-            <div class="header-child-one">  <!-- all elements with this class name are nested flexboxes -->
-               <div class="child-one-icon">
-                  <img class="adobe-official-icon" src="icons/adobe-svgrepo-com.svg" alt="adobe icon">
+         <nav class="main-nav">
+            <div class="header">
+               <div class="header-child-one">  <!-- all elements with this class name are nested flexboxes -->
+                  <div class="child-one-icon">
+                     <img class="adobe-official-icon" src="icons/adobe-svgrepo-com.svg" alt="adobe icon">
+                  </div>
+                  <div class="child-one-icon-name">
+                     <div class="adobe-icon-name">Adobe</div>
+                  </div>
                </div>
-               <div class="child-one-icon-name">
-                  <div class="adobe-icon-name">Adobe</div>
+               <div class="header-child-one">
+                  <div class="child-text-title">Creativity & Design</div>
+                  <div class="entity-icon">
+                     <i class='bx bx-chevron-down bx-sm'></i>
+                  </div>
                </div>
-            </div>   
-            <div class="header-child-one">
-               <div class="child-text-title">Creativity & Design</div>
-               <div class="entity-icon">
+               <div class="header-child-one">
+                 <div class="child-text-title">
+                  PDF & E-signatures
+               </div>
+                 <div class="entity-icon">
                   <i class='bx bx-chevron-down bx-sm'></i>
                </div>
-            </div>
-            <div class="header-child-one"> 
-              <div class="child-text-title">
-               PDF & E-signatures
-            </div>
-              <div class="entity-icon">
-               <i class='bx bx-chevron-down bx-sm'></i>
-            </div>
-            </div>
-            <div class="header-child-one">
-               <div class="child-text-title">Marketing & Commerce</div>
-               <div class="entity-icon">
-                  <i class='bx bx-chevron-down bx-sm'></i>
+               </div>
+               <div class="header-child-one">
+                  <div class="child-text-title">Marketing & Commerce</div>
+                  <div class="entity-icon">
+                     <i class='bx bx-chevron-down bx-sm'></i>
+                  </div>
+               </div>
+               <div class="header-child-one flex-grow">
+                  <div class="child-text-title">Help & Support</div>
+                  <div class="entity-icon">
+                     <i class='bx bx-chevron-down bx-sm'></i>
+                  </div>
+               </div>
+               <div class="search-sign-in-holder">
+                  <div class="search-icon-container">
+                     <a href="#">
+                        <img class="nav-search-icon" src="icons/search-svgrepo-com.svg">
+                     </a>
+                  </div>
+                  <div class="sign-in-">
+                     <a class="child-text-title header-sign-in-link" href="#">Sign-in</a>
+                  </div>
                </div>
             </div>
-            <div class="header-child-one flex-grow">
-               <div class="child-text-title">Help & Support</div>
-               <div class="entity-icon">
-                  <i class='bx bx-chevron-down bx-sm'></i>
-               </div>
-            </div>
-            <div class="search-sign-in-holder">
-               <div class="search-icon-container">
-                  <a href="#">
-                     <img class="nav-search-icon" src="icons/search-svgrepo-com.svg">
-                  </a>
-               </div>
-               <div class="sign-in-">
-                  <a class="child-text-title header-sign-in-link" href="#">Sign-in</a>
-               </div>
-            </div>
-         </div>
-      </nav>
+         </nav>
+      
       <nav class="query-nav">          
          <div class="nav-row">   <!--  query-nav links container/Not a flex -->
                <div class="holder-Nav"> <!--flex: wraps the menu-icon/adobe-logo/sign-in-->
@@ -136,6 +137,9 @@
       <main>
          <section class="secTion-one">
             <div class="secTion-one-photo-holder">
+               <div>
+                  <img class="max-photo" src="./IMG/CC-MAX-triple-tablet.jpeg" alt="scifi-img">
+               </div>
                <img class="cloud-photo" src="IMG/Cloud.PNG" alt="sci-fi image">
                <div class="secTion-one-floatImg-holder">
                   <div class="all-apps-wrapper">
@@ -176,25 +180,44 @@
                   </div>
                </div>
             </div>
+            <div class="contentAfter-photoHolder">
+               <div class="title-after">
+                  Save 43% off 1st year on Creative Cloud All Apps
+               </div>
+               <div class="contentAfter-info">
+                  Create faster with new AI features in Illustrator, Premiere Pro and Lightroom. Collaborate with Share for Review in Photoshop and Illustrator. Make standout content quickly with Adobe Express. And design for the future with new 3D tools. <del>US$56.96/mo</del>, US$32.24/mo (incl. VAT) for the first year.<a class="contentAfter-linkOne" href="#"> See terms.</a>​​
+               </div>
+               <div>
+                  <button class="contentAfter-btn">
+                     Save 43% now
+                  </button>
+               </div>
+               <div class="contentAfter-linkTwo">
+                  Learn more
+               </div>
+            </div>
+
             <div class="cloud-links-case">
-               <span class="cloud-links ref-text" >
+               <span class="cloud-links ref-text" id="cloud-text" >
                   Creative Cloud for:
                </span>
-               <span>
-                  <a class="cloud-links" href="">Everyone</a>
-               </span>
-               <span>
-                  <a class="cloud-links" href="">Students</a>
-               </span>
-               <span>
-                  <a class="cloud-links" href="">Photographers</a>
-               </span>
-               <span>
-                  <a class="cloud-links" href="">Business</a>
-               </span>
-               <span>
-                  <a class="cloud-links" href="">Special Offers</a>
-               </span>
+               <div class="cloudLinksCase">
+                  <span>
+                     <a class="cloud-links" href="">Everyone</a>
+                  </span>
+                  <span>
+                     <a class="cloud-links" href="">Students</a>
+                  </span>
+                  <span>
+                     <a class="cloud-links" href="">Photographers</a>
+                  </span>
+                  <span>
+                     <a class="cloud-links" href="">Business</a>
+                  </span>
+                  <span>
+                     <a class="cloud-links" href="">Special Offers</a>
+                  </span>
+               </div>
             </div>
             <hr class="section-one-hr">
          </section>
@@ -261,6 +284,7 @@
               <!------- Grid item-5 end --------->
          </section>
 
+         
          <!-------------- section three/footer section --------------------->
          <section class="section-three">
             <div class="footer-grid-container"> <!---grid holder-->

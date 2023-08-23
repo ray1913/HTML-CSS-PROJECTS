@@ -23,9 +23,12 @@ a {
    display: flex;
    column-gap: 2.3125em; /* will give each header 'direct child' a column gap of 37px each */
    align-items: center;
+   background-color: white;
+   z-index: 100;
    padding-block: 1.7em;
    padding-inline: 1.3em;
    border-bottom: 1px solid rgb(248, 242, 242);
+
 }
 
 .bx-md {
@@ -151,6 +154,17 @@ a {
 
 
 /* Media conditions for header */
+@media (max-width: 500px) {
+.query-sign-in {
+   font-size: 1.2em;
+   padding-right: 15px;
+}
+
+.query-sign-in:hover {
+
+}
+}
+
 @media (max-width: 899px)  {
 .main-nav {
    display: none;
@@ -194,15 +208,6 @@ a {
    display: none;
 }
 
-}
-
-@media (max-width: 1349px) {
-.section-one-photo-holder {
-
-}
-   .secTion-one-floatImg-holder {
-      
-   }
 }
 
 
