@@ -92,5 +92,11 @@
    cursor: pointer;
 }
 
+@media (max-width: 800px) {
+   .footer-grid-container {
+      
+   }
+}
+
 
 
