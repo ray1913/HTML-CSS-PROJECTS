@@ -97,6 +97,13 @@
    grid-template-areas: '. . . ';
    gap: 3em;
 }
+
+.product-holder-copy {
+  flex-wrap: wrap;
+  margin-top: 3em;
+  row-gap: 3em;
+}
+
 }
 
 
