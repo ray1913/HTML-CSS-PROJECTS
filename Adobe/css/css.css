@@ -159,6 +159,7 @@ a {
    font-size: 1.2em;
    padding-right: 15px;
 }
+}
 
 
 @media (max-width: 899px)  {
@@ -206,6 +207,12 @@ a {
 
 }
 
+
+@media (max-width: 1120) {
+   .item-4 {
+      overflow: hidden;
+   }
+}
 
 
 

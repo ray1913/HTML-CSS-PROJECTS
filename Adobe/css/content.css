@@ -239,7 +239,7 @@
 }
 
 .item-4 {
-   overflow-x: hidden;
+   overflow: clip;
 }
 
 .started {
